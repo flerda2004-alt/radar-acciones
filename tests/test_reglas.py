@@ -197,3 +197,38 @@ def test_construir_ars_convierte_a_usd():
     raw = raw_falso("ARS")
     m = construir("XYZ", raw, {"precio": 20.0}, TCFalso(), None, CFG)
     assert any("ARS" in a for a in m["alertas"])
+
+
+# ── Correcciones tras la primera corrida real ──
+def test_empalme_adr_tsmc():
+    from radar.metricas import empalmar
+    idx_sec = pd.to_datetime(["2021-12-31", "2022-12-31", "2023-12-31", "2024-12-31"])
+    sec = pd.Series([22.84, 38.29, 32.85, 44.67], index=idx_sec)            # TWD por acción
+    idx_yf = pd.to_datetime(["2022-12-31", "2023-12-31", "2024-12-31", "2025-12-31"])
+    yf_ = pd.Series([196.0, 161.7, 226.25, 327.35], index=idx_yf)          # TWD por ADR (5 acciones)
+    out, n = empalmar(sec, yf_)
+    assert n == 1 and len(out) == 5
+    assert abs(out.iloc[-1] - 327.35 / 5.065) < 1.5                         # ≈ 64,6 por acción
+
+
+def test_empalme_rechaza_escala_inestable():
+    from radar.metricas import empalmar
+    idx = pd.to_datetime(["2023-12-31", "2024-12-31"])
+    sec = pd.Series([1.0, 2.0], index=idx)
+    yf_ = pd.Series([1.0, 5.0, 3.0], index=pd.to_datetime(["2023-12-31", "2024-12-31", "2025-12-31"]))
+    out, n = empalmar(sec, yf_)
+    assert n == 0 and len(out) == 2
+
+
+def test_graham_pocos_anios_no_cumple():
+    ev = graham.evaluar(base(estab_anios=4, estab_positivas=True, crec_10a_anios=4), CFG, 5.3)
+    c3 = next(c for c in ev["defensivo"]["checks"] if c["nombre"].startswith("3."))
+    assert c3["nombre"].startswith("3.") and c3["estado"] == "sin datos"
+    assert ev["senal"] != "COMPRAR" or "emprendedor" in ev["motivo"]
+
+
+def test_inventario_irrelevante_no_alerta():
+    raw = raw_falso("USD")
+    raw["balance"].loc["Inventory"] = [1.0, 1.5, 2.5, 4.0, 8.0]   # crece fuerte pero es < 5% de ventas
+    m = construir("XYZ", raw, {"precio": 20.0}, TCFalso(), None, CFG)
+    assert m["inventario_brecha_pp"] is None

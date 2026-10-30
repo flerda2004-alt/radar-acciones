@@ -216,6 +216,7 @@ footer .met ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
   const nf = (v, d = 2) => (v == null || !isFinite(v)) ? "—" :
     Number(v).toLocaleString("es-AR", { minimumFractionDigits: d, maximumFractionDigits: d });
   const fr = (v, d = 1, signo = false) => (v == null || !isFinite(v)) ? "—" : (signo && v > 0 ? "+" : "") + nf(v * 100, d) + "%";
+  const frMg = v => (v != null && isFinite(v) && v < -1) ? "< −100%" : fr(v, 0);
   const pp = (v, d = 1) => (v == null || !isFinite(v)) ? "—" : nf(v, d) + "%";
   const usdM = v => v == null ? "—" : (v >= 1e12 ? "USD " + nf(v / 1e12, 2) + " B" : v >= 1e9 ? "USD " + nf(v / 1e9, 1) + " MM" : "USD " + nf(v / 1e6, 0) + " M");
   const fecha = s => s ? s.split("-").reverse().join("/") : "—";
@@ -235,7 +236,7 @@ footer .met ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
   $("#meta").innerHTML =
     `<span>Cierre <b>${fecha(D.fecha_datos)}</b></span>` +
     `<span>Actualizado <b>${esc((D.generado || "").split(" ").map((x, i) => i ? x : fecha(x)).join(" "))}</b> (hora Argentina)</span>` +
-    `<span>Tasa AAA <b>${nf(D.tasa_aaa, 2)}%</b></span>` +
+    `<span title="${esc(D.fuente_aaa)}">Tasa AAA <b>${nf(D.tasa_aaa, 2)}%</b>${/estimada|respaldo/.test(D.fuente_aaa || "") ? " (estimada)" : ""}</span>` +
     `<span><b>${D.acciones.length}</b> instrumentos</span>`;
   $("#legal").textContent = S.aviso_legal || "";
   if (D.errores && D.errores.length) {
@@ -288,9 +289,9 @@ footer .met ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
       <span class="c-per num">${nf(m.per, 1)}</span>
       <span class="c-peg num">${nf(m.peg, 2)}</span>
       <span class="c-pb num">${nf(m.pb, 1)}</span>
-      <span class="c-mg num ${mg > 0 ? "pos" : mg < 0 ? "neg" : ""}">${fr(mg, 0)}</span>
+      <span class="c-mg num ${mg > 0 ? "pos" : mg < 0 ? "neg" : ""}">${frMg(mg)}</span>
       <span class="rng">${rango(r)}</span>
-      <span class="met-m">PER <span class="num">${nf(m.per, 1)}</span> PEG <span class="num">${nf(m.peg, 2)}</span> P/VL <span class="num">${nf(m.pb, 1)}</span> Margen G. <span class="num">${fr(mg, 0)}</span></span>`;
+      <span class="met-m">PER <span class="num">${nf(m.per, 1)}</span> PEG <span class="num">${nf(m.peg, 2)}</span> P/VL <span class="num">${nf(m.pb, 1)}</span> Margen G. <span class="num">${frMg(mg)}</span></span>`;
   }
 
   const ICON = { "cumple": ["ok", "✓"], "no cumple": ["no", "✗"], "sin datos": ["nd", "?"], "n/a": ["na", "–"] };
@@ -360,7 +361,7 @@ footer .met ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
           <div class="motivo">${esc(G.motivo)}</div>
           <dl class="kv">
             <div><dt>Precio / valor intrínseco</dt><dd>${nf(v.precio_sobre_valor_intrinseco, 2)}</dd></div>
-            <div><dt>Margen de seguridad</dt><dd>${fr(v.margen_seguridad, 0)}</dd></div>
+            <div><dt>Margen de seguridad</dt><dd>${frMg(v.margen_seguridad)}</dd></div>
             <div><dt>Precio / número de Graham</dt><dd>${nf(v.precio_sobre_numero_graham, 2)}</dd></div>
             <div><dt>PER justo (fórmula)</dt><dd>${nf(v.per_justo_formula, 1)}</dd></div>
           </dl>

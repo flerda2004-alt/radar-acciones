@@ -79,9 +79,11 @@ class Edgar:
         t = ticker.upper()
         return self._ciks.get(t) or self._ciks.get(t.replace("-", ".")) or self._ciks.get(t.replace("-", ""))
 
-    def _serie(self, cik: int, tags) -> tuple[list[dict], str | None]:
+    def _serie(self, cik: int, tags, moneda_pref: str | None = None) -> tuple[list[dict], str | None]:
         """Une varios tags (las empresas cambian de tag con los años).
-        Devuelve [{fin, valor, presentado}] y la unidad (ej. 'USD/shares')."""
+        Devuelve [{fin, valor, presentado}] y la unidad (ej. 'USD/shares').
+        Si la empresa informa en varias monedas (ej. TSMC: TWD y conversión a USD),
+        se prefiere la moneda de sus balances."""
         por_fin: dict[date, dict] = {}
         unidad_ref = None
         for tax, tag in tags:
@@ -92,7 +94,8 @@ class Edgar:
             if not unidades:
                 continue
             if unidad_ref is None:
-                unidad_ref = max(unidades, key=lambda u: len(unidades[u]))
+                pref = [u for u in unidades if moneda_pref and u.upper().split("/")[0] == moneda_pref.upper()]
+                unidad_ref = pref[0] if pref else max(unidades, key=lambda u: len(unidades[u]))
             if unidad_ref not in unidades:
                 continue
             candidatos: dict[date, dict] = {}
@@ -111,12 +114,12 @@ class Edgar:
                 por_fin.setdefault(fin, d)
         return [por_fin[k] for k in sorted(por_fin)], unidad_ref
 
-    def historia(self, ticker: str, splits: pd.Series | None) -> dict | None:
+    def historia(self, ticker: str, splits: pd.Series | None, moneda_pref: str | None = None) -> dict | None:
         cik = self.cik(ticker)
         if cik is None:
             return None
-        eps, u_eps = self._serie(cik, TAGS_EPS)
-        ganancia, u_gan = self._serie(cik, TAGS_GANANCIA)
+        eps, u_eps = self._serie(cik, TAGS_EPS, moneda_pref)
+        ganancia, u_gan = self._serie(cik, TAGS_GANANCIA, moneda_pref)
         if not eps and not ganancia:
             return None
         eps = ajustar_por_splits(eps, splits)

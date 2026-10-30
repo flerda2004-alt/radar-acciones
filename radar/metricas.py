@@ -93,6 +93,29 @@ def ajustar_splits_yahoo(eps: pd.Series, ganancia: pd.Series, splits) -> pd.Seri
     return eps
 
 
+def empalmar(base: pd.Series, extra: pd.Series, tolerancia: float = 0.15) -> tuple[pd.Series, int]:
+    """Agrega a 'base' (SEC, historia larga) los ejercicios más nuevos de 'extra' (Yahoo).
+    La escala se calcula en los años que se superponen (ej. 1 ADR de TSMC = 5 acciones)
+    y solo se empalma si esa relación es estable entre años.
+    Devuelve la serie y la cantidad de ejercicios agregados."""
+    if base is None or len(base) == 0 or extra is None or len(extra) == 0:
+        return base, 0
+    ratios = []
+    for t, v in extra.items():
+        cerca = base[(base.index >= t - pd.Timedelta(days=20)) & (base.index <= t + pd.Timedelta(days=20))]
+        if len(cerca) and v and abs(v) > 1e-9 and cerca.iloc[0] and (cerca.iloc[0] > 0) == (v > 0):
+            ratios.append(float(cerca.iloc[0]) / float(v))
+    if not ratios:
+        return base, 0
+    r = statistics.median(ratios)
+    if r <= 0 or any(abs(x / r - 1) > tolerancia for x in ratios):
+        return base, 0
+    nuevos = extra[extra.index > base.index[-1] + pd.Timedelta(days=200)] * r
+    if not len(nuevos):
+        return base, 0
+    return pd.concat([base, nuevos]).sort_index(), len(nuevos)
+
+
 def a_lista(s: pd.Series, decimales=4):
     return [[t.strftime("%Y-%m-%d"), round(float(v), decimales)] for t, v in s.items()]
 
@@ -227,7 +250,9 @@ def construir(sym: str, raw: dict, px: dict, tc: TipoCambio, hist_edgar: dict | 
     inv = serie(bal, ["Inventory"])
     vtas = serie(res, ["TotalRevenue", "OperatingRevenue"])
     m["inventario_brecha_pp"] = None
-    if len(inv) >= 2 and len(vtas) >= 2 and inv.iloc[-2] > 0 and vtas.iloc[-2] > 0:
+    # Solo si los inventarios pesan (ej. ≥ 5% de las ventas); en Alphabet o Visa son irrelevantes
+    material = len(inv) and len(vtas) and vtas.iloc[-1] > 0 and inv.iloc[-1] / vtas.iloc[-1] >= c_l.get("inventario_min_ventas", 0.05)
+    if material and len(inv) >= 2 and len(vtas) >= 2 and inv.iloc[-2] > 0 and vtas.iloc[-2] > 0:
         g_inv = inv.iloc[-1] / inv.iloc[-2] - 1
         g_vtas = vtas.iloc[-1] / vtas.iloc[-2] - 1
         m["inventario_crec"] = g_inv * 100
@@ -239,18 +264,29 @@ def construir(sym: str, raw: dict, px: dict, tc: TipoCambio, hist_edgar: dict | 
     yf_gan = serie(res, ["NetIncomeCommonStockholders", "NetIncome"])
     yf_eps = ajustar_splits_yahoo(yf_eps, yf_gan, raw.get("splits"))
     fuente, eps, gan, moneda_hist = "Yahoo Finance", yf_eps, yf_gan, moneda_bal
+    m["edgar"] = None
     if hist_edgar:
         e_eps, e_gan = hist_edgar["eps"], hist_edgar["ganancia"]
-        ult_yf = yf_eps.index[-1] if len(yf_eps) else pd.Timestamp("1900-01-01")
-        ult_gan_yf = yf_gan.index[-1] if len(yf_gan) else pd.Timestamp("1900-01-01")
-        if len(e_eps) >= 5 and e_eps.index[-1] >= ult_yf - pd.Timedelta(days=120):
-            fuente, eps = "SEC EDGAR", e_eps
-            gan = e_gan if len(e_gan) >= 3 else yf_gan
+
+        def al_dia(s: pd.Series, ref: pd.Series) -> bool:
+            return len(s) > 0 and (len(ref) == 0 or s.index[-1] >= ref.index[-1] - pd.Timedelta(days=120))
+
+        # La SEC a veces no tiene cargado el último 20-F/10-K: se completa con Yahoo
+        eps_emp, n_eps = empalmar(e_eps, yf_eps)
+        gan_emp, n_gan = empalmar(e_gan, yf_gan)
+        m["edgar"] = {"cik": hist_edgar.get("cik"), "moneda": hist_edgar.get("moneda"),
+                      "eps_anios": len(e_eps), "ganancia_anios": len(e_gan),
+                      "ultimo": e_eps.index[-1].strftime("%Y-%m-%d") if len(e_eps) else None,
+                      "anios_agregados_yahoo": n_eps}
+        if len(e_eps) >= 5 and al_dia(eps_emp, yf_eps):
+            fuente = "SEC EDGAR" + (f" + Yahoo ({n_eps} último{'s' if n_eps > 1 else ''})" if n_eps else "")
+            eps = eps_emp
+            gan = gan_emp if len(gan_emp) >= 3 and al_dia(gan_emp, yf_gan) else yf_gan
             moneda_hist = hist_edgar.get("moneda") or moneda_bal
-        elif len(e_gan) >= 6 and e_gan.index[-1] >= ult_gan_yf - pd.Timedelta(days=120):
+        elif len(e_gan) >= 6 and al_dia(gan_emp, yf_gan):
             # Sin EPS sin dimensiones en XBRL (ej. varias clases de acciones): se usa la
             # ganancia neta como aproximación. Subestima el crecimiento por acción si hay recompras.
-            fuente, eps, gan = "SEC EDGAR (ganancia neta)", e_gan, e_gan
+            fuente, eps, gan = "SEC EDGAR (ganancia neta)", gan_emp, gan_emp
             moneda_hist = hist_edgar.get("moneda") or moneda_bal
             alertas.append("Historia de 10 años con ganancia neta total (no por acción): ignora el efecto de recompras")
     m["fuente_historia"] = fuente
@@ -283,8 +319,9 @@ def construir(sym: str, raw: dict, px: dict, tc: TipoCambio, hist_edgar: dict | 
     m["estab_anios"] = len(ult10)
     m["estab_positivas"] = all(v > 0 for v in ult10) if ult10 else None
     m["perdida_ultimos_2"] = any(v <= 0 for v in base_estab[-2:]) if base_estab else None
-    ult5 = base_estab[-cfg["graham"]["emp_anios_sin_perdidas"]:]
-    m["sin_perdidas_5a"] = all(v > 0 for v in ult5) if len(ult5) >= 3 else None
+    n5 = cfg["graham"]["emp_anios_sin_perdidas"]
+    ult5 = base_estab[-n5:]
+    m["sin_perdidas_5a"] = False if any(v <= 0 for v in ult5) else (True if len(ult5) >= n5 else None)
     ventana = base_estab[-c_l["ventana_ciclo_anios"]:]
     m["perdida_en_ciclo"] = any(v <= 0 for v in ventana) if ventana else None
     m["caida_max_eps"] = caida_maxima(base_estab[-c_l["ventana_ciclo_anios"]:]) if len(base_estab) >= 2 else None
@@ -309,11 +346,13 @@ def construir(sym: str, raw: dict, px: dict, tc: TipoCambio, hist_edgar: dict | 
     g_hist, g_hist_anios = crecimiento_historico(eps_g)
     g_fwd = None
     ee = raw.get("est_ganancias")
-    if ee is not None and not ee.empty and "growth" in ee.columns:
-        gs = [num(ee.loc[p, "growth"]) for p in ("0y", "+1y") if p in ee.index]
-        gs = [g for g in gs if g is not None]
-        if gs and moneda_hist not in ALTA_INFLACION:
-            g_fwd = sum(gs) / len(gs) * 100
+    if ee is not None and not ee.empty and "growth" in ee.columns and moneda_hist not in ALTA_INFLACION:
+        # Se prefiere el año próximo vs. el actual (+1y): compara dos estimaciones "limpias".
+        # El año en curso (0y) se compara contra un balance real que puede tener extraordinarios.
+        for p in ("+1y", "0y"):
+            if p in ee.index and num(ee.loc[p, "growth"]) is not None:
+                g_fwd = num(ee.loc[p, "growth"]) * 100
+                break
     g_ltg = None
     ge = raw.get("est_crecimiento")
     if ge is not None and not ge.empty and "stockTrend" in ge.columns:
@@ -326,6 +365,11 @@ def construir(sym: str, raw: dict, px: dict, tc: TipoCambio, hist_edgar: dict | 
         g_ltg = per_yahoo / peg_yahoo
     candidatos = [g for g in (g_hist, g_fwd, g_ltg) if g is not None]
     g_final = statistics.median(candidatos) if candidatos else None
+    if len(candidatos) >= 2 and max(candidatos) - min(candidatos) > 25:
+        partes = [f"{n} {v:.0f}%".replace(".", ",") for n, v in
+                  (("histórico", g_hist), ("analistas próximo año", g_fwd), ("largo plazo", g_ltg)) if v is not None]
+        alertas.append("Estimaciones de crecimiento muy dispares (" + " · ".join(partes) +
+                       "): conviene revisar la categoría de Lynch a mano")
     m["crecimiento"] = {"final": g_final, "historico": g_hist, "historico_anios": g_hist_anios,
                         "estimado_1_2a": g_fwd, "largo_plazo": g_ltg}
     g_lynch = min(g_final, c_l["crecimiento_max"]) if g_final is not None else None

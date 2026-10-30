@@ -150,16 +150,32 @@ def datos_ticker(sym: str, reintentos: int = 3) -> dict:
 
 # ───────────────────────────── Tasa AAA ─────────────────────────────
 
-def tasa_aaa(respaldo: float) -> tuple[float, str]:
-    """Rendimiento de bonos corporativos AAA de Moody's (FRED). Graham usa 'Y' = AAA."""
+def tasa_aaa(respaldo: float, spread: float = 0.9) -> tuple[float, str]:
+    """Rendimiento de bonos corporativos AAA de Moody's (FRED). Graham usa 'Y' = AAA.
+    Si FRED no responde: Tesoro EE.UU. a 10 años (Yahoo ^TNX) + diferencial histórico."""
+    errores = []
+    urls = ["https://fred.stlouisfed.org/graph/fredgraph.csv?id=AAA",
+            "https://fred.stlouisfed.org/graph/fredgraph.csv?id=AAA&cosd=2024-01-01"]
+    for url in urls:
+        for ua in ("Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) "
+                   "Chrome/126.0 Safari/537.36", "RadarAcciones/1.0"):
+            try:
+                r = requests.get(url, timeout=25, headers={"User-Agent": ua, "Accept": "text/csv,*/*"})
+                r.raise_for_status()
+                df = pd.read_csv(io.StringIO(r.text))
+                serie = pd.to_numeric(df.iloc[:, -1], errors="coerce").dropna()
+                if len(serie):
+                    return float(serie.iloc[-1]), f"FRED, Moody's AAA ({df.iloc[serie.index[-1], 0]})"
+                errores.append("FRED: CSV sin datos")
+            except Exception as e:  # noqa: BLE001
+                errores.append(f"FRED: {type(e).__name__} {str(e)[:80]}")
+    log.warning("FRED no respondió: %s", " | ".join(errores))
     try:
-        r = requests.get("https://fred.stlouisfed.org/graph/fredgraph.csv?id=AAA", timeout=30,
-                         headers={"User-Agent": "Mozilla/5.0"})
-        r.raise_for_status()
-        df = pd.read_csv(io.StringIO(r.text))
-        serie = pd.to_numeric(df.iloc[:, -1], errors="coerce").dropna()
-        if len(serie):
-            return float(serie.iloc[-1]), f"FRED AAA ({df.iloc[serie.index[-1], 0]})"
+        h = yf.Ticker("^TNX").history(period="1mo")
+        tnx = float(h["Close"].dropna().iloc[-1])
+        if tnx > 20:  # cotizaciones viejas de ^TNX venían × 10
+            tnx /= 10
+        return round(tnx + spread, 2), f"estimada: Tesoro EE.UU. 10 años {tnx:.2f}% + {spread} pp (FRED no respondió)"
     except Exception as e:  # noqa: BLE001
-        log.warning("FRED no respondió (%s); uso tasa de respaldo", e)
-    return respaldo, "valor de respaldo (config.yaml)"
+        log.warning("Tampoco respondió ^TNX: %s", e)
+    return respaldo, "valor de respaldo de config.yaml (FRED y Yahoo no respondieron)"

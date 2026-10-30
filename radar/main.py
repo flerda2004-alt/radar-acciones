@@ -48,7 +48,7 @@ def evaluar_ticker(item, raw, px, tc, edgar, cfg, aaa) -> dict:
     hist = None
     if info.get("quoteType") != "ETF" and edgar is not None and not sym.endswith(".BA"):
         try:
-            hist = edgar.historia(sym, raw.get("splits"))
+            hist = edgar.historia(sym, raw.get("splits"), info.get("financialCurrency") or info.get("currency"))
         except Exception as e:  # noqa: BLE001
             log.warning("EDGAR %s: %s", sym, e)
     m = construir(sym, raw, px, tc, hist, cfg)
@@ -134,7 +134,7 @@ def main(argv=None):
     salida = Path(args.salida)
     salida.mkdir(parents=True, exist_ok=True)
 
-    aaa, fuente_aaa = tasa_aaa(cfg["datos"]["tasa_aaa_respaldo"])
+    aaa, fuente_aaa = tasa_aaa(cfg["datos"]["tasa_aaa_respaldo"], cfg["datos"].get("spread_aaa_sobre_tesoro", 0.9))
     log.info("Tasa AAA: %.2f%% (%s)", aaa, fuente_aaa)
     tickers = [w["ticker"] for w in watch]
     precios = precios_lote(tickers)

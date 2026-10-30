@@ -46,8 +46,11 @@ def evaluar(m: dict, cfg: dict, tasa_aaa: float) -> dict:
         else:
             d.append(check("2b. Deuda LP ≤ capital de trabajo", None if dlp_ct is None else dlp_ct <= 1, f2(dlp_ct), "≤ 1"))
     anios = m.get("estab_anios") or 0
-    nota_anios = "" if anios >= c["anios_ganancias"] else f"Solo {anios} ejercicios disponibles de {fn(c['anios_ganancias'])}"
-    d.append(check(f"3. Ganancias positivas {fn(c['anios_ganancias'])} años", m.get("estab_positivas"),
+    pos = m.get("estab_positivas")
+    # Graham pide 10 años: con menos historia no se puede afirmar que cumple (sí que falla, si hubo pérdidas)
+    ok3 = False if pos is False else (pos if anios >= c["anios_ganancias"] else None)
+    nota_anios = "" if anios >= c["anios_ganancias"] else f"Solo {anios} ejercicios disponibles de {fn(c['anios_ganancias'])}: no alcanza para verificarlo"
+    d.append(check(f"3. Ganancias positivas {fn(c['anios_ganancias'])} años", ok3,
                    f"{anios} años" + (" positivos" if m.get("estab_positivas") else " con pérdidas" if m.get("estab_positivas") is False else ""),
                    "todos positivos", nota_anios))
     racha = m.get("racha_dividendos") or 0
@@ -55,8 +58,13 @@ def evaluar(m: dict, cfg: dict, tasa_aaa: float) -> dict:
                    f"{racha} años", f"≥ {fn(c['anios_dividendos'])}"))
     cr10 = m.get("crec_10a")
     n10 = m.get("crec_10a_anios") or 0
-    d.append(check("5. Crecimiento de EPS en 10 años", None if cr10 is None else cr10 >= c["crecimiento_eps_10a_min"],
-                   pct(cr10), f"≥ {c['crecimiento_eps_10a_min']}%",
+    if cr10 is None:
+        ok5 = None
+    elif cr10 < c["crecimiento_eps_10a_min"]:
+        ok5 = False
+    else:
+        ok5 = True if n10 >= c.get("anios_minimos_crecimiento", 8) else None
+    d.append(check("5. Crecimiento de EPS en 10 años", ok5, pct(cr10), f"≥ {fn(c['crecimiento_eps_10a_min'])}%",
                    "" if n10 >= 10 else f"Calculado con {n10} ejercicios"))
     d.append(check("6. PER sobre ganancia promedio 3 años", None if per3 is None else per3 <= c["per_max"], f1(per3),
                    f"≤ {fn(c['per_max'])}"))
@@ -116,7 +124,7 @@ def evaluar(m: dict, cfg: dict, tasa_aaa: float) -> dict:
         senal, motivo = COMPRAR, f"Cumple los criterios del inversor defensivo ({cumple_def}/{len(aplicables)})"
     elif emp_ok:
         senal, motivo = COMPRAR, "Cumple los criterios del inversor emprendedor (incl. precio < 120% del valor tangible)"
-    elif p_sobre_v is not None and p_sobre_v > 1 and not precio_ok:
+    elif p_sobre_v is not None and p_sobre_v > c.get("venta_precio_sobre_valor", 1.0) and not precio_ok:
         senal = VENDER
         motivo = (f"PER {f1(per)} > PER justo de la fórmula ({f1(mult_v)}, g={pct(g)}, AAA={pct(tasa_aaa)}) "
                   f"y no cumple los límites de precio")
