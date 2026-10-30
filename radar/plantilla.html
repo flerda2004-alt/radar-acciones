@@ -144,7 +144,12 @@ footer .met ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
 .legal { max-width: 95ch; }
 .errores { color: var(--vender); font-size: 13px; }
 
-@media (max-width: 860px) {
+@media (max-width: 1180px) and (min-width: 1001px) {
+  .cols, .cab { grid-template-columns: minmax(150px, 2.1fr) 96px 72px 112px minmax(120px, 1.3fr) 64px 64px 64px 84px;
+    grid-template-areas: "acc pre dia sen cat per peg pb mg"; }
+  .rng, .cols span:last-child { display: none; }
+}
+@media (max-width: 1000px) {
   .cols { display: none; }
   .cab { grid-template-columns: 1fr auto; grid-template-areas: "acc pre" "sen dia" "cat cat" "per per"; gap: 6px 10px; padding: 12px 14px; }
   .pre { font-size: 15px; } .dia { justify-self: end; }
@@ -154,7 +159,7 @@ footer .met ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
   .detalle { padding: 4px 14px 18px; }
   .marcos { grid-template-columns: 1fr; }
 }
-@media (min-width: 861px) { .met-m { display: none; } }
+@media (min-width: 1001px) { .met-m { display: none; } }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 
