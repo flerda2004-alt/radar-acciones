@@ -57,7 +57,7 @@ h1 { font-size: clamp(30px, 5vw, 46px); font-weight: 780; font-stretch: 118%; le
 .cambios { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin-bottom: 18px; display: grid; gap: 8px; }
 .cambios h2 { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 650; }
 .cambios ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
-.cambios li { display: flex; align-items: center; gap: 6px; font-size: 13px; background: var(--soft); border-radius: 999px; padding: 4px 10px 4px 6px; }
+.cambios li { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; font-size: 13px; background: var(--soft); border-radius: 10px; padding: 5px 10px 5px 8px; max-width: 100%; }
 .cambios .tk { font-weight: 600; }
 .cambios .vacio { color: var(--muted); font-size: 13px; }
 
@@ -263,15 +263,18 @@ footer .met ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
   }
 
   function pintarCambios() {
-    const cs = D.cambios || [];
+    const marco = { senal: "Combinada", lynch: "Lynch", graham: "Graham" }[estado.marco];
+    const cs = (D.cambios || []).filter(c => c.marco === marco);
     const box = $("#cambios");
+    const desde = D.base_cambios && D.base_cambios.fecha ? ` (${fecha(D.base_cambios.fecha)})` : "";
+    const titulo = `Cambios de señal ${marco === "Combinada" ? "" : marco + " "}desde el cierre anterior${desde}`;
     if (!cs.length) {
-      box.innerHTML = `<h2>Cambios de señal</h2><p class="vacio">Sin cambios respecto del cierre anterior.</p>`;
+      box.innerHTML = `<h2>${titulo}</h2><p class="vacio">Sin cambios.</p>`;
       return;
     }
-    box.innerHTML = `<h2>Cambios de señal desde el cierre anterior</h2><ul>` + cs.map(c =>
+    box.innerHTML = `<h2>${titulo}</h2><ul>` + cs.map(c =>
       `<li><button type="button" class="link-ficha tk" data-ir="${esc(c.ticker)}">${esc(c.ticker)}</button>
-       <span>${esc(c.marco)}:</span> <span class="pill ${cls(c.antes)}">${NOMBRE[c.antes] || c.antes}</span>→<span class="pill ${cls(c.ahora)}">${NOMBRE[c.ahora] || c.ahora}</span></li>`).join("") + `</ul>`;
+       <span class="pill ${cls(c.antes)}">${NOMBRE[c.antes] || c.antes}</span>→<span class="pill ${cls(c.ahora)}">${NOMBRE[c.ahora] || c.ahora}</span></li>`).join("") + `</ul>`;
   }
 
   function rango(r) {
@@ -431,7 +434,7 @@ footer .met ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
 
   function pintar() {
     document.querySelectorAll("#marco button").forEach(b => b.setAttribute("aria-pressed", b.dataset.m === estado.marco));
-    pintarResumen(); pintarFilas();
+    pintarResumen(); pintarFilas(); pintarCambios();
   }
 
   function abrir(ticker, desplazar) {
@@ -494,7 +497,6 @@ footer .met ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
     </ul></div>`;
 
   pintar();
-  pintarCambios();
   const h = decodeURIComponent((location.hash || "").slice(1));
   if (h) { const r = D.acciones.find(x => hashDe(x.ticker) === h); if (r) abrir(r.ticker, true); }
 })();

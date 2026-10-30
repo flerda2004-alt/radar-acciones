@@ -27,6 +27,17 @@ GitHub Actions (lun-vie 19:30 ARG)
 No hay que cargar datos a mano. Lo único manual es la lista de tickers (`watchlist.yaml`),
 y solo cuando agregás o sacás una acción.
 
+## Cómo usarlo
+
+- **Ver el radar**: abrí https://flerda2004-alt.github.io/radar-acciones/ desde la compu o el celular.
+  En el iPhone: Safari → botón Compartir → "Agregar a pantalla de inicio" y queda como una app.
+- **Cuándo se actualiza**: solo, de lunes a viernes a las 19:30 (hora Argentina), con los precios de cierre.
+  Si GitHub demora, puede tardar unos minutos más.
+- **Leer una acción**: tocá la fila y se abre la ficha con cada criterio de Lynch y Graham, el valor
+  y el umbral. Arriba podés ver la señal combinada o la de cada autor, filtrar y ordenar.
+- **Compartir una acción**: abrí su ficha y copiá el link (termina en `#TICKER`, ej. `#MELI`).
+- **Actualizar ya**: github.com/flerda2004-alt/radar-acciones → Actions → Actualizar radar → Run workflow.
+
 ## Dónde está
 
 - Página: https://flerda2004-alt.github.io/radar-acciones/

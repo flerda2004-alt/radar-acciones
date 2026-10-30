@@ -98,6 +98,9 @@ def test_corrida_completa(tmp_path, monkeypatch):
     assert (tmp_path / "historial.csv").exists()
 
     # Segunda corrida "al día siguiente" con un cambio forzado: debe detectarlo
+    # Re-corrida el mismo día: sin base del cierre anterior, no inventa cambios
+    main.main(["--salida", str(tmp_path)])
+    assert json.loads((tmp_path / "data.json").read_text(encoding="utf-8"))["cambios"] == []
     prev = json.loads((tmp_path / "data.json").read_text(encoding="utf-8"))
     prev["fecha_datos"] = "2026-10-29"
     prev["acciones"][0]["senal"] = "VENDER" if prev["acciones"][0]["senal"] != "VENDER" else "COMPRAR"
@@ -105,3 +108,9 @@ def test_corrida_completa(tmp_path, monkeypatch):
     main.main(["--salida", str(tmp_path)])
     data2 = json.loads((tmp_path / "data.json").read_text(encoding="utf-8"))
     assert any(c["marco"] == "Combinada" for c in data2["cambios"])
+    assert data2["base_cambios"]["fecha"] == "2026-10-29"
+    # Tercera corrida el mismo día (ej. al cierre): sigue comparando contra el 29, no contra la intradiaria
+    main.main(["--salida", str(tmp_path)])
+    data3 = json.loads((tmp_path / "data.json").read_text(encoding="utf-8"))
+    assert data3["base_cambios"]["fecha"] == "2026-10-29"
+    assert any(c["marco"] == "Combinada" for c in data3["cambios"])

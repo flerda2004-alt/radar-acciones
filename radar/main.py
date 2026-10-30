@@ -75,21 +75,37 @@ def evaluar_ticker(item, raw, px, tc, edgar, cfg, aaa) -> dict:
             "metricas": m, "alertas": m.get("alertas", []) + ev_l.get("alertas", [])}
 
 
-def detectar_cambios(previo: dict | None, actuales: list[dict]) -> list[dict]:
+def resumen_senales(filas: list[dict]) -> dict:
+    return {r["ticker"]: {"senal": r.get("senal"),
+                          "lynch": (r.get("lynch") or {}).get("senal"),
+                          "graham": (r.get("graham") or {}).get("senal")} for r in filas}
+
+
+def base_comparacion(previo: dict | None, fecha_datos: str) -> dict | None:
+    """Señales del cierre anterior. Si hoy ya hubo una corrida (mismo cierre), se usa la base
+    que guardó esa corrida, para no comparar el cierre contra una corrida intradiaria."""
     if not previo:
+        return None
+    if previo.get("fecha_datos") != fecha_datos:
+        return {"fecha": previo.get("fecha_datos"), "senales": resumen_senales(previo.get("acciones", []))}
+    return previo.get("base_cambios")
+
+
+def detectar_cambios(base: dict | None, actuales: list[dict]) -> list[dict]:
+    if not base:
         return []
-    antes = {r["ticker"]: r for r in previo.get("acciones", [])}
+    antes = base.get("senales", {})
     cambios = []
     for r in actuales:
         a = antes.get(r["ticker"])
         if not a:
             continue
+        ahora = resumen_senales([r])[r["ticker"]]
         for clave, nombre in (("senal", "Combinada"), ("lynch", "Lynch"), ("graham", "Graham")):
-            va = a.get(clave) if clave == "senal" else (a.get(clave) or {}).get("senal")
-            vn = r.get(clave) if clave == "senal" else (r.get(clave) or {}).get("senal")
+            va, vn = a.get(clave), ahora.get(clave)
             if va and vn and va != vn:
                 cambios.append({"ticker": r["ticker"], "marco": nombre, "antes": va, "ahora": vn,
-                                "desde": previo.get("fecha_datos")})
+                                "desde": base.get("fecha")})
     return cambios
 
 
@@ -171,10 +187,8 @@ def main(argv=None):
             previo = json.loads(pj.read_text(encoding="utf-8"))
         except json.JSONDecodeError:
             previo = None
-    cambios = detectar_cambios(previo, filas)
-    if previo and previo.get("fecha_datos") == fecha_datos:
-        # Re-corrida del mismo día: conservar los cambios ya detectados contra el día anterior
-        cambios = previo.get("cambios", []) if not cambios else cambios
+    base = base_comparacion(previo, fecha_datos)
+    cambios = detectar_cambios(base, filas)
 
     ahora = datetime.now(ZoneInfo("America/Argentina/Buenos_Aires"))
     data = {
@@ -185,6 +199,7 @@ def main(argv=None):
         "parametros": {"lynch": {k: v for k, v in cfg["lynch"].items() if k != "industrias_ciclicas"},
                        "graham": cfg["graham"]},
         "cambios": cambios,
+        "base_cambios": base,
         "errores": errores,
         "acciones": filas,
     }
