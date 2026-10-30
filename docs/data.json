@@ -1,5 +1,5 @@
 {
- "generado": "2026-10-30 10:37",
+ "generado": "2026-10-30 10:44",
  "fecha_datos": "2026-10-30",
  "tasa_aaa": 5.83,
  "fuente_aaa": "estimada: Tesoro EE.UU. 10 años 4.93% + 0.9 pp (FRED no respondió)",
@@ -48,43 +48,8 @@
    "crecimiento_formula_tope": 15
   }
  },
- "cambios": [
-  {
-   "ticker": "BYMA.BA",
-   "marco": "Combinada",
-   "antes": "MANTENER",
-   "ahora": "VENDER",
-   "desde": "2026-10-29"
-  },
-  {
-   "ticker": "BYMA.BA",
-   "marco": "Graham",
-   "antes": "MANTENER",
-   "ahora": "VENDER",
-   "desde": "2026-10-29"
-  },
-  {
-   "ticker": "AMZN",
-   "marco": "Combinada",
-   "antes": "MANTENER",
-   "ahora": "VENDER",
-   "desde": "2026-10-29"
-  },
-  {
-   "ticker": "AMZN",
-   "marco": "Lynch",
-   "antes": "MANTENER",
-   "ahora": "VENDER",
-   "desde": "2026-10-29"
-  },
-  {
-   "ticker": "AMZN",
-   "marco": "Graham",
-   "antes": "MANTENER",
-   "ahora": "VENDER",
-   "desde": "2026-10-29"
-  }
- ],
+ "cambios": [],
+ "base_cambios": null,
  "errores": [],
  "acciones": [
   {
@@ -94,13 +59,13 @@
    "sector": "Technology",
    "industria": "Software - Application",
    "moneda": "USD",
-   "precio": 65.16999816894531,
+   "precio": 65.19000244140625,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.008670515870800699,
-   "ret_ytd": -0.2024232174868601,
-   "ret_1a": -0.32459322611908137,
+   "var_dia": -0.008366222090591124,
+   "ret_ytd": -0.2021783971137714,
+   "ret_1a": -0.32438590647037346,
    "max_52": 99.72000122070312,
-   "min_52": 65.16999816894531,
+   "min_52": 65.19000244140625,
    "senal": "COMPRAR",
    "motivo": "Lynch comprar · Graham mantener",
    "lynch": {
@@ -273,9 +238,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.4918560376623376,
-     "margen_seguridad": 0.5081439623376625,
-     "precio_sobre_numero_graham": 1.7593526377465896,
+     "precio_sobre_valor_intrinseco": 0.4920070188311688,
+     "margen_seguridad": 0.5079929811688312,
+     "precio_sobre_numero_graham": 1.7598927015146546,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -284,8 +249,8 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 65.16999816894531,
-    "market_cap_usd": 133113639267.96071,
+    "precio": 65.19000244140625,
+    "market_cap_usd": 133154501498.71913,
     "sector": "Technology",
     "industria": "Software - Application",
     "rend_div": 0.0,
@@ -293,11 +258,11 @@
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 55226998784.0,
-    "per": 14.291666,
+    "per": 14.296053,
     "ganancia_ttm_positiva": true,
-    "per_forward": 14.769906,
-    "pb": 4.873101452187755,
-    "ptbv": 7.965153139538099,
+    "per_forward": 14.77444,
+    "pb": 4.874597360474415,
+    "ptbv": 7.967598222757248,
     "liquidez_corriente": 0.8425122722076525,
     "capital_trabajo_usd": -2342000000.0,
     "deuda_lp_usd": 10726000000.0,
@@ -305,7 +270,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.5392810074681506,
     "deuda_neta_ebitda": 1.2496655284930676,
-    "caja_neta_pct": -0.0701656122645582,
+    "caja_neta_pct": -0.07014407995879768,
     "patrimonio_activos": 0.41513046914180635,
     "roe": 0.3716,
     "margen_neto": 0.17345,
@@ -371,17 +336,17 @@
     "crec_10a_anios": 9,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": 22.599000140949293,
+     "final": 22.599386606293386,
      "historico": null,
      "historico_anios": null,
      "estimado_1_2a": 42.68,
-     "largo_plazo": 2.518000281898587
+     "largo_plazo": 2.518773212586772
     },
-    "crec_lynch": 22.599000140949293,
-    "per_eff": 14.291666,
-    "peg": 0.6324025802408647,
-    "div_ajustado": 1.5812712206505033,
-    "per_3a": 18.321752514400906,
+    "crec_lynch": 22.599386606293386,
+    "per_eff": 14.296053,
+    "peg": 0.6325858860266098,
+    "div_ajustado": 1.5808130122554376,
+    "per_3a": 18.327376789142843,
     "per_normalizado": null,
     "ciclo_ratio": null,
     "ciclo_anios": 7,
@@ -400,11 +365,11 @@
    "sector": "Communication Services",
    "industria": "Internet Content & Information",
    "moneda": "USD",
-   "precio": 157.4499969482422,
+   "precio": 159.64999389648438,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.08453984580807394,
-   "ret_ytd": 0.8810106147065155,
-   "ret_1a": 0.2679175113649901,
+   "var_dia": -0.07174842259755698,
+   "ret_ytd": 0.9072933564796122,
+   "ret_1a": 0.2856337051388316,
    "max_52": 286.69000244140625,
    "min_52": 73.87000274658203,
    "senal": "VENDER",
@@ -435,7 +400,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "no cumple",
-      "valor": "-5,3%",
+      "valor": "-4,9%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -450,12 +415,12 @@
      }
     ],
     "alertas": [
-     "Crecimiento estimado 65,9%: Lynch desconfiaba de tasas > 50%; se usa 50% para el PEG"
+     "Crecimiento estimado 67,7%: Lynch desconfiaba de tasas > 50%; se usa 50% para el PEG"
     ]
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 123,2 > PER justo de la fórmula (29,1, g=15,0%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 124,5 > PER justo de la fórmula (29,1, g=15,0%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
@@ -517,7 +482,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 3,87 · PER×P/VL s/d",
+       "valor": "P/VL 4,20 · PER×P/VL s/d",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -571,7 +536,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "4,14",
+       "valor": "4,50",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -581,9 +546,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 4.238359753246753,
-     "margen_seguridad": -3.238359753246753,
-     "precio_sobre_numero_graham": 4.600250004280162,
+     "precio_sobre_valor_intrinseco": 4.285882857142857,
+     "margen_seguridad": -3.285882857142857,
+     "precio_sobre_numero_graham": 4.82008657927419,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -592,8 +557,8 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 157.4499969482422,
-    "market_cap_usd": 39976268764.57362,
+    "precio": 159.64999389648438,
+    "market_cap_usd": 43401684556.208336,
     "sector": "Communication Services",
     "industria": "Internet Content & Information",
     "rend_div": 0.0,
@@ -601,11 +566,11 @@
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 1355100032.0,
-    "per": 123.15234,
+    "per": 124.5332,
     "ganancia_ttm_positiva": true,
-    "per_forward": -43.813908,
-    "pb": 3.866363824611792,
-    "ptbv": 4.142618524826283,
+    "per_forward": -44.305176,
+    "pb": 4.19765796762013,
+    "ptbv": 4.497583891835061,
     "liquidez_corriente": 4.029839487029043,
     "capital_trabajo_usd": 7229500000.0,
     "deuda_lp_usd": 8499000000.0,
@@ -613,7 +578,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.9837032738527008,
     "deuda_neta_ebitda": 8.251550387596899,
-    "caja_neta_pct": -0.05325409463643089,
+    "caja_neta_pct": -0.04905109149030655,
     "patrimonio_activos": 0.3697762995547449,
     "roe": 0.00601,
     "margen_neto": 0.03129,
@@ -693,29 +658,29 @@
     "crec_10a_anios": 10,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": 65.92724409448817,
+     "final": 67.7393963254593,
      "historico": null,
      "historico_anios": null,
      "estimado_1_2a": -191.38,
-     "largo_plazo": 323.23448818897634
+     "largo_plazo": 326.8587926509186
     },
     "crec_lynch": 50,
-    "per_eff": 123.15234,
-    "peg": 2.4630468,
-    "div_ajustado": 0.40600121767885206,
+    "per_eff": 124.5332,
+    "peg": 2.4906639999999998,
+    "div_ajustado": 0.40149935920702273,
     "per_3a": null,
-    "per_normalizado": 378.81938723705883,
+    "per_normalizado": 411.2789926810049,
     "ciclo_ratio": 0.40178692297279,
     "ciclo_anios": 7,
     "alertas": [
-     "PER Yahoo (123.2) y PER por capitalización (942.8) difieren: revisar",
-     "Estimaciones de crecimiento muy dispares (analistas próximo año -191% · largo plazo 323%): conviene revisar la categoría de Lynch a mano"
+     "PER Yahoo (124.5) y PER por capitalización (1023.6) difieren: revisar",
+     "Estimaciones de crecimiento muy dispares (analistas próximo año -191% · largo plazo 327%): conviene revisar la categoría de Lynch a mano"
     ]
    },
    "alertas": [
-    "PER Yahoo (123.2) y PER por capitalización (942.8) difieren: revisar",
-    "Estimaciones de crecimiento muy dispares (analistas próximo año -191% · largo plazo 323%): conviene revisar la categoría de Lynch a mano",
-    "Crecimiento estimado 65,9%: Lynch desconfiaba de tasas > 50%; se usa 50% para el PEG"
+    "PER Yahoo (124.5) y PER por capitalización (1023.6) difieren: revisar",
+    "Estimaciones de crecimiento muy dispares (analistas próximo año -191% · largo plazo 327%): conviene revisar la categoría de Lynch a mano",
+    "Crecimiento estimado 67,7%: Lynch desconfiaba de tasas > 50%; se usa 50% para el PEG"
    ]
   },
   {
@@ -725,11 +690,11 @@
    "sector": "Technology",
    "industria": "Software - Application",
    "moneda": "USD",
-   "precio": 253.2550048828125,
+   "precio": 253.0500030517578,
    "fecha_precio": "2026-10-30",
-   "var_dia": 0.020695670911970332,
-   "ret_ytd": -0.27639357710425594,
-   "ret_1a": -0.2534635886888128,
+   "var_dia": 0.019869450393314114,
+   "ret_ytd": -0.2769793133732201,
+   "ret_1a": -0.25406788605043296,
    "max_52": 357.5299987792969,
    "min_52": 193.41000366210938,
    "senal": "MANTENER",
@@ -770,7 +735,7 @@
       "estado": "no cumple",
       "valor": "1,14",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 14,2 → efectivo 14,2 · crecimiento 12,4%",
+      "nota": "PER 14,1 → efectivo 14,1 · crecimiento 12,4%",
       "informativo": false
      },
      {
@@ -786,7 +751,7 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 43,6% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 43,7% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
@@ -848,7 +813,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 8,38 · PER×P/VL 136,7",
+       "valor": "P/VL 8,37 · PER×P/VL 136,5",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -912,9 +877,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.5637495838040966,
-     "margen_seguridad": 0.43625041619590343,
-     "precio_sobre_numero_graham": 2.29627298824133,
+     "precio_sobre_valor_intrinseco": 0.5631160283806244,
+     "margen_seguridad": 0.43688397161937564,
+     "precio_sobre_numero_graham": 2.2940532082143683,
      "per_justo_formula": 25.116981735849055,
      "g_usado": 12.3900004,
      "tasa_aaa": 5.83
@@ -923,8 +888,8 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 253.2550048828125,
-    "market_cap_usd": 98566851479.51498,
+    "precio": 253.0500030517578,
+    "market_cap_usd": 98487058902.13765,
     "sector": "Technology",
     "industria": "Software - Application",
     "rend_div": 0.0,
@@ -932,10 +897,10 @@
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 25969999872.0,
-    "per": 14.159688,
+    "per": 14.143775,
     "ganancia_ttm_positiva": true,
-    "per_forward": 9.219284,
-    "pb": 8.378685096864585,
+    "per_forward": 9.208922,
+    "pb": 8.371902320820949,
     "ptbv": null,
     "liquidez_corriente": 0.7703566621803499,
     "capital_trabajo_usd": -2730000000.0,
@@ -944,7 +909,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.5748044882692962,
     "deuda_neta_ebitda": 0.11323989475010249,
-    "caja_neta_pct": -0.01139328266190375,
+    "caja_neta_pct": -0.011402513310057079,
     "patrimonio_activos": 0.392381841833161,
     "roe": 0.61902,
     "margen_neto": 0.28048,
@@ -1026,14 +991,14 @@
      "historico": 9.04409702823681,
      "historico_anios": 5,
      "estimado_1_2a": 12.3900004,
-     "largo_plazo": 23.46261474730737
+     "largo_plazo": 23.436246893123446
     },
     "crec_lynch": 12.3900004,
-    "per_eff": 14.159688,
-    "peg": 1.1428319243637797,
-    "div_ajustado": 0.8750193083350425,
-    "per_3a": 16.32081656024644,
-    "per_normalizado": 19.21541650253725,
+    "per_eff": 14.143775,
+    "peg": 1.1415475821937826,
+    "div_ajustado": 0.876003782582797,
+    "per_3a": 16.30760441033298,
+    "per_normalizado": 19.199861094353846,
     "ciclo_ratio": 1.4200016210766704,
     "ciclo_anios": 7,
     "alertas": []
@@ -1047,11 +1012,11 @@
    "sector": "Communication Services",
    "industria": "Internet Content & Information",
    "moneda": "USD",
-   "precio": 573.72998046875,
+   "precio": 576.364990234375,
    "fecha_precio": "2026-10-30",
-   "var_dia": 0.029592259212120275,
-   "ret_ytd": -0.012019839919750752,
-   "ret_1a": -0.12631725213529643,
+   "var_dia": 0.034320939514689286,
+   "ret_ytd": -0.0074822744121434415,
+   "ret_1a": -0.1223046283382958,
    "max_52": 655.3200073242188,
    "min_52": 412.75,
    "senal": "VENDER",
@@ -1092,7 +1057,7 @@
       "estado": "no cumple",
       "valor": "1,15",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 35,8 → efectivo 32,6 · crecimiento 28,4%",
+      "nota": "PER 35,9 → efectivo 32,7 · crecimiento 28,4%",
       "informativo": false
      }
     ],
@@ -1100,13 +1065,13 @@
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 35,8 > PER justo de la fórmula (29,1, g=15,0%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 35,9 > PER justo de la fórmula (29,1, g=15,0%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
        "nombre": "1. Tamaño: ventas anuales",
        "estado": "cumple",
-       "valor": "USD 21.007 M",
+       "valor": "USD 20.998 M",
        "umbral": "≥ USD 2.000 M",
        "nota": "",
        "informativo": false
@@ -1154,7 +1119,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "112,6",
+       "valor": "113,0",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -1162,7 +1127,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 12,10 · PER×P/VL 1.362,1",
+       "valor": "P/VL 12,14 · PER×P/VL 1.372,2",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -1216,7 +1181,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "13,93",
+       "valor": "13,98",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -1226,9 +1191,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.2303993259745594,
-     "margen_seguridad": -0.23039932597455937,
-     "precio_sobre_numero_graham": 4.384481185947163,
+     "precio_sobre_valor_intrinseco": 1.2349669619120909,
+     "margen_seguridad": -0.23496696191209088,
+     "precio_sobre_numero_graham": 4.400757782828832,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -1237,28 +1202,28 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "EUR",
-    "precio": 573.72998046875,
-    "market_cap_usd": 118106021492.30396,
+    "precio": 576.364990234375,
+    "market_cap_usd": 118491534479.79442,
     "sector": "Communication Services",
     "industria": "Internet Content & Information",
     "rend_div": 0.0,
     "racha_dividendos": 0,
     "tipo": "ACCION",
     "es_financiera": false,
-    "ventas_usd": 21007370581.23861,
-    "per": 35.75122569812871,
+    "ventas_usd": 20997990038.118347,
+    "per": 35.88394568574755,
     "ganancia_ttm_positiva": true,
     "per_forward": null,
-    "pb": 12.098401806569225,
-    "ptbv": 13.927582008589699,
+    "pb": 12.143314944695836,
+    "ptbv": 13.979285648832649,
     "liquidez_corriente": 2.1287109375,
-    "capital_trabajo_usd": 6454098815.502454,
-    "deuda_lp_usd": 436676351.7669942,
+    "capital_trabajo_usd": 6451216829.296369,
+    "deuda_lp_usd": 436481360.1410071,
     "deuda_lp_sobre_ct": 0.06765876449212667,
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.051710330625786526,
     "deuda_neta_ebitda": -3.410191464310714,
-    "caja_neta_pct": 0.08922751705273238,
+    "caja_neta_pct": 0.08889750108787146,
     "patrimonio_activos": 0.610746226942426,
     "roe": 0.35811,
     "margen_neto": 0.15726,
@@ -1335,11 +1300,11 @@
      "largo_plazo": null
     },
     "crec_lynch": 28.38,
-    "per_eff": 32.56123259749285,
-    "peg": 1.1473302536114465,
-    "div_ajustado": 0.7938189375556282,
-    "per_3a": 112.58211163011525,
-    "per_normalizado": 466.4555206922188,
+    "per_eff": 32.69395258511169,
+    "peg": 1.152006785944739,
+    "div_ajustado": 0.7908829271044188,
+    "per_3a": 113.0000524466852,
+    "per_normalizado": 468.18715281733085,
     "ciclo_ratio": 13.04725954379332,
     "ciclo_anios": 7,
     "alertas": []
@@ -1353,11 +1318,11 @@
    "sector": "Consumer Cyclical",
    "industria": "Internet Retail",
    "moneda": "USD",
-   "precio": 1615.449951171875,
+   "precio": 1633.4200439453125,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.026913587236857106,
-   "ret_ytd": -0.19799333584553203,
-   "ret_1a": -0.3157076769814243,
+   "var_dia": -0.016089077878804647,
+   "ret_ytd": -0.18907189934462643,
+   "ret_1a": -0.30809568224282247,
    "max_52": 2327.260009765625,
    "min_52": 1546.81005859375,
    "senal": "VENDER",
@@ -1365,7 +1330,7 @@
    "lynch": {
     "categoria": "rapido",
     "categoria_nombre": "Crecimiento rápido",
-    "categoria_motivo": "Crecimiento de ganancias estimado 46,6% ≥ 18%",
+    "categoria_motivo": "Crecimiento de ganancias estimado 46,8% ≥ 18%",
     "senal": "MANTENER",
     "motivo": "PEG 0,95 ≤ 1: el precio no refleja el crecimiento — pero el endeudamiento supera el límite",
     "checks": [
@@ -1380,7 +1345,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "no cumple",
-      "valor": "-9,3%",
+      "valor": "-9,2%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -1398,7 +1363,7 @@
       "estado": "cumple",
       "valor": "0,95",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 44,1 → efectivo 44,1 · crecimiento 46,6%",
+      "nota": "PER 44,5 → efectivo 44,5 · crecimiento 46,8%",
       "informativo": false
      }
     ],
@@ -1406,7 +1371,7 @@
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 44,1 > PER justo de la fórmula (29,1, g=15,0%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 44,5 > PER justo de la fórmula (29,1, g=15,0%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
@@ -1460,7 +1425,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "50,2",
+       "valor": "50,8",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -1468,7 +1433,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 10,45 · PER×P/VL 524,7",
+       "valor": "P/VL 10,57 · PER×P/VL 536,5",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -1522,7 +1487,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "10,73",
+       "valor": "10,84",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -1532,9 +1497,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.5177113383116883,
-     "margen_seguridad": -0.5177113383116883,
-     "precio_sobre_numero_graham": 4.526588414406455,
+     "precio_sobre_valor_intrinseco": 1.5326495259740258,
+     "margen_seguridad": -0.5326495259740258,
+     "precio_sobre_numero_graham": 4.574040634893947,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -1543,8 +1508,8 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 1615.449951171875,
-    "market_cap_usd": 81898146033.45338,
+    "precio": 1633.4200439453125,
+    "market_cap_usd": 82809166969.66718,
     "sector": "Consumer Cyclical",
     "industria": "Internet Retail",
     "rend_div": 0.0,
@@ -1552,11 +1517,11 @@
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 35181998080.0,
-    "per": 44.099537,
+    "per": 44.53359,
     "ganancia_ttm_positiva": true,
-    "per_forward": 28.833002,
-    "pb": 10.454192753823511,
-    "ptbv": 10.725267945711549,
+    "per_forward": 29.270071,
+    "pb": 10.570483401795657,
+    "ptbv": 10.844573987646303,
     "liquidez_corriente": 1.1212471131639723,
     "capital_trabajo_usd": 4410000000.0,
     "deuda_lp_usd": 4078000000.0,
@@ -1564,7 +1529,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 1.6818994128159306,
     "deuda_neta_ebitda": 1.9650565262076054,
-    "caja_neta_pct": -0.0933842873180057,
+    "caja_neta_pct": -0.09235692472068276,
     "patrimonio_activos": 0.15254303294649116,
     "roe": 0.27504,
     "margen_neto": 0.052950002,
@@ -1642,18 +1607,18 @@
     "crec_10a_anios": 10,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": 46.58406894649752,
+     "final": 46.8234804191947,
      "historico": null,
      "historico_anios": null,
      "estimado_1_2a": 44.519999999999996,
-     "largo_plazo": 48.64813789299504
+     "largo_plazo": 49.12696083838941
     },
-    "crec_lynch": 46.58406894649752,
-    "per_eff": 44.099537,
-    "peg": 0.9466656304894482,
-    "div_ajustado": 1.0563391843886596,
-    "per_3a": 50.19293934634528,
-    "per_normalizado": 108.4333107245816,
+    "crec_lynch": 46.8234804191947,
+    "per_eff": 44.53359,
+    "peg": 0.9510952539475046,
+    "div_ajustado": 1.0514193986874785,
+    "per_3a": 50.75127699877457,
+    "per_normalizado": 109.63950428374615,
     "ciclo_ratio": 2.4666158466775396,
     "ciclo_anios": 7,
     "alertas": []
@@ -1667,11 +1632,11 @@
    "sector": "Technology",
    "industria": "Software - Infrastructure",
    "moneda": "USD",
-   "precio": 131.58999633789062,
+   "precio": 133.29249572753906,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.05710806362945764,
-   "ret_ytd": -0.3158348400801557,
-   "ret_1a": -0.4809037815148054,
+   "var_dia": -0.044909013619202076,
+   "ret_ytd": -0.30698311856355076,
+   "ret_1a": -0.4741877302603186,
    "max_52": 259.1427307128906,
    "min_52": 114.56627655029297,
    "senal": "MANTENER",
@@ -1679,7 +1644,7 @@
    "lynch": {
     "categoria": "rapido",
     "categoria_nombre": "Crecimiento rápido",
-    "categoria_motivo": "Crecimiento de ganancias estimado 26,4% ≥ 18%",
+    "categoria_motivo": "Crecimiento de ganancias estimado 26,7% ≥ 18%",
     "senal": "MANTENER",
     "motivo": "PEG 0,78 ≤ 1: el precio no refleja el crecimiento — pero el endeudamiento supera el límite",
     "checks": [
@@ -1694,7 +1659,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "no cumple",
-      "valor": "-29,8%",
+      "valor": "-29,4%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -1712,7 +1677,7 @@
       "estado": "cumple",
       "valor": "0,78",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 20,6 → efectivo 20,6 · crecimiento 26,4%",
+      "nota": "PER 20,9 → efectivo 20,9 · crecimiento 26,7%",
       "informativo": false
      }
     ],
@@ -1720,7 +1685,7 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 29,0% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 28,2% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
@@ -1774,7 +1739,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "29,9",
+       "valor": "30,3",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -1782,7 +1747,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 5,97 · PER×P/VL 178,8",
+       "valor": "P/VL 6,05 · PER×P/VL 183,4",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -1836,7 +1801,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "88,55",
+       "valor": "89,70",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -1846,9 +1811,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.709807972077922,
-     "margen_seguridad": 0.290192027922078,
-     "precio_sobre_numero_graham": 2.340155565599672,
+     "precio_sobre_valor_intrinseco": 0.7176026889610388,
+     "margen_seguridad": 0.28239731103896115,
+     "precio_sobre_numero_graham": 2.3681418821025444,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -1857,20 +1822,20 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 131.58999633789062,
-    "market_cap_usd": 398915247524.90784,
+    "precio": 133.29249572753906,
+    "market_cap_usd": 404076348985.8641,
     "sector": "Technology",
     "industria": "Software - Infrastructure",
-    "rend_div": 1.5198723730218016,
+    "rend_div": 1.5004595638213318,
     "racha_dividendos": 18,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 71776002048.0,
-    "per": 20.624609,
+    "per": 20.851097,
     "ganancia_ttm_positiva": true,
-    "per_forward": 11.926904,
-    "pb": 5.974289335723175,
-    "ptbv": 88.54944451163325,
+    "per_forward": 12.0578785,
+    "pb": 6.051583732490626,
+    "ptbv": 89.69508301573009,
     "liquidez_corriente": 1.1708128130656228,
     "capital_trabajo_usd": 8116000000.0,
     "deuda_lp_usd": 117712000000.0,
@@ -1878,7 +1843,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 2.335275265081172,
     "deuda_neta_ebitda": 3.4517469284757714,
-    "caja_neta_pct": -0.29794298597869184,
+    "caja_neta_pct": -0.2941374824294849,
     "patrimonio_activos": 0.22018142907547675,
     "roe": 0.41192,
     "margen_neto": 0.2636,
@@ -1956,26 +1921,26 @@
     "crec_10a_anios": 10,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": 26.367436716952184,
+     "final": 26.656989261058552,
      "historico": 5.083463749420591,
      "historico_anios": 5,
      "estimado_1_2a": 35.529998,
-     "largo_plazo": 26.367436716952184
+     "largo_plazo": 26.656989261058552
     },
-    "crec_lynch": 26.367436716952184,
-    "per_eff": 20.624609,
+    "crec_lynch": 26.656989261058552,
+    "per_eff": 20.851097,
     "peg": 0.7822,
-    "div_ajustado": 1.3521375891283072,
-    "per_3a": 29.920887630940406,
-    "per_normalizado": 35.303126914389175,
+    "div_ajustado": 1.3504061117206392,
+    "per_3a": 30.307999273885347,
+    "per_normalizado": 35.75987310552794,
     "ciclo_ratio": 1.658095111987661,
     "ciclo_anios": 7,
     "alertas": [
-     "Estimaciones de crecimiento muy dispares (histórico 5% · analistas próximo año 36% · largo plazo 26%): conviene revisar la categoría de Lynch a mano"
+     "Estimaciones de crecimiento muy dispares (histórico 5% · analistas próximo año 36% · largo plazo 27%): conviene revisar la categoría de Lynch a mano"
     ]
    },
    "alertas": [
-    "Estimaciones de crecimiento muy dispares (histórico 5% · analistas próximo año 36% · largo plazo 26%): conviene revisar la categoría de Lynch a mano"
+    "Estimaciones de crecimiento muy dispares (histórico 5% · analistas próximo año 36% · largo plazo 27%): conviene revisar la categoría de Lynch a mano"
    ]
   },
   {
@@ -1985,11 +1950,11 @@
    "sector": "Technology",
    "industria": "Semiconductors",
    "moneda": "USD",
-   "precio": 65.01000213623047,
+   "precio": 65.62999725341797,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.29390678449317886,
-   "ret_ytd": 0.7617886029255936,
-   "ret_1a": 0.6187749597419303,
+   "var_dia": -0.287172830770549,
+   "ret_ytd": 0.7785906379269385,
+   "ret_1a": 0.6342130852285632,
    "max_52": 140.94000244140625,
    "min_52": 33.619998931884766,
    "senal": "VENDER",
@@ -2100,7 +2065,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 3,94 · PER×P/VL s/d",
+       "valor": "P/VL 3,98 · PER×P/VL s/d",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -2154,7 +2119,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "5,35",
+       "valor": "5,40",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -2175,8 +2140,8 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 65.01000213623047,
-    "market_cap_usd": 345256027193.5824,
+    "precio": 65.62999725341797,
+    "market_cap_usd": 348495282939.5766,
     "sector": "Technology",
     "industria": "Semiconductors",
     "rend_div": 0.0,
@@ -2186,9 +2151,9 @@
     "ventas_usd": 57031999488.0,
     "per": null,
     "ganancia_ttm_positiva": false,
-    "per_forward": 29.761444,
-    "pb": 3.9438901006783302,
-    "ptbv": 5.3501522840386535,
+    "per_forward": 29.784245,
+    "pb": 3.980892405240646,
+    "ptbv": 5.400348399857072,
     "liquidez_corriente": 1.6039529015979814,
     "capital_trabajo_usd": 21543000000.0,
     "deuda_lp_usd": 48549000000.0,
@@ -2196,7 +2161,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.5772886157501542,
     "deuda_neta_ebitda": 1.2357482560987594,
-    "caja_neta_pct": -0.0602741106915767,
+    "caja_neta_pct": -0.05971386420058981,
     "patrimonio_activos": 0.4324364376429443,
     "roe": -0.10715,
     "margen_neto": -0.19794,
@@ -2287,7 +2252,7 @@
     "peg": null,
     "div_ajustado": null,
     "per_3a": null,
-    "per_normalizado": 46.0385215802472,
+    "per_normalizado": 46.4704634837039,
     "ciclo_ratio": -1.5053433575007145,
     "ciclo_anios": 7,
     "alertas": []
@@ -2301,11 +2266,11 @@
    "sector": "Technology",
    "industria": "Semiconductors",
    "moneda": "USD",
-   "precio": 886.9099731445312,
+   "precio": 893.1749877929688,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.050692032706433854,
-   "ret_ytd": 2.1097674073206947,
-   "ret_1a": 2.963739386043365,
+   "var_dia": -0.04398624688706143,
+   "ret_ytd": 2.1317343926405483,
+   "ret_1a": 2.99173898859143,
    "max_52": 1213.1824951171875,
    "min_52": 201.1415557861328,
    "senal": "VENDER",
@@ -2315,7 +2280,7 @@
     "categoria_nombre": "Cíclica",
     "categoria_motivo": "Industria cíclica (Semiconductors) con ganancias volátiles en el ciclo",
     "senal": "VENDER",
-    "motivo": "PER normalizado 66,5 > 22 y ganancias en zona de pico",
+    "motivo": "PER normalizado 66,9 > 22 y ganancias en zona de pico",
     "checks": [
      {
       "nombre": "Deuda / patrimonio",
@@ -2352,7 +2317,7 @@
      {
       "nombre": "PER normalizado (ganancia promedio 7 años)",
       "estado": "no cumple",
-      "valor": "66,5",
+      "valor": "66,9",
       "umbral": "≤ 12 compra · > 22 venta",
       "nota": "",
       "informativo": false
@@ -2370,7 +2335,7 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 58,9% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 58,7% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
@@ -2424,7 +2389,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "31,9",
+       "valor": "32,2",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -2432,7 +2397,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 7,25 · PER×P/VL 231,5",
+       "valor": "P/VL 7,30 · PER×P/VL 234,8",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -2486,7 +2451,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "7,31",
+       "valor": "7,36",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -2496,9 +2461,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.4109242805194805,
-     "margen_seguridad": 0.5890757194805195,
-     "precio_sobre_numero_graham": 1.9616921672808734,
+     "precio_sobre_valor_intrinseco": 0.41287588506493506,
+     "margen_seguridad": 0.587124114935065,
+     "precio_sobre_numero_graham": 1.9732777402905648,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -2507,20 +2472,20 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 886.9099731445312,
-    "market_cap_usd": 1003470544442.6521,
+    "precio": 893.1749877929688,
+    "market_cap_usd": 1010558902239.6896,
     "sector": "Technology",
     "industria": "Semiconductors",
-    "rend_div": 0.06370432367524267,
+    "rend_div": 0.06325748120154064,
     "racha_dividendos": 6,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 133188001792.0,
-    "per": 11.940064,
+    "per": 11.996771,
     "ganancia_ttm_positiva": true,
-    "per_forward": 4.270868,
-    "pb": 7.251662435088324,
-    "ptbv": 7.3124329177912095,
+    "per_forward": 4.291151,
+    "pb": 7.302887035798245,
+    "ptbv": 7.364086791614609,
     "liquidez_corriente": 3.313805399898115,
     "capital_trabajo_usd": 63588000000.0,
     "deuda_lp_usd": 2792000000.0,
@@ -2528,7 +2493,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.03742646952550261,
     "deuda_neta_ebitda": -0.351469548500888,
-    "caja_neta_pct": 0.03812269349794179,
+    "caja_neta_pct": 0.03785528969683598,
     "patrimonio_activos": 0.7064138691497182,
     "roe": 0.8826,
     "margen_neto": 0.63796,
@@ -2608,18 +2573,18 @@
     "crec_10a_anios": 10,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": 46.1827,
+     "final": 46.359909375,
      "historico": null,
      "historico_anios": null,
      "estimado_1_2a": 17.740000000000002,
-     "largo_plazo": 74.6254
+     "largo_plazo": 74.97981875
     },
-    "crec_lynch": 46.1827,
-    "per_eff": 11.48487659978219,
-    "peg": 0.24868352434531094,
-    "div_ajustado": 3.873212431999966,
-    "per_3a": 31.928511479201113,
-    "per_normalizado": 66.46254836025437,
+    "crec_lynch": 46.359909375,
+    "per_eff": 11.5426297583684,
+    "peg": 0.24897869547158494,
+    "div_ajustado": 3.869638493241351,
+    "per_3a": 32.154049452931176,
+    "per_normalizado": 66.93202932856924,
     "ciclo_ratio": 5.627724794186662,
     "ciclo_anios": 7,
     "alertas": [
@@ -2637,11 +2602,11 @@
    "sector": "Financial Services",
    "industria": "Banks - Diversified",
    "moneda": "USD",
-   "precio": 341.42999267578125,
+   "precio": 339.8500061035156,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.006257622622126036,
-   "ret_ytd": 0.08002553143673996,
-   "ret_1a": 0.1246310362588674,
+   "var_dia": -0.010856221591840187,
+   "ret_ytd": 0.07502765229905539,
+   "ret_1a": 0.11942685515500351,
    "max_52": 363.3671875,
    "min_52": 278.7472229003906,
    "senal": "MANTENER",
@@ -2664,7 +2629,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "no cumple",
-      "valor": "-24,6%",
+      "valor": "-24,7%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -2682,7 +2647,7 @@
       "estado": "no cumple",
       "valor": "1,46",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 14,3 → efectivo 14,3 · crecimiento 9,8%",
+      "nota": "PER 14,2 → efectivo 14,2 · crecimiento 9,8%",
       "informativo": false
      },
      {
@@ -2698,7 +2663,7 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 32,6% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 32,7% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
@@ -2752,7 +2717,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "16,5",
+       "valor": "16,4",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -2760,7 +2725,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 2,42 · PER×P/VL 39,9",
+       "valor": "P/VL 2,41 · PER×P/VL 39,5",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -2814,7 +2779,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "2,92",
+       "valor": "2,91",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -2824,31 +2789,31 @@
      "aplicables": 4
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.673733108314978,
-     "margen_seguridad": 0.326266891685022,
-     "precio_sobre_numero_graham": 1.2409494830035026,
-     "per_justo_formula": 21.24730968885021,
-     "g_usado": 9.826342668863262,
+     "precio_sobre_valor_intrinseco": 0.6727943058052904,
+     "margen_seguridad": 0.3272056941947096,
+     "precio_sobre_numero_graham": 1.2352238192881024,
+     "per_justo_formula": 21.17907639385368,
+     "g_usado": 9.781138110928062,
      "tasa_aaa": 5.83
     }
    },
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 341.42999267578125,
-    "market_cap_usd": 906701511184.4113,
+    "precio": 339.8500061035156,
+    "market_cap_usd": 902505721604.5334,
     "sector": "Financial Services",
     "industria": "Banks - Diversified",
-    "rend_div": 1.8012477321639353,
+    "rend_div": 1.8096218595113864,
     "racha_dividendos": 43,
     "tipo": "ACCION",
     "es_financiera": true,
     "ventas_usd": 190732992512.0,
-    "per": 14.315016,
+    "per": 14.249162,
     "ganancia_ttm_positiva": true,
-    "per_forward": 13.366761,
-    "pb": 2.4204654354385533,
-    "ptbv": 2.922072328773393,
+    "per_forward": 13.305268,
+    "pb": 2.4092646559899773,
+    "ptbv": 2.908550347749339,
     "liquidez_corriente": null,
     "capital_trabajo_usd": null,
     "deuda_lp_usd": 460523000000.0,
@@ -2856,7 +2821,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 1.422733169958195,
     "deuda_neta_ebitda": null,
-    "caja_neta_pct": -0.2461030419024148,
+    "caja_neta_pct": -0.2472471859826923,
     "patrimonio_activos": 0.07469448575882007,
     "roe": 0.18013,
     "margen_neto": 0.34592,
@@ -2934,18 +2899,18 @@
     "crec_10a_anios": 10,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": 9.826342668863262,
+     "final": 9.781138110928062,
      "historico": 17.657573851332597,
      "historico_anios": 5,
      "estimado_1_2a": 6.29,
-     "largo_plazo": 9.826342668863262
+     "largo_plazo": 9.781138110928062
     },
-    "crec_lynch": 9.826342668863262,
-    "per_eff": 14.315016,
-    "peg": 1.4568,
-    "div_ajustado": 0.8122652745220261,
-    "per_3a": 16.478391319815316,
-    "per_normalizado": 20.044373563574368,
+    "crec_lynch": 9.781138110928062,
+    "per_eff": 14.249162,
+    "peg": 1.4567999999999999,
+    "div_ajustado": 0.8134345002491689,
+    "per_3a": 16.40213704898862,
+    "per_normalizado": 19.951617598468097,
     "ciclo_ratio": 1.4264929174622525,
     "ciclo_anios": 7,
     "alertas": []
@@ -2959,13 +2924,13 @@
    "sector": "Technology",
    "industria": "Semiconductor Equipment & Materials",
    "moneda": "USD",
-   "precio": 1591.8299560546875,
+   "precio": 1602.199951171875,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.050050723614650905,
-   "ret_ytd": 0.49701733530712033,
-   "ret_1a": 0.4892362660780498,
+   "var_dia": -0.04386226779358615,
+   "ret_ytd": 0.5067696724826036,
+   "ret_1a": 0.4989380845688276,
    "max_52": 1984.23779296875,
-   "min_52": 960.6742553710938,
+   "min_52": 960.67431640625,
    "senal": "VENDER",
    "motivo": "Lynch mantener · Graham vender",
    "lynch": {
@@ -2973,7 +2938,7 @@
     "categoria_nombre": "Crecimiento rápido",
     "categoria_motivo": "Crecimiento de ganancias estimado 29,8% ≥ 18%",
     "senal": "MANTENER",
-    "motivo": "PEG 1,34 entre 1 y 2",
+    "motivo": "PEG 1,35 entre 1 y 2",
     "checks": [
      {
       "nombre": "Deuda / patrimonio",
@@ -2994,7 +2959,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "cumple",
-      "valor": "2,0%",
+      "valor": "1,9%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -3010,9 +2975,9 @@
      {
       "nombre": "PEG (PER efectivo / crecimiento)",
       "estado": "no cumple",
-      "valor": "1,34",
+      "valor": "1,35",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 40,8 → efectivo 40,0 · crecimiento 29,8%",
+      "nota": "PER 41,1 → efectivo 40,3 · crecimiento 29,8%",
       "informativo": false
      }
     ],
@@ -3020,13 +2985,13 @@
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 40,8 > PER justo de la fórmula (29,1, g=15,0%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 41,1 > PER justo de la fórmula (29,1, g=15,0%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
        "nombre": "1. Tamaño: ventas anuales",
        "estado": "cumple",
-       "valor": "USD 44.085 M",
+       "valor": "USD 44.065 M",
        "umbral": "≥ USD 2.000 M",
        "nota": "",
        "informativo": false
@@ -3074,7 +3039,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "65,9",
+       "valor": "66,3",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -3082,7 +3047,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 24,90 · PER×P/VL 1.640,0",
+       "valor": "P/VL 25,07 · PER×P/VL 1.662,9",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -3136,7 +3101,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "32,52",
+       "valor": "32,75",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -3146,9 +3111,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.4031185707352802,
-     "margen_seguridad": -0.40311857073528023,
-     "precio_sobre_numero_graham": 6.716761527550801,
+     "precio_sobre_valor_intrinseco": 1.4128900940464981,
+     "margen_seguridad": -0.4128900940464981,
+     "precio_sobre_numero_graham": 6.763538038967052,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -3157,28 +3122,28 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "EUR",
-    "precio": 1591.8299560546875,
-    "market_cap_usd": 613519469561.1577,
+    "precio": 1602.199951171875,
+    "market_cap_usd": 617516242743.5706,
     "sector": "Technology",
     "industria": "Semiconductor Equipment & Materials",
-    "rend_div": 0.5846101817976023,
+    "rend_div": 0.5808263814509196,
     "racha_dividendos": 20,
     "tipo": "ACCION",
     "es_financiera": false,
-    "ventas_usd": 44084767369.16282,
-    "per": 40.76986035721381,
+    "ventas_usd": 44065081942.10502,
+    "per": 41.05378763833221,
     "ganancia_ttm_positiva": true,
     "per_forward": null,
-    "pb": 24.897924913424166,
-    "ptbv": 32.51949502138778,
+    "pb": 25.071317710559605,
+    "ptbv": 32.745965549465815,
     "liquidez_corriente": 1.4867271916897886,
-    "capital_trabajo_usd": 13537636996.36521,
-    "deuda_lp_usd": 2192316313.3468275,
+    "capital_trabajo_usd": 13531591956.739723,
+    "deuda_lp_usd": 2191337365.618407,
     "deuda_lp_sobre_ct": 0.16194231784582894,
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.08896885863333318,
     "deuda_neta_ebitda": -0.6657252253989714,
-    "caja_neta_pct": 0.01960897726807535,
+    "caja_neta_pct": 0.01947336192241505,
     "patrimonio_activos": 0.374083606301669,
     "roe": 0.65636003,
     "margen_neto": 0.34135,
@@ -3265,11 +3230,11 @@
      "largo_plazo": null
     },
     "crec_lynch": 29.786724856394443,
-    "per_eff": 39.9704050922466,
-    "peg": 1.3418865378771572,
-    "div_ajustado": 0.7449457705296787,
-    "per_3a": 65.86874406442439,
-    "per_normalizado": 90.11274654658632,
+    "per_eff": 40.254332373365,
+    "peg": 1.3514185452558554,
+    "div_ajustado": 0.739701571639908,
+    "per_3a": 66.3274636491626,
+    "per_normalizado": 90.74030491683608,
     "ciclo_ratio": 2.210278518421312,
     "ciclo_anios": 7,
     "alertas": []
@@ -3283,11 +3248,11 @@
    "sector": "Consumer Cyclical",
    "industria": "Auto Manufacturers",
    "moneda": "USD",
-   "precio": 398.45001220703125,
+   "precio": 397.2200012207031,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.0033018406656720733,
-   "ret_ytd": 0.09061738482741255,
-   "ret_1a": 0.017799392863061758,
+   "var_dia": -0.006378637374106488,
+   "ret_ytd": 0.08725066046018837,
+   "ret_1a": 0.01465745686922082,
    "max_52": 436.5400085449219,
    "min_52": 311.0402526855469,
    "senal": "VENDER",
@@ -3336,7 +3301,7 @@
       "estado": "no cumple",
       "valor": "2,26",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 38,2 → efectivo 38,2 · crecimiento 16,9%",
+      "nota": "PER 38,1 → efectivo 38,1 · crecimiento 16,9%",
       "informativo": false
      },
      {
@@ -3352,13 +3317,13 @@
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 38,2 > PER justo de la fórmula (29,1, g=15,0%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 38,1 > PER justo de la fórmula (29,1, g=15,0%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
        "nombre": "1. Tamaño: ventas anuales",
        "estado": "cumple",
-       "valor": "USD 8.212 M",
+       "valor": "USD 8.209 M",
        "umbral": "≥ USD 2.000 M",
        "nota": "",
        "informativo": false
@@ -3406,7 +3371,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "42,9",
+       "valor": "42,8",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -3414,7 +3379,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 17,09 · PER×P/VL 733,6",
+       "valor": "P/VL 17,05 · PER×P/VL 729,7",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -3468,7 +3433,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "53,56",
+       "valor": "53,42",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -3478,9 +3443,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.31533729784108,
-     "margen_seguridad": -0.31533729784108,
-     "precio_sobre_numero_graham": 5.388374278070962,
+     "precio_sobre_valor_intrinseco": 1.311862597487013,
+     "margen_seguridad": -0.31186259748701306,
+     "precio_sobre_numero_graham": 5.374139917011947,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -3489,28 +3454,28 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "EUR",
-    "precio": 398.45001220703125,
-    "market_cap_usd": 69835940388.0362,
+    "precio": 397.2200012207031,
+    "market_cap_usd": 69620354305.59328,
     "sector": "Consumer Cyclical",
     "industria": "Auto Manufacturers",
-    "rend_div": 1.067637061029793,
+    "rend_div": 1.0709430509357445,
     "racha_dividendos": 11,
     "tipo": "ACCION",
     "es_financiera": false,
-    "ventas_usd": 8212316574.750049,
-    "per": 38.2192346919861,
+    "ventas_usd": 8208649481.362575,
+    "per": 38.11827170056604,
     "ganancia_ttm_positiva": true,
     "per_forward": null,
-    "pb": 17.092911354134408,
-    "ptbv": 53.55703056568181,
+    "pb": 17.047757350494635,
+    "ptbv": 53.415550024245945,
     "liquidez_corriente": 1.7966429116578178,
-    "capital_trabajo_usd": 2583286834.689105,
-    "deuda_lp_usd": 2343514662.531664,
+    "capital_trabajo_usd": 2582133304.62445,
+    "deuda_lp_usd": 2342468199.32677,
     "deuda_lp_sobre_ct": 0.9071832949644953,
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.8653313856194643,
     "deuda_neta_ebitda": 0.6780878077226321,
-    "caja_neta_pct": -0.026791196630128997,
+    "caja_neta_pct": -0.026862157857771976,
     "patrimonio_activos": 0.35815357805440384,
     "roe": 0.45439997,
     "margen_neto": 0.2225,
@@ -3593,12 +3558,12 @@
      "largo_plazo": null
     },
     "crec_lynch": 16.902025849307158,
-    "per_eff": 38.2192346919861,
-    "peg": 2.2612221181493917,
-    "div_ajustado": 0.4701732793750805,
-    "per_3a": 42.919239509095746,
-    "per_normalizado": 58.849951619160116,
-    "ciclo_ratio": 1.539799320772373,
+    "per_eff": 38.11827170056604,
+    "peg": 2.2552486926961226,
+    "div_ajustado": 0.47150534634486096,
+    "per_3a": 42.80586060851768,
+    "per_normalizado": 58.69448887354835,
+    "ciclo_ratio": 1.5397993207723728,
     "ciclo_anios": 7,
     "alertas": []
    },
@@ -3611,13 +3576,13 @@
    "sector": "Financial Services",
    "industria": "Financial Data & Stock Exchanges",
    "moneda": "USD",
-   "precio": 494.31500244140625,
+   "precio": 494.04998779296875,
    "fecha_precio": "2026-10-30",
-   "var_dia": 0.01122070253423324,
-   "ret_ytd": -0.025908126083078464,
-   "ret_1a": 0.040989074048997765,
-   "max_52": 536.03173828125,
-   "min_52": 409.49639892578125,
+   "var_dia": 0.010678561798768582,
+   "ret_ytd": -0.02643036112396724,
+   "ret_1a": 0.040430973744285614,
+   "max_52": 536.0316162109375,
+   "min_52": 409.4963684082031,
    "senal": "VENDER",
    "motivo": "Lynch y Graham coinciden: vender",
    "lynch": {
@@ -3625,7 +3590,7 @@
     "categoria_nombre": "Estable (stalwart)",
     "categoria_motivo": "Crecimiento de ganancias estimado 11,2% entre 7% y 18%",
     "senal": "VENDER",
-    "motivo": "PEG 2,75 y (crec.+div.)/PER 0,39: paga demasiado por un crecimiento de 11,2%",
+    "motivo": "PEG 2,69 y (crec.+div.)/PER 0,40: paga demasiado por un crecimiento de 11,2%",
     "checks": [
      {
       "nombre": "Deuda / patrimonio",
@@ -3654,15 +3619,15 @@
      {
       "nombre": "PEG (PER efectivo / crecimiento)",
       "estado": "no cumple",
-      "valor": "2,75",
+      "valor": "2,69",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 30,8 → efectivo 30,8 · crecimiento 11,2%",
+      "nota": "PER 30,2 → efectivo 30,2 · crecimiento 11,2%",
       "informativo": false
      },
      {
       "nombre": "(Crecimiento + dividendo) / PER",
       "estado": "no cumple",
-      "valor": "0,39",
+      "valor": "0,40",
       "umbral": "≥ 2 compra · < 1 venta",
       "nota": "Rend. dividendo 0,8%",
       "informativo": false
@@ -3672,7 +3637,7 @@
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 30,8 > PER justo de la fórmula (23,4, g=11,2%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 30,2 > PER justo de la fórmula (23,4, g=11,2%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
@@ -3726,7 +3691,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "41,8",
+       "valor": "41,7",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -3734,7 +3699,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 26,08 · PER×P/VL 1.088,9",
+       "valor": "P/VL 26,07 · PER×P/VL 1.087,8",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -3798,9 +3763,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.3197880334165397,
-     "margen_seguridad": -0.3197880334165397,
-     "precio_sobre_numero_graham": 5.9787883525962835,
+     "precio_sobre_valor_intrinseco": 1.2930540168316549,
+     "margen_seguridad": -0.2930540168316549,
+     "precio_sobre_numero_graham": 5.916338042209609,
      "per_justo_formula": 23.366036226415094,
      "g_usado": 11.229999,
      "tasa_aaa": 5.83
@@ -3809,19 +3774,19 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 494.31500244140625,
-    "market_cap_usd": 85231806524.56105,
+    "precio": 494.04998779296875,
+    "market_cap_usd": 85186115193.87622,
     "sector": "Financial Services",
     "industria": "Financial Data & Stock Exchanges",
-    "rend_div": 0.8152696115019687,
+    "rend_div": 0.8157069324104038,
     "racha_dividendos": 27,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 8176000000.0,
-    "per": 30.838215,
+    "per": 30.213547,
     "ganancia_ttm_positiva": true,
-    "per_forward": 26.474058,
-    "pb": 26.080724150722475,
+    "per_forward": 26.503763,
+    "pb": 26.0667427153844,
     "ptbv": null,
     "liquidez_corriente": 1.287020109689214,
     "capital_trabajo_usd": 942000000.0,
@@ -3830,7 +3795,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 2.292533659730722,
     "deuda_neta_ebitda": 1.4499876741909634,
-    "caja_neta_pct": -0.06888273567577342,
+    "caja_neta_pct": -0.06891968235243634,
     "patrimonio_activos": 0.22036412677006068,
     "roe": 0.76741,
     "margen_neto": 0.35262,
@@ -3912,14 +3877,14 @@
      "historico": 7.801561241140598,
      "historico_anios": 5,
      "estimado_1_2a": 11.229999,
-     "largo_plazo": 18.03826333645297
+     "largo_plazo": 17.672874941506784
     },
     "crec_lynch": 11.229999,
-    "per_eff": 30.838215,
-    "peg": 2.746056789497488,
-    "div_ajustado": 0.3905955196013118,
-    "per_3a": 41.75300776840025,
-    "per_normalizado": 46.20683439218768,
+    "per_eff": 30.213547,
+    "peg": 2.6904318513296395,
+    "div_ajustado": 0.3986855939956472,
+    "per_3a": 41.73062468674537,
+    "per_normalizado": 46.18206368936908,
     "ciclo_ratio": 1.5629647187112763,
     "ciclo_anios": 7,
     "alertas": []
@@ -3933,11 +3898,11 @@
    "sector": "Consumer Cyclical",
    "industria": "Restaurants",
    "moneda": "USD",
-   "precio": 262.6000061035156,
+   "precio": 261.3616027832031,
    "fecha_precio": "2026-10-30",
-   "var_dia": 0.020281300496050036,
-   "ret_ytd": -0.12394854506186004,
-   "ret_1a": -0.1093664933192734,
+   "var_dia": 0.01546972501692001,
+   "ret_ytd": -0.1280799426450433,
+   "ret_1a": -0.11356665884181416,
    "max_52": 334.5029602050781,
    "min_52": 230.8800048828125,
    "senal": "VENDER",
@@ -3960,7 +3925,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "no cumple",
-      "valor": "-28,9%",
+      "valor": "-29,1%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -3978,7 +3943,7 @@
       "estado": "no cumple",
       "valor": "2,72",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 21,3 → efectivo 21,3 · crecimiento 7,8%",
+      "nota": "PER 21,2 → efectivo 21,2 · crecimiento 7,8%",
       "informativo": false
      },
      {
@@ -3994,7 +3959,7 @@
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 21,3 > PER justo de la fórmula (18,2, g=7,8%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 21,2 > PER justo de la fórmula (18,2, g=7,8%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
@@ -4048,7 +4013,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "22,1",
+       "valor": "22,0",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -4120,29 +4085,29 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.1697597474773205,
-     "margen_seguridad": -0.16975974747732048,
+     "precio_sobre_valor_intrinseco": 1.168210700478697,
+     "margen_seguridad": -0.16821070047869702,
      "precio_sobre_numero_graham": null,
-     "per_justo_formula": 18.226020382372027,
-     "g_usado": 7.824738503321467,
+     "per_justo_formula": 18.18169187398855,
+     "g_usado": 7.795370866517415,
      "tasa_aaa": 5.83
     }
    },
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 262.6000061035156,
-    "market_cap_usd": 185826687646.62604,
+    "precio": 261.3616027832031,
+    "market_cap_usd": 184950328025.90405,
     "sector": "Consumer Cyclical",
     "industria": "Restaurants",
-    "rend_div": 2.8332063317116565,
+    "rend_div": 2.8466308443063104,
     "racha_dividendos": 51,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 27701999616.0,
-    "per": 21.320065,
+    "per": 21.240047,
     "ganancia_ttm_positiva": true,
-    "per_forward": 19.099552,
+    "per_forward": 19.027868,
     "pb": null,
     "ptbv": null,
     "liquidez_corriente": 1.0813837730214038,
@@ -4152,7 +4117,7 @@
     "patrimonio_negativo": true,
     "deuda_patrimonio": null,
     "deuda_neta_ebitda": 3.6014735740782733,
-    "caja_neta_pct": -0.28935563928390495,
+    "caja_neta_pct": -0.29072670794327543,
     "patrimonio_activos": -0.01705607476635514,
     "roe": null,
     "margen_neto": 0.3172,
@@ -4230,18 +4195,18 @@
     "crec_10a_anios": 10,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": 7.824738503321467,
+     "final": 7.795370866517415,
      "historico": 13.625368150569539,
      "historico_anios": 5,
      "estimado_1_2a": 6.65,
-     "largo_plazo": 7.824738503321467
+     "largo_plazo": 7.795370866517415
     },
-    "crec_lynch": 7.824738503321467,
-    "per_eff": 21.320065,
+    "crec_lynch": 7.795370866517415,
+    "per_eff": 21.240047,
     "peg": 2.7247,
-    "div_ajustado": 0.49990207980290513,
-    "per_3a": 22.074047235790065,
-    "per_normalizado": 26.155353547765618,
+    "div_ajustado": 0.5010347533987908,
+    "per_3a": 21.969945914777753,
+    "per_normalizado": 26.03200476506247,
     "ciclo_ratio": 1.2367819870468562,
     "ciclo_anios": 7,
     "alertas": []
@@ -4255,11 +4220,11 @@
    "sector": "Consumer Cyclical",
    "industria": "Internet Retail",
    "moneda": "USD",
-   "precio": 98.40499877929688,
+   "precio": 98.48300170898438,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.011402472632019212,
-   "ret_ytd": -0.32249455448696196,
-   "ret_1a": -0.4290303696946174,
+   "var_dia": -0.010618838625890414,
+   "ret_ytd": -0.321957514597883,
+   "ret_1a": -0.428577777809257,
    "max_52": 175.5675811767578,
    "min_52": 94.80999755859375,
    "senal": "MANTENER",
@@ -4316,7 +4281,7 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 23,7% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 23,6% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
@@ -4370,7 +4335,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "15,5",
+       "valor": "15,6",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -4442,9 +4407,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.7631993994949756,
-     "margen_seguridad": 0.23680060050502438,
-     "precio_sobre_numero_graham": 1.2360101752643087,
+     "precio_sobre_valor_intrinseco": 0.7638044159556392,
+     "margen_seguridad": 0.2361955840443608,
+     "precio_sobre_numero_graham": 1.2369900063570447,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -4453,20 +4418,20 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "CNY",
-    "precio": 98.40499877929688,
-    "market_cap_usd": 244806537485.77002,
+    "precio": 98.48300170898438,
+    "market_cap_usd": 245000604704.57935,
     "sector": "Consumer Cyclical",
     "industria": "Internet Retail",
-    "rend_div": 1.0670189655252618,
+    "rend_div": 1.0661738389156055,
     "racha_dividendos": 4,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 157323025020.66357,
-    "per": 22.175982551363443,
+    "per": 22.19356227493744,
     "ganancia_ttm_positiva": true,
     "per_forward": null,
-    "pb": 1.5500429742364228,
-    "ptbv": 2.058603666885723,
+    "pb": 1.5512717507721085,
+    "ptbv": 2.06023559833807,
     "liquidez_corriente": 1.3618496327901746,
     "capital_trabajo_usd": 28995965222.23051,
     "deuda_lp_usd": 35517750179.74181,
@@ -4474,7 +4439,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.2540708725518046,
     "deuda_neta_ebitda": -1.197501834701397,
-    "caja_neta_pct": 0.07328600486081484,
+    "caja_neta_pct": 0.07322795434637576,
     "patrimonio_activos": 0.5346481770380749,
     "roe": 0.0636,
     "margen_neto": 0.07039,
@@ -4559,11 +4524,11 @@
      "largo_plazo": null
     },
     "crec_lynch": 17.551175518205575,
-    "per_eff": 20.55079338631088,
-    "peg": 1.1709069495085298,
-    "div_ajustado": 0.8395657076572751,
-    "per_3a": 15.549908975872892,
-    "per_normalizado": 15.201779320081789,
+    "per_eff": 20.568373109884877,
+    "peg": 1.1719085760694268,
+    "div_ajustado": 0.8388626001759629,
+    "per_3a": 15.562235965252663,
+    "per_normalizado": 15.213830334176022,
     "ciclo_ratio": 0.6855064610946467,
     "ciclo_anios": 7,
     "alertas": [
@@ -4581,12 +4546,12 @@
    "sector": "Financial Services",
    "industria": "Insurance - Diversified",
    "moneda": "USD",
-   "precio": 548.6300048828125,
+   "precio": 546.1300048828125,
    "fecha_precio": "2026-10-30",
-   "var_dia": 0.012307149309424004,
-   "ret_ytd": 0.09147520450541813,
-   "ret_1a": 0.14651428880463646,
-   "max_52": 548.6300048828125,
+   "var_dia": 0.0076942629365504,
+   "ret_ytd": 0.08650156473548543,
+   "ret_1a": 0.14128984665509736,
+   "max_52": 548.5599975585938,
    "min_52": 465.3999938964844,
    "senal": "VENDER",
    "motivo": "Lynch vender · Graham mantener",
@@ -4608,7 +4573,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "cumple",
-      "valor": "20,2%",
+      "valor": "20,3%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -4626,7 +4591,7 @@
       "estado": "sin datos",
       "valor": "s/d",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 13,8 → efectivo 11,0 · crecimiento -0,2%",
+      "nota": "PER 13,7 → efectivo 11,0 · crecimiento -0,2%",
       "informativo": false
      },
      {
@@ -4642,7 +4607,7 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad -114,7% según la fórmula; precio dentro de límites pero falla en calidad",
+    "motivo": "Margen de seguridad -114,2% según la fórmula; precio dentro de límites pero falla en calidad",
     "defensivo": {
      "checks": [
       {
@@ -4696,7 +4661,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "cumple",
-       "valor": "14,0",
+       "valor": "13,9",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -4704,7 +4669,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "cumple",
-       "valor": "P/VL 1,57 · PER×P/VL 21,9",
+       "valor": "P/VL 1,56 · PER×P/VL 21,7",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -4758,7 +4723,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "1,86",
+       "valor": "1,85",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -4768,9 +4733,9 @@
      "aplicables": 4
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 2.1474597676470584,
-     "margen_seguridad": -1.1474597676470584,
-     "precio_sobre_numero_graham": 0.9805432869496347,
+     "precio_sobre_valor_intrinseco": 2.1415789499999995,
+     "margen_seguridad": -1.1415789499999995,
+     "precio_sobre_numero_graham": 0.9769662253605874,
      "per_justo_formula": 6.415094339622643,
      "g_usado": 0.0,
      "tasa_aaa": 5.83
@@ -4779,8 +4744,8 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 548.6300048828125,
-    "market_cap_usd": 1174457528220.7764,
+    "precio": 546.1300048828125,
+    "market_cap_usd": 1169105816734.095,
     "sector": "Financial Services",
     "industria": "Insurance - Diversified",
     "rend_div": 0.0,
@@ -4788,11 +4753,11 @@
     "tipo": "ACCION",
     "es_financiera": true,
     "ventas_usd": 384687013888.0,
-    "per": 13.776157,
+    "per": 13.738431,
     "ganancia_ttm_positiva": true,
-    "per_forward": 24.418362,
-    "pb": 1.5703193274869656,
-    "ptbv": 1.8618894592490287,
+    "per_forward": 24.35149,
+    "pb": 1.5631637720234988,
+    "ptbv": 1.8534052910551484,
     "liquidez_corriente": null,
     "capital_trabajo_usd": null,
     "deuda_lp_usd": 125936000000.0,
@@ -4800,7 +4765,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.1719444852990333,
     "deuda_neta_ebitda": -1.812898347748772,
-    "caja_neta_pct": 0.2017229182896977,
+    "caja_neta_pct": 0.20264632731177717,
     "patrimonio_activos": 0.5921361506993669,
     "roe": 0.121199995,
     "margen_neto": 0.22296,
@@ -4885,11 +4850,11 @@
      "largo_plazo": null
     },
     "crec_lynch": -0.16999999999999998,
-    "per_eff": 10.997190407142952,
+    "per_eff": 10.954388414823734,
     "peg": null,
-    "div_ajustado": -0.012340161338172902,
-    "per_3a": 13.971325072217844,
-    "per_normalizado": 18.545376960955366,
+    "div_ajustado": -0.012374047662356785,
+    "per_3a": 13.907661211178594,
+    "per_normalizado": 18.460870280618327,
     "ciclo_ratio": 1.354327354913806,
     "ciclo_anios": 7,
     "alertas": [
@@ -4907,11 +4872,11 @@
    "sector": "Technology",
    "industria": "Semiconductors",
    "moneda": "USD",
-   "precio": 415.9049987792969,
+   "precio": 416.6700134277344,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.03683332685491769,
-   "ret_ytd": 0.37936477283515635,
-   "ret_1a": 0.3861446912973501,
+   "var_dia": -0.03506168040679736,
+   "ret_ytd": 0.3819019730608202,
+   "ret_1a": 0.38869450373301895,
    "max_52": 485.79998779296875,
    "min_52": 272.1793518066406,
    "senal": "COMPRAR",
@@ -4960,7 +4925,7 @@
       "estado": "cumple",
       "valor": "0,88",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 27,8 → efectivo 26,6 · crecimiento 30,2%",
+      "nota": "PER 27,9 → efectivo 26,7 · crecimiento 30,2%",
       "informativo": false
      }
     ],
@@ -4968,13 +4933,13 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 4,2% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 4,1% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
        "nombre": "1. Tamaño: ventas anuales",
        "estado": "cumple",
-       "valor": "USD 151.644 M",
+       "valor": "USD 151.705 M",
        "umbral": "≥ USD 2.000 M",
        "nota": "",
        "informativo": false
@@ -5022,7 +4987,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "56,9",
+       "valor": "57,0",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -5030,7 +4995,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 10,05 · PER×P/VL 572,2",
+       "valor": "P/VL 10,07 · PER×P/VL 573,7",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -5084,7 +5049,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "10,09",
+       "valor": "10,10",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -5094,9 +5059,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.9578666904669502,
-     "margen_seguridad": 0.042133309533049834,
-     "precio_sobre_numero_graham": 3.5263581027265762,
+     "precio_sobre_valor_intrinseco": 0.9591074523282532,
+     "margen_seguridad": 0.04089254767174677,
+     "precio_sobre_numero_graham": 3.530925931096333,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -5105,28 +5070,28 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "TWD",
-    "precio": 415.9049987792969,
-    "market_cap_usd": 2157392143525.587,
+    "precio": 416.6700134277344,
+    "market_cap_usd": 2161048285824.1165,
     "sector": "Technology",
     "industria": "Semiconductors",
-    "rend_div": 0.9264134865675474,
+    "rend_div": 0.9247125724991124,
     "racha_dividendos": 23,
     "tipo": "ACCION",
     "es_financiera": false,
-    "ventas_usd": 151644282690.20764,
-    "per": 27.83235289281327,
+    "ventas_usd": 151704765882.29846,
+    "per": 27.86840521859453,
     "ganancia_ttm_positiva": true,
     "per_forward": null,
-    "pb": 10.05276248553235,
-    "ptbv": 10.087466317702976,
+    "pb": 10.065784218532277,
+    "ptbv": 10.100533003922207,
     "liquidez_corriente": 2.584138696833177,
-    "capital_trabajo_usd": 95595585029.09221,
-    "deuda_lp_usd": 23623496063.168987,
+    "capital_trabajo_usd": 95633713246.19197,
+    "deuda_lp_usd": 23632918274.312714,
     "deuda_lp_sobre_ct": 0.24711911178722057,
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.14054398018148867,
     "deuda_neta_ebitda": -0.839963242884852,
-    "caja_neta_pct": 0.04312070509454881,
+    "caja_neta_pct": 0.04306492143216153,
     "patrimonio_activos": 0.6961086207267007,
     "roe": 0.41854998,
     "margen_neto": 0.51116,
@@ -5209,12 +5174,12 @@
      "largo_plazo": null
     },
     "crec_lynch": 30.213077375730176,
-    "per_eff": 26.632202211634855,
-    "peg": 0.8814792972075133,
-    "div_ajustado": 1.1188235138516949,
-    "per_3a": 56.92029091837398,
-    "per_normalizado": 79.97106434001327,
-    "ciclo_ratio": 2.8733131060817714,
+    "per_eff": 26.668254537416114,
+    "peg": 0.8826725661133222,
+    "div_ajustado": 1.1173150994464993,
+    "per_3a": 56.99402197803882,
+    "per_normalizado": 80.07465396018532,
+    "ciclo_ratio": 2.8733131060817723,
     "ciclo_anios": 7,
     "alertas": []
    },
@@ -5227,19 +5192,19 @@
    "sector": "Healthcare",
    "industria": "Drug Manufacturers - General",
    "moneda": "USD",
-   "precio": 1429.1300048828125,
+   "precio": 1431.6800537109375,
    "fecha_precio": "2026-10-30",
-   "var_dia": 0.04035091772672139,
-   "ret_ytd": 0.33624361992094687,
-   "ret_1a": 0.7029526014268082,
-   "max_52": 1429.1300048828125,
+   "var_dia": 0.042207253839967596,
+   "ret_ytd": 0.33862792818221554,
+   "ret_1a": 0.7059911178319673,
+   "max_52": 1431.6800537109375,
    "min_52": 848.5313110351562,
    "senal": "VENDER",
    "motivo": "Lynch mantener · Graham vender",
    "lynch": {
     "categoria": "rapido",
     "categoria_nombre": "Crecimiento rápido",
-    "categoria_motivo": "Crecimiento de ganancias estimado 36,5% ≥ 18%",
+    "categoria_motivo": "Crecimiento de ganancias estimado 36,6% ≥ 18%",
     "senal": "MANTENER",
     "motivo": "PEG 1,32 entre 1 y 2",
     "checks": [
@@ -5280,7 +5245,7 @@
       "estado": "no cumple",
       "valor": "1,32",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 48,1 → efectivo 48,1 · crecimiento 36,5%",
+      "nota": "PER 48,1 → efectivo 48,1 · crecimiento 36,6%",
       "informativo": false
      }
     ],
@@ -5342,7 +5307,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "104,7",
+       "valor": "104,9",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -5350,7 +5315,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 37,57 · PER×P/VL 3.934,6",
+       "valor": "P/VL 37,64 · PER×P/VL 3.948,7",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -5404,7 +5369,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "183,96",
+       "valor": "184,29",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -5414,9 +5379,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.6550673772727271,
-     "margen_seguridad": -0.6550673772727271,
-     "precio_sobre_numero_graham": 8.961615320293108,
+     "precio_sobre_valor_intrinseco": 1.6566616103896104,
+     "margen_seguridad": -0.6566616103896104,
+     "precio_sobre_numero_graham": 8.973925673777027,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -5425,20 +5390,20 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 1429.1300048828125,
-    "market_cap_usd": 1272990512245.8633,
+    "precio": 1431.6800537109375,
+    "market_cap_usd": 1275261878819.1465,
     "sector": "Healthcare",
     "industria": "Drug Manufacturers - General",
-    "rend_div": 0.4681169646668061,
+    "rend_div": 0.4672831742440927,
     "racha_dividendos": 55,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 86461997056.0,
-    "per": 48.090637,
+    "per": 48.13696,
     "ganancia_ttm_positiva": true,
-    "per_forward": 29.1818,
-    "pb": 37.574618856691856,
-    "ptbv": 183.9581665095178,
+    "per_forward": 29.20991,
+    "pb": 37.64166235187422,
+    "ptbv": 184.28639867328707,
     "liquidez_corriente": 1.3546427598919168,
     "capital_trabajo_usd": 16931000000.0,
     "deuda_lp_usd": 47858000000.0,
@@ -5446,7 +5411,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 1.6207089937719532,
     "deuda_neta_ebitda": 0.9882803681643819,
-    "caja_neta_pct": -0.036102390047604495,
+    "caja_neta_pct": -0.0360380881474758,
     "patrimonio_activos": 0.23810996394509534,
     "roe": null,
     "margen_neto": 0.31898,
@@ -5526,18 +5491,18 @@
     "crec_10a_anios": 10,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": 36.54026061849404,
+     "final": 36.5754577919611,
      "historico": 27.58425028465261,
      "historico_anios": 5,
      "estimado_1_2a": 39.95,
-     "largo_plazo": 36.54026061849404
+     "largo_plazo": 36.5754577919611
     },
-    "crec_lynch": 36.54026061849404,
-    "per_eff": 48.090637,
-    "peg": 1.3160999999999998,
-    "div_ajustado": 0.7695547385483965,
-    "per_3a": 104.71542464320235,
-    "per_normalizado": 141.87441824401503,
+    "crec_lynch": 36.5754577919611,
+    "per_eff": 48.13696,
+    "peg": 1.3161,
+    "div_ajustado": 0.7695280500930095,
+    "per_3a": 104.90226587489552,
+    "per_normalizado": 142.12756138067118,
     "ciclo_ratio": 3.0737829181354144,
     "ciclo_anios": 7,
     "alertas": []
@@ -5551,12 +5516,12 @@
    "sector": "Technology",
    "industria": "Semiconductors",
    "moneda": "USD",
-   "precio": 329.94000244140625,
+   "precio": 329.20989990234375,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.043652166836503636,
-   "ret_ytd": -0.041437757273706466,
-   "ret_1a": -0.11707918327974332,
-   "max_52": 479.93511962890625,
+   "var_dia": -0.04576840608016308,
+   "ret_ytd": -0.043558811839122136,
+   "ret_1a": -0.11903294070627135,
+   "max_52": 479.9350891113281,
    "min_52": 292.41387939453125,
    "senal": "MANTENER",
    "motivo": "Señales opuestas: Lynch comprar, Graham vender",
@@ -5660,7 +5625,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "109,6",
+       "valor": "109,4",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -5668,7 +5633,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 15,80 · PER×P/VL 1.731,9",
+       "valor": "P/VL 15,76 · PER×P/VL 1.724,3",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -5732,9 +5697,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.4467071350649352,
-     "margen_seguridad": -0.4467071350649352,
-     "precio_sobre_numero_graham": 5.4329729284517505,
+     "precio_sobre_valor_intrinseco": 1.4465071805194805,
+     "margen_seguridad": -0.44650718051948046,
+     "precio_sobre_numero_graham": 5.42658321002872,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -5743,19 +5708,19 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 329.94000244140625,
-    "market_cap_usd": 1575011472412.7058,
+    "precio": 329.20989990234375,
+    "market_cap_usd": 1571526115823.33,
     "sector": "Technology",
     "industria": "Semiconductors",
-    "rend_div": 0.7880220587868038,
+    "rend_div": 0.789769688205385,
     "racha_dividendos": 17,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 89103998976.0,
-    "per": 42.036396,
+    "per": 42.030586,
     "ganancia_ttm_positiva": true,
-    "per_forward": 16.90952,
-    "pb": 15.799091909045098,
+    "per_forward": 16.90718,
+    "pb": 15.76412996111275,
     "ptbv": null,
     "liquidez_corriente": 2.503743161531817,
     "capital_trabajo_usd": 31335000000.0,
@@ -5764,7 +5729,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.5960377169224597,
     "deuda_neta_ebitda": 0.6782242666212287,
-    "caja_neta_pct": -0.02250396306364966,
+    "caja_neta_pct": -0.02255387272481356,
     "patrimonio_activos": 0.5298488424006633,
     "roe": 0.44245,
     "margen_neto": 0.42944,
@@ -5838,14 +5803,14 @@
      "historico": 49.74451415507015,
      "historico_anios": 5,
      "estimado_1_2a": 66.86,
-     "largo_plazo": 123.05736533957845
+     "largo_plazo": 123.04035714285713
     },
     "crec_lynch": 50,
-    "per_eff": 42.036396,
-    "peg": 0.8407279200000001,
-    "div_ajustado": 1.2081916360952256,
-    "per_3a": 109.62193854808523,
-    "per_normalizado": 166.05787216858616,
+    "per_eff": 42.030586,
+    "peg": 0.84061172,
+    "div_ajustado": 1.2084002275915302,
+    "per_3a": 109.37935520659792,
+    "per_normalizado": 165.6904012586163,
     "ciclo_ratio": 4.034386148419261,
     "ciclo_anios": 7,
     "alertas": [
@@ -5864,11 +5829,11 @@
    "sector": "Communication Services",
    "industria": "Entertainment",
    "moneda": "USD",
-   "precio": 62.309898376464844,
+   "precio": 62.11289978027344,
    "fecha_precio": "2026-10-30",
-   "var_dia": 0.00418854379693645,
-   "ret_ytd": -0.3354319863823122,
-   "ret_1a": -0.42782463265937076,
+   "var_dia": 0.0010137073970393207,
+   "ret_ytd": -0.33753308057709663,
+   "ret_1a": -0.4296336188249458,
    "max_52": 115.75,
    "min_52": 61.9900016784668,
    "senal": "COMPRAR",
@@ -5876,7 +5841,7 @@
    "lynch": {
     "categoria": "rapido",
     "categoria_nombre": "Crecimiento rápido",
-    "categoria_motivo": "Crecimiento de ganancias estimado 18,3% ≥ 18%",
+    "categoria_motivo": "Crecimiento de ganancias estimado 18,4% ≥ 18%",
     "senal": "COMPRAR",
     "motivo": "PEG 0,98 ≤ 1: el precio no refleja el crecimiento",
     "checks": [
@@ -5909,7 +5874,7 @@
       "estado": "cumple",
       "valor": "0,98",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 17,9 → efectivo 17,9 · crecimiento 18,3%",
+      "nota": "PER 18,0 → efectivo 18,0 · crecimiento 18,4%",
       "informativo": false
      }
     ],
@@ -5917,7 +5882,7 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 38,4% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 38,1% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
@@ -5971,7 +5936,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "31,0",
+       "valor": "30,9",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -5979,7 +5944,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 8,86 · PER×P/VL 274,7",
+       "valor": "P/VL 8,83 · PER×P/VL 273,0",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -6043,9 +6008,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.6164964818181818,
-     "margen_seguridad": 0.38350351818181816,
-     "precio_sobre_numero_graham": 2.6557995858429804,
+     "precio_sobre_valor_intrinseco": 0.6189831454545455,
+     "margen_seguridad": 0.38101685454545453,
+     "precio_sobre_numero_graham": 2.6569402079775997,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -6054,8 +6019,8 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 62.309898376464844,
-    "market_cap_usd": 259454657930.13675,
+    "precio": 62.11289978027344,
+    "market_cap_usd": 258634356586.12808,
     "sector": "Communication Services",
     "industria": "Entertainment",
     "rend_div": 0.0,
@@ -6063,10 +6028,10 @@
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 49734631424.0,
-    "per": 17.913294,
+    "per": 17.985548,
     "ganancia_ttm_positiva": true,
-    "per_forward": 16.434477,
-    "pb": 8.859264376707282,
+    "per_forward": 16.500767,
+    "pb": 8.831254602155083,
     "ptbv": null,
     "liquidez_corriente": 1.0749115915472576,
     "capital_trabajo_usd": 921477000.0,
@@ -6075,7 +6040,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.5167063878059102,
     "deuda_neta_ebitda": 0.4330021988334579,
-    "caja_neta_pct": -0.026630630011123185,
+    "caja_neta_pct": -0.02671509342842887,
     "patrimonio_activos": 0.4990674475495482,
     "roe": 0.53463,
     "margen_neto": 0.29691,
@@ -6153,18 +6118,18 @@
     "crec_10a_anios": 10,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": 18.288202143950997,
+     "final": 18.361968351199593,
      "historico": 33.0026652576249,
      "historico_anios": 5,
      "estimado_1_2a": 5.1,
-     "largo_plazo": 18.288202143950997
+     "largo_plazo": 18.361968351199593
     },
-    "crec_lynch": 18.288202143950997,
-    "per_eff": 17.913294,
-    "peg": 0.9794999999999999,
-    "div_ajustado": 1.0209290454313427,
-    "per_3a": 31.009501353796708,
-    "per_normalizado": 46.169495569177116,
+    "crec_lynch": 18.361968351199593,
+    "per_eff": 17.985548,
+    "peg": 0.9795,
+    "div_ajustado": 1.0209290454313424,
+    "per_3a": 30.911460579194745,
+    "per_normalizado": 46.02352440192293,
     "ciclo_ratio": 2.6276997530459973,
     "ciclo_anios": 7,
     "alertas": [
@@ -6182,11 +6147,11 @@
    "sector": "Consumer Defensive",
    "industria": "Discount Stores",
    "moneda": "USD",
-   "precio": 123.72000122070312,
+   "precio": 123.08000183105469,
    "fecha_precio": "2026-10-30",
-   "var_dia": 0.02037114408827323,
-   "ret_ytd": 0.1175645374797869,
-   "ret_1a": 0.22040161305082862,
+   "var_dia": 0.015092798606636704,
+   "ret_ytd": 0.11178333723515155,
+   "ret_1a": 0.2140886080760167,
    "max_52": 133.87948608398438,
    "min_52": 99.76998138427734,
    "senal": "VENDER",
@@ -6217,7 +6182,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "no cumple",
-      "valor": "-6,3%",
+      "valor": "-6,4%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -6235,7 +6200,7 @@
       "estado": "no cumple",
       "valor": "3,88",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 44,7 → efectivo 44,7 · crecimiento 11,5%",
+      "nota": "PER 44,6 → efectivo 44,6 · crecimiento 11,5%",
       "informativo": false
      },
      {
@@ -6251,7 +6216,7 @@
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 44,7 > PER justo de la fórmula (23,8, g=11,5%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 44,6 > PER justo de la fórmula (23,8, g=11,5%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
@@ -6305,7 +6270,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "51,8",
+       "valor": "51,7",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -6313,7 +6278,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 9,99 · PER×P/VL 517,6",
+       "valor": "P/VL 9,97 · PER×P/VL 515,4",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -6367,7 +6332,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "14,03",
+       "valor": "14,00",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -6377,9 +6342,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.8775747483617733,
-     "margen_seguridad": -0.8775747483617733,
-     "precio_sobre_numero_graham": 4.453995665546467,
+     "precio_sobre_valor_intrinseco": 1.876097622961014,
+     "margen_seguridad": -0.876097622961014,
+     "precio_sobre_numero_graham": 4.44751747446771,
      "per_justo_formula": 23.792834367301786,
      "g_usado": 11.512752768337432,
      "tasa_aaa": 5.83
@@ -6388,20 +6353,20 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 123.72000122070312,
-    "market_cap_usd": 981563031809.9386,
+    "precio": 123.08000183105469,
+    "market_cap_usd": 979480382303.3766,
     "sector": "Consumer Defensive",
     "industria": "Discount Stores",
-    "rend_div": 0.7913029343198676,
+    "rend_div": 0.7954176027262502,
     "racha_dividendos": 53,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 735839977472.0,
-    "per": 44.672825,
+    "per": 44.63768,
     "ganancia_ttm_positiva": true,
-    "per_forward": 38.214447,
-    "pb": 9.991683786416036,
-    "ptbv": 14.026737429048252,
+    "per_forward": 38.184383,
+    "pb": 9.970483746649734,
+    "ptbv": 13.996975939629264,
     "liquidez_corriente": 0.7671279079823575,
     "capital_trabajo_usd": -26927000000.0,
     "deuda_lp_usd": 36462000000.0,
@@ -6409,7 +6374,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.7507787210651683,
     "deuda_neta_ebitda": 1.4118847966916388,
-    "caja_neta_pct": -0.06339480805961008,
+    "caja_neta_pct": -0.06352960316945543,
     "patrimonio_activos": 0.3342406282109733,
     "roe": 0.22313999,
     "margen_neto": 0.03,
@@ -6493,14 +6458,14 @@
      "historico": 11.512752768337432,
      "historico_anios": 5,
      "estimado_1_2a": 11.790000000000001,
-     "largo_plazo": 10.848711690708631
+     "largo_plazo": 10.840176793433388
     },
     "crec_lynch": 11.512752768337432,
-    "per_eff": 44.672825,
-    "peg": 3.8802904829903033,
-    "div_ajustado": 0.27542595980122814,
-    "per_3a": 51.80663433198127,
-    "per_normalizado": 62.133231052137475,
+    "per_eff": 44.63768,
+    "peg": 3.8772377812857504,
+    "div_ajustado": 0.2757349927474654,
+    "per_3a": 51.69671264796146,
+    "per_normalizado": 62.00139872064346,
     "ciclo_ratio": 1.397417364103306,
     "ciclo_anios": 7,
     "alertas": []
@@ -6514,21 +6479,21 @@
    "sector": "Consumer Defensive",
    "industria": "Beverages - Non-Alcoholic",
    "moneda": "USD",
-   "precio": 94.91000366210938,
+   "precio": 94.59500122070312,
    "fecha_precio": "2026-10-30",
-   "var_dia": 0.02251674180302432,
-   "ret_ytd": 0.3839721462128025,
-   "ret_1a": 0.4124829670939185,
+   "var_dia": 0.01912305033090722,
+   "ret_ytd": 0.379378798956729,
+   "ret_1a": 0.40779499358310356,
    "max_52": 95.33999633789062,
-   "min_52": 66.20988464355469,
+   "min_52": 66.20987701416016,
    "senal": "VENDER",
    "motivo": "Lynch y Graham coinciden: vender",
    "lynch": {
     "categoria": "estable",
     "categoria_nombre": "Estable (stalwart)",
-    "categoria_motivo": "Crecimiento de ganancias estimado 7,3% entre 7% y 18%",
+    "categoria_motivo": "Crecimiento de ganancias estimado 7,2% entre 7% y 18%",
     "senal": "VENDER",
-    "motivo": "PEG 3,90 y (crec.+div.)/PER 0,33: paga demasiado por un crecimiento de 7,3%",
+    "motivo": "PEG 3,90 y (crec.+div.)/PER 0,34: paga demasiado por un crecimiento de 7,2%",
     "checks": [
      {
       "nombre": "Deuda / patrimonio",
@@ -6567,13 +6532,13 @@
       "estado": "no cumple",
       "valor": "3,90",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 28,4 → efectivo 28,4 · crecimiento 7,3%",
+      "nota": "PER 27,9 → efectivo 27,9 · crecimiento 7,2%",
       "informativo": false
      },
      {
       "nombre": "(Crecimiento + dividendo) / PER",
       "estado": "no cumple",
-      "valor": "0,33",
+      "valor": "0,34",
       "umbral": "≥ 2 compra · < 1 venta",
       "nota": "Rend. dividendo 2,2%",
       "informativo": false
@@ -6583,7 +6548,7 @@
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 28,4 > PER justo de la fórmula (17,4, g=7,3%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 27,9 > PER justo de la fórmula (17,2, g=7,2%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
@@ -6637,7 +6602,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "35,6",
+       "valor": "35,4",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -6645,7 +6610,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 11,29 · PER×P/VL 401,6",
+       "valor": "P/VL 11,26 · PER×P/VL 398,9",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -6699,7 +6664,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "49,83",
+       "valor": "49,66",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -6709,31 +6674,31 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.6325432753280478,
-     "margen_seguridad": -0.6325432753280478,
-     "precio_sobre_numero_graham": 3.77887507478837,
-     "per_justo_formula": 17.425234252539916,
-     "g_usado": 7.294217692307692,
+     "precio_sobre_valor_intrinseco": 1.6210837655992527,
+     "margen_seguridad": -0.6210837655992527,
+     "precio_sobre_numero_graham": 3.7368923133869503,
+     "per_justo_formula": 17.21780551523948,
+     "g_usado": 7.1567961538461535,
      "tasa_aaa": 5.83
     }
    },
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 94.91000366210938,
-    "market_cap_usd": 408293590219.5714,
+    "precio": 94.59500122070312,
+    "market_cap_usd": 406938454237.603,
     "sector": "Consumer Defensive",
     "industria": "Beverages - Non-Alcoholic",
-    "rend_div": 2.212622399084762,
+    "rend_div": 2.2199904571071483,
     "racha_dividendos": 65,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 51053998080.0,
-    "per": 28.447449,
+    "per": 27.911505,
     "ganancia_ttm_positiva": true,
-    "per_forward": 26.887566,
-    "pb": 11.294428498466706,
-    "ptbv": 49.82836102264723,
+    "per_forward": 26.857944,
+    "pb": 11.25694202593646,
+    "ptbv": 49.66297952619026,
     "liquidez_corriente": 1.3046031746031745,
     "capital_trabajo_usd": 7676000000.0,
     "deuda_lp_usd": 37001000000.0,
@@ -6741,7 +6706,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 1.204508990318119,
     "deuda_neta_ebitda": 1.5576702819745238,
-    "caja_neta_pct": -0.06655015080052443,
+    "caja_neta_pct": -0.06677176786083437,
     "patrimonio_activos": 0.3349641407683327,
     "roe": 0.40592998,
     "margen_neto": 0.28654,
@@ -6821,18 +6786,18 @@
     "crec_10a_anios": 10,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": 7.294217692307692,
+     "final": 7.1567961538461535,
      "historico": 11.175837317060267,
      "historico_anios": 5,
      "estimado_1_2a": 5.609999999999999,
-     "largo_plazo": 7.294217692307692
+     "largo_plazo": 7.1567961538461535
     },
-    "crec_lynch": 7.294217692307692,
-    "per_eff": 28.447449,
+    "crec_lynch": 7.1567961538461535,
+    "per_eff": 27.911505,
     "peg": 3.9,
-    "div_ajustado": 0.33418954688669816,
-    "per_3a": 35.553255853323876,
-    "per_normalizado": 40.57892905975977,
+    "div_ajustado": 0.33594700862433974,
+    "per_3a": 35.43525376502987,
+    "per_normalizado": 40.44424664446873,
     "ciclo_ratio": 1.4539272112676058,
     "ciclo_anios": 7,
     "alertas": []
@@ -6846,12 +6811,12 @@
    "sector": "Consumer Defensive",
    "industria": "Beverages - Non-Alcoholic",
    "moneda": "USD",
-   "precio": 137.47000122070312,
+   "precio": 137.0500030517578,
    "fecha_precio": "2026-10-30",
-   "var_dia": 0.027505853346595055,
-   "ret_ytd": -0.012996793226719872,
-   "ret_1a": -0.030564353133991418,
-   "max_52": 165.45346069335938,
+   "var_dia": 0.024366618799755102,
+   "ret_ytd": -0.016012176340011952,
+   "ret_1a": -0.03352617166151406,
+   "max_52": 165.4534454345703,
    "min_52": 123.7300033569336,
    "senal": "VENDER",
    "motivo": "Lynch y Graham coinciden: vender",
@@ -6881,7 +6846,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "no cumple",
-      "valor": "-21,7%",
+      "valor": "-21,8%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -6969,7 +6934,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "20,9",
+       "valor": "20,8",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -6977,7 +6942,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 8,40 · PER×P/VL 175,6",
+       "valor": "P/VL 8,38 · PER×P/VL 174,6",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -7041,9 +7006,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.5272266482507966,
-     "margen_seguridad": -0.5272266482507966,
-     "precio_sobre_numero_graham": 2.536358155585379,
+     "precio_sobre_valor_intrinseco": 1.5283979663823481,
+     "margen_seguridad": -0.5283979663823481,
+     "precio_sobre_numero_graham": 2.5334516873195807,
      "per_justo_formula": 11.277892524811119,
      "g_usado": 3.221603797687367,
      "tasa_aaa": 5.83
@@ -7052,19 +7017,19 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 137.47000122070312,
-    "market_cap_usd": 187336010328.83954,
+    "precio": 137.0500030517578,
+    "market_cap_usd": 186763671643.2262,
     "sector": "Consumer Defensive",
     "industria": "Beverages - Non-Alcoholic",
-    "rend_div": 4.2234669007376215,
+    "rend_div": 4.236409974983603,
     "racha_dividendos": 55,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 98241003520.0,
-    "per": 17.223898,
+    "per": 17.237108,
     "ganancia_ttm_positiva": true,
-    "per_forward": 15.850561,
-    "pb": 8.403732743981676,
+    "per_forward": 15.862718,
+    "pb": 8.378058121443845,
     "ptbv": null,
     "liquidez_corriente": 0.9429465087317906,
     "capital_trabajo_usd": -1970000000.0,
@@ -7073,7 +7038,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 2.327337161313476,
     "deuda_neta_ebitda": 2.1239371613551774,
-    "caja_neta_pct": -0.21735276591257505,
+    "caja_neta_pct": -0.21801884510914635,
     "patrimonio_activos": 0.19907837393727226,
     "roe": 0.52187,
     "margen_neto": 0.11091,
@@ -7157,14 +7122,14 @@
      "historico": 3.221603797687367,
      "historico_anios": 5,
      "estimado_1_2a": 2.9000001,
-     "largo_plazo": 11.998535701846045
+     "largo_plazo": 12.007738070358759
     },
     "crec_lynch": 3.221603797687367,
-    "per_eff": 17.223898,
-    "peg": 5.346373757183984,
-    "div_ajustado": 0.43225236810070455,
-    "per_3a": 20.89870708710838,
-    "per_normalizado": 22.666575730319025,
+    "per_eff": 17.237108,
+    "peg": 5.350474199333165,
+    "div_ajustado": 0.43267198724234773,
+    "per_3a": 20.834858505491543,
+    "per_normalizado": 22.59732605355867,
     "ciclo_ratio": 1.3183530957237184,
     "ciclo_anios": 7,
     "alertas": []
@@ -7178,11 +7143,11 @@
    "sector": "Financial Services",
    "industria": "Banks - Diversified",
    "moneda": "USD",
-   "precio": 122.83499908447266,
+   "precio": 121.98500061035156,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.023258611657697714,
-   "ret_ytd": 0.06855853702744907,
-   "ret_1a": 0.2515820627364853,
+   "var_dia": -0.030017505262043498,
+   "ret_ytd": 0.06116428349423764,
+   "ret_1a": 0.2429212191665313,
    "max_52": 144.93312072753906,
    "min_52": 96.177490234375,
    "senal": "COMPRAR",
@@ -7192,7 +7157,7 @@
     "categoria_nombre": "Estable (stalwart)",
     "categoria_motivo": "Crecimiento de ganancias estimado 14,7% entre 7% y 18%",
     "senal": "COMPRAR",
-    "motivo": "PEG 0,81 / (crec.+div.)/PER 1,40: valuación atractiva para su crecimiento",
+    "motivo": "PEG 0,81 / (crec.+div.)/PER 1,41: valuación atractiva para su crecimiento",
     "checks": [
      {
       "nombre": "Solidez (bancos): patrimonio / activos",
@@ -7205,7 +7170,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "no cumple",
-      "valor": "-17,9%",
+      "valor": "-18,0%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -7223,13 +7188,13 @@
       "estado": "cumple",
       "valor": "0,81",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 12,0 → efectivo 12,0 · crecimiento 14,7%",
+      "nota": "PER 11,8 → efectivo 11,8 · crecimiento 14,7%",
       "informativo": false
      },
      {
       "nombre": "(Crecimiento + dividendo) / PER",
       "estado": "no cumple",
-      "valor": "1,40",
+      "valor": "1,41",
       "umbral": "≥ 2 compra · < 1 venta",
       "nota": "Rend. dividendo 2,0%",
       "informativo": false
@@ -7239,7 +7204,7 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 58,1% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 58,5% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
@@ -7293,7 +7258,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "16,8",
+       "valor": "16,7",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -7301,7 +7266,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "cumple",
-       "valor": "P/VL 0,96 · PER×P/VL 16,2",
+       "valor": "P/VL 0,95 · PER×P/VL 15,9",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -7355,7 +7320,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "cumple",
-       "valor": "1,08",
+       "valor": "1,07",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -7365,9 +7330,9 @@
      "aplicables": 4
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.4186356048600105,
-     "margen_seguridad": 0.5813643951399895,
-     "precio_sobre_numero_graham": 0.7140230060872385,
+     "precio_sobre_valor_intrinseco": 0.41454472860538827,
+     "margen_seguridad": 0.5854552713946117,
+     "precio_sobre_numero_graham": 0.7080631145614303,
      "per_justo_formula": 28.57358490566038,
      "g_usado": 14.680000000000001,
      "tasa_aaa": 5.83
@@ -7376,20 +7341,20 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 122.83499908447266,
-    "market_cap_usd": 203316499116.04645,
+    "precio": 121.98500061035156,
+    "market_cap_usd": 201909577571.26636,
     "sector": "Financial Services",
     "industria": "Banks - Diversified",
-    "rend_div": 2.0108275478566173,
+    "rend_div": 2.0248391094326044,
     "racha_dividendos": 16,
     "tipo": "ACCION",
     "es_financiera": true,
     "ventas_usd": 83299000320.0,
-    "per": 11.96192,
+    "per": 11.845029,
     "ganancia_ttm_positiva": true,
-    "per_forward": 9.394465,
-    "pb": 0.9589722383607124,
-    "ptbv": 1.0814764925135052,
+    "per_forward": 9.302664,
+    "pb": 0.9523362855046406,
+    "ptbv": 1.0739928274685842,
     "liquidez_corriente": null,
     "capital_trabajo_usd": null,
     "deuda_lp_usd": 333749000000.0,
@@ -7397,7 +7362,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 1.8995212602881872,
     "deuda_neta_ebitda": null,
-    "caja_neta_pct": -0.17860822981844257,
+    "caja_neta_pct": -0.17985278577081143,
     "patrimonio_activos": 0.07324364155439649,
     "roe": 0.09353,
     "margen_neto": 0.23208,
@@ -7479,14 +7444,14 @@
      "historico": 8.171214313957664,
      "historico_anios": 5,
      "estimado_1_2a": 14.680000000000001,
-     "largo_plazo": 22.775932977913175
+     "largo_plazo": 22.55336824067022
     },
     "crec_lynch": 14.680000000000001,
-    "per_eff": 11.96192,
-    "peg": 0.8148446866485012,
-    "div_ajustado": 1.395330143309487,
-    "per_3a": 16.84198965507343,
-    "per_normalizado": 13.7560577784124,
+    "per_eff": 11.845029,
+    "peg": 0.8068820844686648,
+    "div_ajustado": 1.4102826687408367,
+    "per_3a": 16.725445458189725,
+    "per_normalizado": 13.660867795583501,
     "ciclo_ratio": 1.2084456382211655,
     "ciclo_anios": 7,
     "alertas": []
@@ -7500,11 +7465,11 @@
    "sector": "Financial Services",
    "industria": "Banks - Diversified",
    "moneda": "USD",
-   "precio": 50.47999954223633,
+   "precio": 50.46500015258789,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.012905746094821091,
-   "ret_ytd": -0.06746380378517391,
-   "ret_1a": -0.027795095830996486,
+   "var_dia": -0.013199046638963763,
+   "ret_ytd": -0.06774089320464982,
+   "ret_1a": -0.02808390081899992,
    "max_52": 64.48101043701172,
    "min_52": 46.242576599121094,
    "senal": "COMPRAR",
@@ -7545,7 +7510,7 @@
       "estado": "cumple",
       "valor": "0,79",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 12,1 → efectivo 12,1 · crecimiento 15,3%",
+      "nota": "PER 12,0 → efectivo 12,0 · crecimiento 15,3%",
       "informativo": false
      },
      {
@@ -7687,9 +7652,9 @@
      "aplicables": 4
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.4150404532467532,
-     "margen_seguridad": 0.5849595467532468,
-     "precio_sobre_numero_graham": 0.789278084079331,
+     "precio_sobre_valor_intrinseco": 0.4139726753246753,
+     "margen_seguridad": 0.5860273246753247,
+     "precio_sobre_numero_graham": 0.7881450315057171,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -7698,20 +7663,20 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 50.47999954223633,
-    "market_cap_usd": 349457636037.3936,
+    "precio": 50.46500015258789,
+    "market_cap_usd": 349353809838.5417,
     "sector": "Financial Services",
     "industria": "Banks - Diversified",
-    "rend_div": 2.297939798968173,
+    "rend_div": 2.2986228009364513,
     "racha_dividendos": 41,
     "tipo": "ACCION",
     "es_financiera": true,
     "ventas_usd": 114874998784.0,
-    "per": 12.059666,
+    "per": 12.02864,
     "ganancia_ttm_positiva": true,
-    "per_forward": 9.732037,
-    "pb": 1.1622707971496589,
-    "ptbv": 1.5085782938583,
+    "per_forward": 9.706999,
+    "pb": 1.1619254787291686,
+    "ptbv": 1.5081300851664028,
     "liquidez_corriente": null,
     "capital_trabajo_usd": null,
     "deuda_lp_usd": 300757000000.0,
@@ -7719,7 +7684,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 1.2758058722577728,
     "deuda_neta_ebitda": null,
-    "caja_neta_pct": -0.3826758559818403,
+    "caja_neta_pct": -0.38278958532556023,
     "patrimonio_activos": 0.08599885704021468,
     "roe": 0.1073,
     "margen_neto": 0.28064,
@@ -7801,14 +7766,14 @@
      "historico": 15.298892902353622,
      "historico_anios": 5,
      "estimado_1_2a": 16.280001,
-     "largo_plazo": 12.935392041188459
+     "largo_plazo": 12.902113053738066
     },
     "crec_lynch": 15.298892902353622,
-    "per_eff": 12.059666,
-    "peg": 0.7882705027724398,
-    "div_ajustado": 1.4591476000514272,
-    "per_3a": 12.512357622449555,
-    "per_normalizado": 12.969156821822823,
+    "per_eff": 12.02864,
+    "peg": 0.7862425128912094,
+    "div_ajustado": 1.4629680249213604,
+    "per_3a": 12.508640117388438,
+    "per_normalizado": 12.965303598667097,
     "ciclo_ratio": 1.1416839344067609,
     "ciclo_anios": 7,
     "alertas": []
@@ -8093,13 +8058,13 @@
    "sector": "ETF",
    "industria": "Large Value",
    "moneda": "USD",
-   "precio": 521.5599975585938,
+   "precio": 521.0900268554688,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.002238216581928354,
-   "ret_ytd": 0.09740334917620963,
-   "ret_1a": 0.11406674944035844,
+   "var_dia": -0.003137286313309673,
+   "ret_ytd": 0.09641442336698569,
+   "ret_1a": 0.11306280631087762,
    "max_52": 540.9947509765625,
-   "min_52": 448.0914611816406,
+   "min_52": 448.09149169921875,
    "senal": "N/A",
    "motivo": "ETF: Lynch y Graham evalúan empresas, no índices",
    "lynch": null,
@@ -8107,14 +8072,14 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 521.5599975585938,
+    "precio": 521.0900268554688,
     "market_cap_usd": null,
     "sector": null,
     "industria": null,
-    "rend_div": 1.3775979817533484,
+    "rend_div": 1.3788404363365137,
     "racha_dividendos": 29,
     "tipo": "ETF",
-    "per": 21.185757,
+    "per": 21.203253,
     "alertas": []
    },
    "alertas": []
@@ -8126,12 +8091,12 @@
    "sector": "Consumer Cyclical",
    "industria": "Footwear & Accessories",
    "moneda": "USD",
-   "precio": 39.20500183105469,
+   "precio": 38.91999816894531,
    "fecha_precio": "2026-10-30",
-   "var_dia": 0.02043216292352379,
-   "ret_ytd": -0.3683761302015822,
-   "ret_1a": -0.375998984826742,
-   "max_52": 66.03541564941406,
+   "var_dia": 0.013014055799829505,
+   "ret_ytd": -0.3729677281292817,
+   "ret_1a": -0.38053520638466265,
+   "max_52": 66.03540802001953,
    "min_52": 33.869998931884766,
    "senal": "VENDER",
    "motivo": "Lynch y Graham coinciden: vender",
@@ -8140,7 +8105,7 @@
     "categoria_nombre": "Crecimiento lento",
     "categoria_motivo": "Crecimiento de ganancias estimado 5,6% < 7%",
     "senal": "VENDER",
-    "motivo": "PEG 3,33 y (crec.+div.)/PER 0,52: paga demasiado por un crecimiento de 5,6%",
+    "motivo": "PEG 3,33 y (crec.+div.)/PER 0,53: paga demasiado por un crecimiento de 5,6%",
     "checks": [
      {
       "nombre": "Deuda / patrimonio",
@@ -8161,7 +8126,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "no cumple",
-      "valor": "-4,6%",
+      "valor": "-4,7%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -8185,7 +8150,7 @@
      {
       "nombre": "(Crecimiento + dividendo) / PER",
       "estado": "no cumple",
-      "valor": "0,52",
+      "valor": "0,53",
       "umbral": "≥ 2 compra · < 1 venta",
       "nota": "Rend. dividendo 4,2%",
       "informativo": false
@@ -8249,7 +8214,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "cumple",
-       "valor": "14,5",
+       "valor": "14,4",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -8257,7 +8222,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 3,83 · PER×P/VL 55,6",
+       "valor": "P/VL 3,80 · PER×P/VL 54,8",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -8311,7 +8276,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "3,96",
+       "valor": "3,93",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -8321,31 +8286,31 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.2556758303444795,
-     "margen_seguridad": -0.2556758303444795,
-     "precio_sobre_numero_graham": 1.7837552520446966,
-     "per_justo_formula": 14.901567385323261,
-     "g_usado": 5.622288392776659,
+     "precio_sobre_valor_intrinseco": 1.2553493540706502,
+     "margen_seguridad": -0.2553493540706502,
+     "precio_sobre_numero_graham": 1.7767233105419185,
+     "per_justo_formula": 14.896443718524877,
+     "g_usado": 5.61889396352273,
      "tasa_aaa": 5.83
     }
    },
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 39.20500183105469,
-    "market_cap_usd": 58231531773.87269,
+    "precio": 38.91999816894531,
+    "market_cap_usd": 57808216085.30491,
     "sector": "Consumer Cyclical",
     "industria": "Footwear & Accessories",
-    "rend_div": 4.183139710252325,
+    "rend_div": 4.213772037914878,
     "racha_dividendos": 40,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 45890998272.0,
-    "per": 18.711538,
+    "per": 18.700241,
     "ganancia_ttm_positiva": true,
-    "per_forward": 24.995663,
-    "pb": 3.8259876329745524,
-    "ptbv": 3.95567772392315,
+    "per_forward": 24.980572,
+    "pb": 3.798174512832123,
+    "ptbv": 3.926921818171653,
     "liquidez_corriente": 2.0749408361819617,
     "capital_trabajo_usd": 12264000000.0,
     "deuda_lp_usd": 5893000000.0,
@@ -8353,7 +8318,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.7274638633377135,
     "deuda_neta_ebitda": 0.552626179009968,
-    "caja_neta_pct": -0.046435323228320606,
+    "caja_neta_pct": -0.04677535795274901,
     "patrimonio_activos": 0.4027094247764195,
     "roe": 0.21563,
     "margen_neto": 0.0674,
@@ -8433,18 +8398,18 @@
     "crec_10a_anios": 10,
     "eps_vs_5a": false,
     "crecimiento": {
-     "final": 5.622288392776659,
+     "final": 5.61889396352273,
      "historico": -10.019669812564736,
      "historico_anios": 5,
      "estimado_1_2a": 22.040000000000003,
-     "largo_plazo": 5.622288392776659
+     "largo_plazo": 5.61889396352273
     },
-    "crec_lynch": 5.622288392776659,
-    "per_eff": 18.711538,
+    "crec_lynch": 5.61889396352273,
+    "per_eff": 18.700241,
     "peg": 3.3281,
-    "div_ajustado": 0.524031114012594,
-    "per_3a": 14.52520124067665,
-    "per_normalizado": 12.977831908596542,
+    "div_ajustado": 0.5258042397120769,
+    "per_3a": 14.419609899053357,
+    "per_normalizado": 12.88348921000778,
     "ciclo_ratio": 0.689324701582349,
     "ciclo_anios": 7,
     "alertas": [
@@ -8462,12 +8427,12 @@
    "sector": "Financial Services",
    "industria": "Credit Services",
    "moneda": "USD",
-   "precio": 323.0299987792969,
+   "precio": 322.4849853515625,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.002100623069200558,
-   "ret_ytd": -0.11699597106696025,
-   "ret_1a": -0.08975883918926375,
-   "max_52": 380.6043701171875,
+   "var_dia": -0.0037842702908527093,
+   "ret_ytd": -0.11848576784846865,
+   "ret_1a": -0.09129459022474984,
+   "max_52": 380.6044006347656,
    "min_52": 289.6576843261719,
    "senal": "MANTENER",
    "motivo": "Lynch y Graham coinciden: mantener",
@@ -8507,7 +8472,7 @@
       "estado": "no cumple",
       "valor": "1,34",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 18,2 → efectivo 18,2 · crecimiento 13,5%",
+      "nota": "PER 18,1 → efectivo 18,1 · crecimiento 13,5%",
       "informativo": false
      },
      {
@@ -8523,7 +8488,7 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 32,3% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 32,4% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
@@ -8577,7 +8542,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "22,2",
+       "valor": "22,1",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -8585,7 +8550,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 6,32 · PER×P/VL 140,0",
+       "valor": "P/VL 6,31 · PER×P/VL 139,5",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -8639,7 +8604,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "7,39",
+       "valor": "7,38",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -8649,31 +8614,31 @@
      "aplicables": 4
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.6766875534018952,
-     "margen_seguridad": 0.32331244659810476,
-     "precio_sobre_numero_graham": 2.2587847651618422,
-     "per_justo_formula": 26.847850102556823,
-     "g_usado": 13.536700692943892,
+     "precio_sobre_valor_intrinseco": 0.6764089249018415,
+     "margen_seguridad": 0.32359107509815854,
+     "precio_sobre_numero_graham": 2.2549356606697235,
+     "per_justo_formula": 26.8126858359119,
+     "g_usado": 13.513404366291633,
      "tasa_aaa": 5.83
     }
    },
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 323.0299987792969,
-    "market_cap_usd": 216608416926.36328,
+    "precio": 322.4849853515625,
+    "market_cap_usd": 216242967284.4185,
     "sector": "Financial Services",
     "industria": "Credit Services",
-    "rend_div": 1.136117392771142,
+    "rend_div": 1.1380374797912178,
     "racha_dividendos": 50,
     "tipo": "ACCION",
     "es_financiera": true,
     "ventas_usd": 72851996672.0,
-    "per": 18.167606,
+    "per": 18.13634,
     "ganancia_ttm_positiva": true,
-    "per_forward": 15.962932,
-    "pb": 6.318798626790061,
-    "ptbv": 7.388491896386509,
+    "per_forward": 15.935458,
+    "pb": 6.308137902112558,
+    "ptbv": 7.376026444875618,
     "liquidez_corriente": null,
     "capital_trabajo_usd": null,
     "deuda_lp_usd": 57017000000.0,
@@ -8681,7 +8646,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 1.7225495915985998,
     "deuda_neta_ebitda": null,
-    "caja_neta_pct": -0.06409261559175501,
+    "caja_neta_pct": -0.06420093182378536,
     "patrimonio_activos": 0.11122539365288463,
     "roe": 0.35933998,
     "margen_neto": 0.16823,
@@ -8739,18 +8704,18 @@
     "crec_10a_anios": 7,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": 13.536700692943892,
+     "final": 13.513404366291633,
      "historico": 32.47676582303172,
      "historico_anios": 5,
      "estimado_1_2a": 9.770001,
-     "largo_plazo": 13.536700692943892
+     "largo_plazo": 13.513404366291633
     },
-    "crec_lynch": 13.536700692943892,
-    "per_eff": 18.167606,
+    "crec_lynch": 13.513404366291633,
+    "per_eff": 18.13634,
     "peg": 1.3421,
-    "div_ajustado": 0.8076362997807766,
-    "per_3a": 22.15111981112251,
-    "per_normalizado": 27.666938881916337,
+    "div_ajustado": 0.8078499766812295,
+    "per_3a": 22.11374767702671,
+    "per_normalizado": 27.620260765472032,
     "ciclo_ratio": 1.5444858366542586,
     "ciclo_anios": 7,
     "alertas": []
@@ -8764,12 +8729,12 @@
    "sector": "Financial Services",
    "industria": "Credit Services",
    "moneda": "USD",
-   "precio": 641.3599853515625,
+   "precio": 640.22998046875,
    "fecha_precio": "2026-10-30",
-   "var_dia": 0.008903528450284082,
-   "ret_ytd": 0.13068044137249513,
-   "ret_1a": 0.16580490863145947,
-   "max_52": 641.3599853515625,
+   "var_dia": 0.007125952768179955,
+   "ret_ytd": 0.1286881868804377,
+   "ret_1a": 0.16375101929872238,
+   "max_52": 640.22998046875,
    "min_52": 470.0482482910156,
    "senal": "VENDER",
    "motivo": "Lynch mantener · Graham vender",
@@ -8879,7 +8844,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 99,58 · PER×P/VL 4.275,8",
+       "valor": "P/VL 99,40 · PER×P/VL 4.260,8",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -8943,9 +8908,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.2124488214285714,
-     "margen_seguridad": -0.21244882142857135,
-     "precio_sobre_numero_graham": 12.486670119746789,
+     "precio_sobre_valor_intrinseco": 1.2116822142857142,
+     "margen_seguridad": -0.2116822142857142,
+     "precio_sobre_numero_graham": 12.471721043227811,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -8954,19 +8919,19 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 641.3599853515625,
-    "market_cap_usd": 558737469706.115,
+    "precio": 640.22998046875,
+    "market_cap_usd": 557753082527.0985,
     "sector": "Financial Services",
     "industria": "Credit Services",
-    "rend_div": 0.5425969938072193,
+    "rend_div": 0.5435546766260598,
     "racha_dividendos": 21,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 36288000000.0,
-    "per": 35.229645,
+    "per": 35.20737,
     "ganancia_ttm_positiva": true,
-    "per_forward": 27.761703,
-    "pb": 99.5789466594395,
+    "per_forward": 27.686832,
+    "pb": 99.40350784656897,
     "ptbv": null,
     "liquidez_corriente": 1.0607102863541833,
     "capital_trabajo_usd": 1518000000.0,
@@ -8975,7 +8940,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 4.39190875066833,
     "deuda_neta_ebitda": 0.5709904985162385,
-    "caja_neta_pct": -0.023327592486066185,
+    "caja_neta_pct": -0.023368763720578348,
     "patrimonio_activos": 0.09725953788285868,
     "roe": 2.31366,
     "margen_neto": 0.46732,
@@ -9057,14 +9022,14 @@
      "historico": 21.000023549606105,
      "historico_anios": 5,
      "estimado_1_2a": 15.47,
-     "largo_plazo": 22.126394297198843
+     "largo_plazo": 22.112404220575304
     },
     "crec_lynch": 21.000023549606105,
-    "per_eff": 35.229645,
-    "peg": 1.6776002615797445,
-    "div_ajustado": 0.6114912751296053,
-    "per_3a": 42.93906829721405,
-    "per_normalizado": 54.18398082571803,
+    "per_eff": 35.20737,
+    "peg": 1.6765395484835244,
+    "div_ajustado": 0.6119053546525107,
+    "per_3a": 42.863417977336766,
+    "per_normalizado": 54.08851914841014,
     "ciclo_ratio": 1.64451464882313,
     "ciclo_anios": 7,
     "alertas": []
@@ -9078,13 +9043,13 @@
    "sector": "Financial Services",
    "industria": "Credit Services",
    "moneda": "USD",
-   "precio": 416.2995910644531,
+   "precio": 414.2300109863281,
    "fecha_precio": "2026-10-30",
-   "var_dia": 0.014029284356340765,
-   "ret_ytd": 0.19414743403666912,
-   "ret_1a": 0.2162101559881029,
-   "max_52": 416.2995910644531,
-   "min_52": 294.3617858886719,
+   "var_dia": 0.008988167692802307,
+   "ret_ytd": 0.1882108830698348,
+   "ret_1a": 0.21016392302589826,
+   "max_52": 414.3399963378906,
+   "min_52": 294.36175537109375,
    "senal": "VENDER",
    "motivo": "Lynch y Graham coinciden: vender",
    "lynch": {
@@ -9092,7 +9057,7 @@
     "categoria_nombre": "Estable (stalwart)",
     "categoria_motivo": "Crecimiento de ganancias estimado 14,0% entre 7% y 18%",
     "senal": "VENDER",
-    "motivo": "PEG 2,41 y (crec.+div.)/PER 0,43: paga demasiado por un crecimiento de 14,0%",
+    "motivo": "PEG 2,39 y (crec.+div.)/PER 0,44: paga demasiado por un crecimiento de 14,0%",
     "checks": [
      {
       "nombre": "Deuda / patrimonio",
@@ -9121,15 +9086,15 @@
      {
       "nombre": "PEG (PER efectivo / crecimiento)",
       "estado": "no cumple",
-      "valor": "2,41",
+      "valor": "2,39",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 33,7 → efectivo 33,7 · crecimiento 14,0%",
+      "nota": "PER 33,6 → efectivo 33,6 · crecimiento 14,0%",
       "informativo": false
      },
      {
       "nombre": "(Crecimiento + dividendo) / PER",
       "estado": "no cumple",
-      "valor": "0,43",
+      "valor": "0,44",
       "umbral": "≥ 2 compra · < 1 venta",
       "nota": "Rend. dividendo 0,6%",
       "informativo": false
@@ -9139,7 +9104,7 @@
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 33,7 > PER justo de la fórmula (27,6, g=14,0%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 33,6 > PER justo de la fórmula (27,6, g=14,0%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
@@ -9193,7 +9158,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "40,9",
+       "valor": "40,7",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -9201,7 +9166,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 22,12 · PER×P/VL 904,6",
+       "valor": "P/VL 22,01 · PER×P/VL 895,6",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -9265,9 +9230,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.2234695892661556,
-     "margen_seguridad": -0.22346958926615557,
-     "precio_sobre_numero_graham": 5.75752109631291,
+     "precio_sobre_valor_intrinseco": 1.2173441128148959,
+     "margen_seguridad": -0.21734411281489585,
+     "precio_sobre_numero_graham": 5.728796786396195,
      "per_justo_formula": 27.562264150943395,
      "g_usado": 14.01,
      "tasa_aaa": 5.83
@@ -9276,19 +9241,19 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 416.2995910644531,
-    "market_cap_usd": 778066414149.5247,
+    "precio": 414.2300109863281,
+    "market_cap_usd": 774198359066.536,
     "sector": "Financial Services",
     "industria": "Credit Services",
-    "rend_div": 0.6437671469115309,
+    "rend_div": 0.6469835426985648,
     "racha_dividendos": 19,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 45902999552.0,
-    "per": 33.721592,
+    "per": 33.55276,
     "ganancia_ttm_positiva": true,
-    "per_forward": 24.248951,
-    "pb": 22.117983232404477,
+    "per_forward": 24.127544,
+    "pb": 22.008026581003353,
     "ptbv": null,
     "liquidez_corriente": 0.9852226141672228,
     "capital_trabajo_usd": -465000000.0,
@@ -9297,7 +9262,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.6782079708908977,
     "deuda_neta_ebitda": 0.316143216080402,
-    "caja_neta_pct": -0.012937198954928248,
+    "caja_neta_pct": -0.013001835875933327,
     "patrimonio_activos": 0.37189977798921664,
     "roe": 0.63507,
     "margen_neto": 0.51203996,
@@ -9379,14 +9344,14 @@
      "historico": 13.044874203683188,
      "historico_anios": 5,
      "estimado_1_2a": 14.01,
-     "largo_plazo": 18.61117721728572
+     "largo_plazo": 18.51799768199128
     },
     "crec_lynch": 14.01,
-    "per_eff": 33.721592,
-    "peg": 2.406965881513205,
-    "div_ajustado": 0.43455146325569477,
-    "per_3a": 40.89776855395756,
-    "per_normalizado": 50.764902869348596,
+    "per_eff": 33.55276,
+    "peg": 2.3949150606709493,
+    "div_ajustado": 0.4368339159788514,
+    "per_3a": 40.69445066404331,
+    "per_normalizado": 50.512531815913725,
     "ciclo_ratio": 1.5335171951383193,
     "ciclo_anios": 7,
     "alertas": [
@@ -9404,11 +9369,11 @@
    "sector": "ETF",
    "industria": "Large Blend",
    "moneda": "USD",
-   "precio": 760.0700073242188,
+   "precio": 760.6799926757812,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.01207494307505308,
-   "ret_ytd": 0.12330872088261335,
-   "ret_1a": 0.13009141743994324,
+   "var_dia": -0.011282095301349604,
+   "ret_ytd": 0.12421021924252496,
+   "ret_1a": 0.1309983591741548,
    "max_52": 779.0900268554688,
    "min_52": 628.78466796875,
    "senal": "N/A",
@@ -9418,14 +9383,14 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 760.0700073242188,
+    "precio": 760.6799926757812,
     "market_cap_usd": null,
     "sector": null,
     "industria": null,
-    "rend_div": 0.9976712575063317,
+    "rend_div": 0.9968712300853224,
     "racha_dividendos": 34,
     "tipo": "ETF",
-    "per": 24.132341,
+    "per": 24.132977,
     "alertas": []
    },
    "alertas": []
@@ -9437,13 +9402,13 @@
    "sector": "ETF",
    "industria": "Large Growth",
    "moneda": "USD",
-   "precio": 694.5800170898438,
+   "precio": 696.2999877929688,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.02902117732301801,
-   "ret_ytd": 0.13451772474743273,
-   "ret_1a": 0.11467706587977111,
+   "var_dia": -0.026616767338180747,
+   "ret_ytd": 0.13732710192605846,
+   "ret_1a": 0.11743720268952562,
    "max_52": 759.6599731445312,
-   "min_52": 557.0867309570312,
+   "min_52": 557.086669921875,
    "senal": "N/A",
    "motivo": "ETF: Lynch y Graham evalúan empresas, no índices",
    "lynch": null,
@@ -9451,14 +9416,14 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 694.5800170898438,
+    "precio": 696.2999877929688,
     "market_cap_usd": null,
     "sector": null,
     "industria": null,
-    "rend_div": 0.4450171217062497,
+    "rend_div": 0.44391785928323874,
     "racha_dividendos": 24,
     "tipo": "ETF",
-    "per": 26.636185,
+    "per": 26.63886,
     "alertas": []
    },
    "alertas": []
@@ -9470,11 +9435,11 @@
    "sector": "Energy",
    "industria": "Oil & Gas E&P",
    "moneda": "USD",
-   "precio": 71.4800033569336,
+   "precio": 71.51499938964844,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.0013970169260000276,
-   "ret_ytd": 0.4689684254229427,
-   "ret_1a": 0.5147278117629941,
+   "var_dia": -0.0009081089654017216,
+   "ret_ytd": 0.46968762050770585,
+   "ret_1a": 0.5154694102739767,
    "max_52": 79.25,
    "min_52": 43.880001068115234,
    "senal": "VENDER",
@@ -9531,7 +9496,7 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 40,0% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 40,3% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
@@ -9593,7 +9558,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 2,22 · PER×P/VL 33,0",
+       "valor": "P/VL 2,22 · PER×P/VL 33,1",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -9657,9 +9622,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.59961053125,
-     "margen_seguridad": 0.40038946875000003,
-     "precio_sobre_numero_graham": 0.9998463105025336,
+     "precio_sobre_valor_intrinseco": 0.5969824765624999,
+     "margen_seguridad": 0.4030175234375001,
+     "precio_sobre_numero_graham": 0.9978969527188074,
      "per_justo_formula": 16.905660377358494,
      "g_usado": 6.950000000000001,
      "tasa_aaa": 5.83
@@ -9668,8 +9633,8 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 71.4800033569336,
-    "market_cap_usd": 7906932924.961573,
+    "precio": 71.51499938964844,
+    "market_cap_usd": 7910803908.140699,
     "sector": "Energy",
     "industria": "Oil & Gas E&P",
     "rend_div": 0.0,
@@ -9677,11 +9642,11 @@
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 4113947904.0,
-    "per": 10.136812,
+    "per": 10.092383,
     "ganancia_ttm_positiva": true,
-    "per_forward": 6.3071694,
-    "pb": 2.218950544221832,
-    "ptbv": 2.24240114646789,
+    "per_forward": 6.2795258,
+    "pb": 2.2200368719184893,
+    "ptbv": 2.2434989548344473,
     "liquidez_corriente": 0.7198971266848375,
     "capital_trabajo_usd": -517222000.0,
     "deuda_lp_usd": 3078038000.0,
@@ -9689,7 +9654,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 1.0454587039333034,
     "deuda_neta_ebitda": 1.1419847370480263,
-    "caja_neta_pct": -0.37129580178072247,
+    "caja_neta_pct": -0.3711141160987282,
     "patrimonio_activos": 0.36472390022678525,
     "roe": 0.26751,
     "margen_neto": 0.19773,
@@ -9758,11 +9723,11 @@
      "largo_plazo": null
     },
     "crec_lynch": 6.950000000000001,
-    "per_eff": 10.136812,
-    "peg": 1.4585341007194244,
-    "div_ajustado": 0.6856198970642842,
-    "per_3a": 14.885609184892694,
-    "per_normalizado": 31.125245732736985,
+    "per_eff": 10.092383,
+    "peg": 1.4521414388489207,
+    "div_ajustado": 0.688638154140603,
+    "per_3a": 14.892896706275842,
+    "per_normalizado": 31.140483664286556,
     "ciclo_ratio": 3.202132863058779,
     "ciclo_anios": 7,
     "alertas": []
@@ -9776,13 +9741,13 @@
    "sector": "Industrials",
    "industria": "Conglomerates",
    "moneda": "USD",
-   "precio": 74.0,
+   "precio": 73.59500122070312,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.014909514185727168,
-   "ret_ytd": -0.16393629856541359,
-   "ret_1a": -0.08619415988621293,
+   "var_dia": -0.020300871540480547,
+   "ret_ytd": -0.16851203881535182,
+   "ret_1a": -0.09119537947757017,
    "max_52": 92.2699966430664,
-   "min_52": 74.0,
+   "min_52": 73.59500122070312,
    "senal": "MANTENER",
    "motivo": "Lynch y Graham coinciden: mantener",
    "lynch": {
@@ -9790,7 +9755,7 @@
     "categoria_nombre": "Crecimiento lento",
     "categoria_motivo": "Crecimiento de ganancias estimado 4,1% < 7%",
     "senal": "MANTENER",
-    "motivo": "PEG 1,63 · (crec.+div.)/PER 0,61: precio razonable",
+    "motivo": "PEG 1,62 · (crec.+div.)/PER 0,62: precio razonable",
     "checks": [
      {
       "nombre": "Deuda / patrimonio",
@@ -9811,7 +9776,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "no cumple",
-      "valor": "-33,2%",
+      "valor": "-33,4%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -9827,7 +9792,7 @@
      {
       "nombre": "PEG (PER efectivo / crecimiento)",
       "estado": "no cumple",
-      "valor": "1,63",
+      "valor": "1,62",
       "umbral": "≤ 1 compra · > 2 venta",
       "nota": "PER 6,7 → efectivo 6,7 · crecimiento 4,1%",
       "informativo": false
@@ -9835,7 +9800,7 @@
      {
       "nombre": "(Crecimiento + dividendo) / PER",
       "estado": "no cumple",
-      "valor": "0,61",
+      "valor": "0,62",
       "umbral": "≥ 2 compra · < 1 venta",
       "nota": "Rend. dividendo 0,0%",
       "informativo": false
@@ -9845,7 +9810,7 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 46,8% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 47,1% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
@@ -9899,7 +9864,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "cumple",
-       "valor": "9,2",
+       "valor": "9,1",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -9907,7 +9872,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "cumple",
-       "valor": "P/VL 0,99 · PER×P/VL 9,1",
+       "valor": "P/VL 0,98 · PER×P/VL 8,9",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -9961,7 +9926,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "cumple",
-       "valor": "1,01",
+       "valor": "1,00",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -9971,9 +9936,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.531839847837951,
-     "margen_seguridad": 0.468160152162049,
-     "precio_sobre_numero_graham": 0.543398334748712,
+     "precio_sobre_valor_intrinseco": 0.5289291170004983,
+     "margen_seguridad": 0.4710708829995017,
+     "precio_sobre_numero_graham": 0.5397188221334314,
      "per_justo_formula": 12.64905690566038,
      "g_usado": 4.1300002000000005,
      "tasa_aaa": 5.83
@@ -9982,8 +9947,8 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 74.0,
-    "market_cap_usd": 3977056256.0,
+    "precio": 73.59500122070312,
+    "market_cap_usd": 3944969537.43429,
     "sector": "Industrials",
     "industria": "Conglomerates",
     "rend_div": 0.0,
@@ -9991,11 +9956,11 @@
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 2416999936.0,
-    "per": 6.7272725,
+    "per": 6.6904545,
     "ganancia_ttm_positiva": true,
-    "per_forward": 6.2776985,
-    "pb": 0.9875977789918053,
-    "ptbv": 1.0094051411167513,
+    "per_forward": 6.243341,
+    "pb": 0.9796298826506804,
+    "ptbv": 1.0012613039173324,
     "liquidez_corriente": 3.6405797101449275,
     "capital_trabajo_usd": 1822000000.0,
     "deuda_lp_usd": 2575000000.0,
@@ -10003,7 +9968,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.6456419170598461,
     "deuda_neta_ebitda": 1.4082251451998633,
-    "caja_neta_pct": -0.3316523365768553,
+    "caja_neta_pct": -0.33434985681989443,
     "patrimonio_activos": 0.5196799587043489,
     "roe": 0.15264,
     "margen_neto": 0.23583001,
@@ -10070,11 +10035,11 @@
      "largo_plazo": null
     },
     "crec_lynch": 4.1300002000000005,
-    "per_eff": 6.7272725,
-    "peg": 1.6288794610712123,
-    "div_ajustado": 0.6139189693891545,
-    "per_3a": 9.191963611710323,
-    "per_normalizado": 11.836476952380952,
+    "per_eff": 6.6904545,
+    "peg": 1.6199646915271335,
+    "div_ajustado": 0.6172974048325118,
+    "per_3a": 9.11780324522563,
+    "per_normalizado": 11.740980766173482,
     "ciclo_ratio": 1.6964285714285714,
     "ciclo_anios": 7,
     "alertas": [
@@ -10092,11 +10057,11 @@
    "sector": "Energy",
    "industria": "Oil & Gas Integrated",
    "moneda": "USD",
-   "precio": 46.900001525878906,
+   "precio": 47.13999938964844,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.019033671225127335,
-   "ret_ytd": 0.29701332200739583,
-   "ret_1a": 0.3558832413699782,
+   "var_dia": -0.01401384573096609,
+   "ret_ytd": 0.30365043109982603,
+   "ret_1a": 0.36282160108986306,
    "max_52": 57.61000061035156,
    "min_52": 32.779998779296875,
    "senal": "VENDER",
@@ -10127,7 +10092,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "no cumple",
-      "valor": "-40,0%",
+      "valor": "-39,8%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -10145,7 +10110,7 @@
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 8,6 > PER justo de la fórmula (6,4, g=0,0%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 8,7 > PER justo de la fórmula (6,4, g=0,0%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
@@ -10199,7 +10164,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "262,7",
+       "valor": "264,0",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -10207,7 +10172,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "cumple",
-       "valor": "P/VL 1,34 · PER×P/VL 351,4",
+       "valor": "P/VL 1,34 · PER×P/VL 355,0",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -10271,9 +10236,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.3461000794117643,
-     "margen_seguridad": -0.34610007941176435,
-     "precio_sobre_numero_graham": 0.7164997120175828,
+     "precio_sobre_valor_intrinseco": 1.3562194941176469,
+     "margen_seguridad": -0.35621949411764686,
+     "precio_sobre_numero_graham": 0.7210256311673865,
      "per_justo_formula": 6.415094339622643,
      "g_usado": 0.0,
      "tasa_aaa": 5.83
@@ -10282,8 +10247,8 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 46.900001525878906,
-    "market_cap_usd": 18388321733.034096,
+    "precio": 47.13999938964844,
+    "market_cap_usd": 18482419679.58803,
     "sector": "Energy",
     "industria": "Oil & Gas Integrated",
     "rend_div": 0.0,
@@ -10291,11 +10256,11 @@
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 19430545408.0,
-    "per": 8.635359,
+    "per": 8.700276,
     "ganancia_ttm_positiva": true,
-    "per_forward": 7.7824945,
-    "pb": 1.3376243349846582,
-    "ptbv": 1.4253408055991084,
+    "per_forward": 7.8410006,
+    "pb": 1.3444693154570475,
+    "ptbv": 1.432634654645999,
     "liquidez_corriente": 1.2402440574551925,
     "capital_trabajo_usd": 1890000000.0,
     "deuda_lp_usd": 8672000000.0,
@@ -10303,7 +10268,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.8013384738488397,
     "deuda_neta_ebitda": 0.9498124803359659,
-    "caja_neta_pct": -0.40036280128677415,
+    "caja_neta_pct": -0.3983244687453227,
     "patrimonio_activos": 0.4022060329442055,
     "roe": 0.18541999,
     "margen_neto": 0.115509994,
@@ -10366,11 +10331,11 @@
      "largo_plazo": null
     },
     "crec_lynch": -29.78,
-    "per_eff": 8.635359,
+    "per_eff": 8.700276,
     "peg": null,
-    "div_ajustado": -3.448611690608347,
-    "per_3a": 262.69031047191567,
-    "per_normalizado": 75.5684454782223,
+    "div_ajustado": -3.422879917832492,
+    "per_3a": 264.0345668512576,
+    "per_normalizado": 75.95514936816998,
     "ciclo_ratio": 9.22378730958904,
     "ciclo_anios": 6,
     "alertas": [
@@ -10390,11 +10355,11 @@
    "sector": "Financial Services",
    "industria": "Banks - Regional",
    "moneda": "USD",
-   "precio": 11.630000114440918,
+   "precio": 11.704999923706055,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.034854777563977146,
-   "ret_ytd": -0.30525685343757436,
-   "ret_1a": -0.27584056655144584,
+   "var_dia": -0.02863072710107306,
+   "ret_ytd": -0.3007765780319238,
+   "ret_1a": -0.2711705907258436,
    "max_52": 18.760000228881836,
    "min_52": 11.600000381469727,
    "senal": "COMPRAR",
@@ -10404,7 +10369,7 @@
     "categoria_nombre": "Crecimiento rápido",
     "categoria_motivo": "Crecimiento de ganancias estimado 34,8% ≥ 18%",
     "senal": "COMPRAR",
-    "motivo": "PEG 0,31 ≤ 1: el precio no refleja el crecimiento",
+    "motivo": "PEG 0,32 ≤ 1: el precio no refleja el crecimiento",
     "checks": [
      {
       "nombre": "Solidez (bancos): patrimonio / activos",
@@ -10417,7 +10382,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "cumple",
-      "valor": "31,5%",
+      "valor": "31,3%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -10433,9 +10398,9 @@
      {
       "nombre": "PEG (PER efectivo / crecimiento)",
       "estado": "cumple",
-      "valor": "0,31",
+      "valor": "0,32",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 16,0 → efectivo 10,9 · crecimiento 34,8%",
+      "nota": "PER 16,0 → efectivo 11,0 · crecimiento 34,8%",
       "informativo": false
      }
     ],
@@ -10443,7 +10408,7 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 45,1% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 44,9% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
@@ -10497,7 +10462,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "28,7",
+       "valor": "28,9",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -10505,7 +10470,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 4,24 · PER×P/VL 121,7",
+       "valor": "P/VL 4,27 · PER×P/VL 123,3",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -10559,7 +10524,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "4,65",
+       "valor": "4,68",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -10569,9 +10534,9 @@
      "aplicables": 4
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.5489992954545454,
-     "margen_seguridad": 0.4510007045454546,
-     "precio_sobre_numero_graham": 1.7338396570288606,
+     "precio_sobre_valor_intrinseco": 0.5506493506493506,
+     "margen_seguridad": 0.4493506493506494,
+     "precio_sobre_numero_graham": 1.7420332446937967,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -10580,8 +10545,8 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 11.630000114440918,
-    "market_cap_usd": 56180914680.46439,
+    "precio": 11.704999923706055,
+    "market_cap_usd": 56543211907.17372,
     "sector": "Financial Services",
     "industria": "Banks - Regional",
     "rend_div": 0.0,
@@ -10589,11 +10554,11 @@
     "tipo": "ACCION",
     "es_financiera": true,
     "ventas_usd": 8442067968.0,
-    "per": 15.952055,
+    "per": 16.0,
     "ganancia_ttm_positiva": true,
-    "per_forward": 10.34633,
-    "pb": 4.240174636837325,
-    "ptbv": 4.645662353371241,
+    "per_forward": 10.377426,
+    "pb": 4.267518504775872,
+    "ptbv": 4.675621114214265,
     "liquidez_corriente": null,
     "capital_trabajo_usd": null,
     "deuda_lp_usd": 2814338000.0,
@@ -10601,7 +10566,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.1459920888595716,
     "deuda_neta_ebitda": null,
-    "caja_neta_pct": 0.314520012721408,
+    "caja_neta_pct": 0.3125047446722456,
     "patrimonio_activos": 0.1601102523697693,
     "roe": 0.31628,
     "margen_neto": 0.42728,
@@ -10659,18 +10624,18 @@
     "crec_10a_anios": 7,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": 34.77538722655268,
+     "final": 34.83566507417652,
      "historico": null,
      "historico_anios": null,
      "estimado_1_2a": 29.439999999999998,
-     "largo_plazo": 40.11077445310536
+     "largo_plazo": 40.23133014835303
     },
-    "crec_lynch": 34.77538722655268,
-    "per_eff": 10.934814458467399,
-    "peg": 0.31444119909377005,
-    "div_ajustado": 2.1799941905010156,
-    "per_3a": 28.705061410083495,
-    "per_normalizado": 77.4460362503721,
+    "crec_lynch": 34.83566507417652,
+    "per_eff": 10.999924085244071,
+    "peg": 0.3157661569492541,
+    "div_ajustado": 2.1772290671360324,
+    "per_3a": 28.890173457485073,
+    "per_normalizado": 77.94546713918419,
     "ciclo_ratio": 4.972437122841719,
     "ciclo_anios": 7,
     "alertas": [
@@ -10690,11 +10655,11 @@
    "sector": "Consumer Cyclical",
    "industria": "Auto Manufacturers",
    "moneda": "USD",
-   "precio": 388.2405090332031,
+   "precio": 391.3599853515625,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.037340637777297236,
-   "ret_ytd": -0.13670615498670813,
-   "ret_1a": -0.11783571086366829,
+   "var_dia": -0.02960575949120925,
+   "ret_ytd": -0.12976966937367784,
+   "ret_1a": -0.11074760299023723,
    "max_52": 489.8800048828125,
    "min_52": 298.32000732421875,
    "senal": "VENDER",
@@ -10704,7 +10669,7 @@
     "categoria_nombre": "Cíclica",
     "categoria_motivo": "Industria cíclica (Auto Manufacturers) con ganancias volátiles en el ciclo",
     "senal": "VENDER",
-    "motivo": "PER normalizado 245,2 > 22",
+    "motivo": "PER normalizado 247,1 > 22",
     "checks": [
      {
       "nombre": "Deuda / patrimonio",
@@ -10741,7 +10706,7 @@
      {
       "nombre": "PER normalizado (ganancia promedio 7 años)",
       "estado": "no cumple",
-      "valor": "245,2",
+      "valor": "247,1",
       "umbral": "≤ 12 compra · > 22 venta",
       "nota": "",
       "informativo": false
@@ -10759,7 +10724,7 @@
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 428,2 > PER justo de la fórmula (29,1, g=15,0%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 431,0 > PER justo de la fórmula (29,1, g=15,0%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
@@ -10813,7 +10778,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "177,9",
+       "valor": "179,3",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -10821,7 +10786,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 17,19 · PER×P/VL 3.057,2",
+       "valor": "P/VL 17,33 · PER×P/VL 3.106,5",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -10875,7 +10840,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "17,34",
+       "valor": "17,48",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -10885,9 +10850,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 14.738315714285713,
-     "margen_seguridad": -13.738315714285713,
-     "precio_sobre_numero_graham": 18.08652439895468,
+     "precio_sobre_valor_intrinseco": 14.833115850649351,
+     "margen_seguridad": -13.833115850649351,
+     "precio_sobre_numero_graham": 18.217348379685415,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -10896,8 +10861,8 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 388.2405090332031,
-    "market_cap_usd": 1534609942704.3086,
+    "precio": 391.3599853515625,
+    "market_cap_usd": 1546940338977.2622,
     "sector": "Consumer Cyclical",
     "industria": "Auto Manufacturers",
     "rend_div": 0.0,
@@ -10905,11 +10870,11 @@
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 103569997824.0,
-    "per": 428.2454,
+    "per": 430.99997,
     "ganancia_ttm_positiva": true,
-    "per_forward": 180.8108,
-    "pb": 17.186998876729593,
-    "ptbv": 17.33963755696766,
+    "per_forward": 181.97383,
+    "pb": 17.32509423307756,
+    "ptbv": 17.478959345753953,
     "liquidez_corriente": 1.7386644275412426,
     "capital_trabajo_usd": 29910000000.0,
     "deuda_lp_usd": 7956000000.0,
@@ -10917,7 +10882,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.18417722227822017,
     "deuda_neta_ebitda": -2.9244764815681044,
-    "caja_neta_pct": 0.01874808653285498,
+    "caja_neta_pct": 0.01859864874880795,
     "patrimonio_activos": 0.5668531015699892,
     "roe": 0.03844,
     "margen_neto": 0.031070001,
@@ -11001,14 +10966,14 @@
      "historico": 38.75874605795031,
      "historico_anios": 5,
      "estimado_1_2a": 23.84,
-     "largo_plazo": 90.84736629966694
+     "largo_plazo": 91.43171683743822
     },
     "crec_lynch": 38.75874605795031,
-    "per_eff": 420.21661818350293,
-    "peg": 10.841852766733325,
-    "div_ajustado": 0.09050592500923609,
-    "per_3a": 177.87766896348526,
-    "per_normalizado": 245.1677377882545,
+    "per_eff": 422.98395294722326,
+    "peg": 10.913251742324091,
+    "div_ajustado": 0.08992749131270313,
+    "per_3a": 179.30689347545731,
+    "per_normalizado": 247.1376294696192,
     "ciclo_ratio": 0.514423954719737,
     "ciclo_anios": 7,
     "alertas": [
@@ -11026,11 +10991,11 @@
    "sector": "Technology",
    "industria": "Consumer Electronics",
    "moneda": "USD",
-   "precio": 345.7379150390625,
+   "precio": 344.82000732421875,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.009091423546912059,
-   "ret_ytd": 0.2752115402235402,
-   "ret_1a": 0.27861123927036213,
+   "var_dia": -0.011722210011070544,
+   "ret_ytd": 0.27182595114026964,
+   "ret_1a": 0.2752166242462053,
    "max_52": 348.9100036621094,
    "min_52": 246.0303192138672,
    "senal": "VENDER",
@@ -11038,9 +11003,9 @@
    "lynch": {
     "categoria": "estable",
     "categoria_nombre": "Estable (stalwart)",
-    "categoria_motivo": "Crecimiento de ganancias estimado 14,2% entre 7% y 18%",
+    "categoria_motivo": "Crecimiento de ganancias estimado 14,1% entre 7% y 18%",
     "senal": "VENDER",
-    "motivo": "PEG 2,80 y (crec.+div.)/PER 0,37: paga demasiado por un crecimiento de 14,2%",
+    "motivo": "PEG 2,80 y (crec.+div.)/PER 0,37: paga demasiado por un crecimiento de 14,1%",
     "checks": [
      {
       "nombre": "Deuda / patrimonio",
@@ -11071,7 +11036,7 @@
       "estado": "no cumple",
       "valor": "2,80",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 39,6 → efectivo 39,6 · crecimiento 14,2%",
+      "nota": "PER 39,5 → efectivo 39,5 · crecimiento 14,1%",
       "informativo": false
      },
      {
@@ -11087,7 +11052,7 @@
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 39,6 > PER justo de la fórmula (27,8, g=14,2%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 39,5 > PER justo de la fórmula (27,7, g=14,1%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
@@ -11141,7 +11106,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "50,0",
+       "valor": "49,9",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -11149,7 +11114,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 46,93 · PER×P/VL 2.346,5",
+       "valor": "P/VL 46,80 · PER×P/VL 2.334,0",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -11203,7 +11168,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "57,88",
+       "valor": "57,73",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -11213,31 +11178,31 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.4249544489675938,
-     "margen_seguridad": -0.4249544489675938,
-     "precio_sobre_numero_graham": 9.09133781178772,
-     "per_justo_formula": 27.80991703188206,
-     "g_usado": 14.174070033621863,
+     "precio_sobre_valor_intrinseco": 1.4239628955990955,
+     "margen_seguridad": -0.4239628955990955,
+     "precio_sobre_numero_graham": 9.065589037868007,
+     "per_justo_formula": 27.74552772555059,
+     "g_usado": 14.131412118177268,
      "tasa_aaa": 5.83
     }
    },
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 345.7379150390625,
-    "market_cap_usd": 5045761163890.4375,
+    "precio": 344.82000732421875,
+    "market_cap_usd": 5032365387588.697,
     "sector": "Technology",
     "industria": "Consumer Electronics",
-    "rend_div": 0.30659061499813756,
+    "rend_div": 0.3074067564192497,
     "racha_dividendos": 15,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 466822987776.0,
-    "per": 39.627865,
+    "per": 39.508602,
     "ganancia_ttm_positiva": true,
-    "per_forward": 36.132538,
-    "pb": 46.92858225344529,
-    "ptbv": 57.87883598947484,
+    "per_forward": 36.023796,
+    "pb": 46.80399356016274,
+    "ptbv": 57.7251759341657,
     "liquidez_corriente": 1.0032948046555858,
     "capital_trabajo_usd": 492000000.0,
     "deuda_lp_usd": 71340000000.0,
@@ -11245,7 +11210,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.7844494047619047,
     "deuda_neta_ebitda": 0.13065688406253914,
-    "caja_neta_pct": -0.004349195153557314,
+    "caja_neta_pct": -0.004360772382331948,
     "patrimonio_activos": 0.2805362333209833,
     "roe": 1.4875101,
     "margen_neto": 0.27618998,
@@ -11323,18 +11288,18 @@
     "crec_10a_anios": 10,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": 14.174070033621863,
+     "final": 14.131412118177268,
      "historico": 17.853829118440025,
      "historico_anios": 5,
      "estimado_1_2a": 8.25,
-     "largo_plazo": 14.174070033621863
+     "largo_plazo": 14.131412118177268
     },
-    "crec_lynch": 14.174070033621863,
-    "per_eff": 39.627865,
+    "crec_lynch": 14.131412118177268,
+    "per_eff": 39.508602,
     "peg": 2.7958,
-    "div_ajustado": 0.365416119405373,
-    "per_3a": 50.00077125883614,
-    "per_normalizado": 57.91252559429974,
+    "div_ajustado": 0.3654601313049881,
+    "per_3a": 49.86802634187669,
+    "per_normalizado": 57.75877609789434,
     "ciclo_ratio": 1.4797889747512258,
     "ciclo_anios": 7,
     "alertas": []
@@ -11348,11 +11313,11 @@
    "sector": "Communication Services",
    "industria": "Internet Content & Information",
    "moneda": "USD",
-   "precio": 279.07501220703125,
+   "precio": 280.1000061035156,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.01149403171225094,
-   "ret_ytd": -0.10891929425493707,
-   "ret_1a": -0.0074367918281144085,
+   "var_dia": -0.007863421518524039,
+   "ret_ytd": -0.10564651007608661,
+   "ret_1a": -0.0037912800991876106,
    "max_52": 398.541259765625,
    "min_52": 272.79864501953125,
    "senal": "MANTENER",
@@ -11360,7 +11325,7 @@
    "lynch": {
     "categoria": "estable",
     "categoria_nombre": "Estable (stalwart)",
-    "categoria_motivo": "Crecimiento de ganancias estimado 13,0% entre 7% y 18%",
+    "categoria_motivo": "Crecimiento de ganancias estimado 12,9% entre 7% y 18%",
     "senal": "MANTENER",
     "motivo": "PEG 1,09 · (crec.+div.)/PER 0,91: precio razonable",
     "checks": [
@@ -11393,7 +11358,7 @@
       "estado": "no cumple",
       "valor": "1,09",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 14,6 → efectivo 14,1 · crecimiento 13,0%",
+      "nota": "PER 14,6 → efectivo 14,0 · crecimiento 12,9%",
       "informativo": false
      },
      {
@@ -11409,7 +11374,7 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 43,6% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 43,7% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
@@ -11463,7 +11428,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "33,6",
+       "valor": "33,8",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -11471,7 +11436,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 5,36 · PER×P/VL 180,1",
+       "valor": "P/VL 5,38 · PER×P/VL 181,5",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -11525,7 +11490,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "5,98",
+       "valor": "6,00",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -11535,31 +11500,31 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.5637588003174043,
-     "margen_seguridad": 0.43624119968259567,
-     "precio_sobre_numero_graham": 1.8670503812686383,
-     "per_justo_formula": 25.971239813474515,
-     "g_usado": 12.955946376426864,
+     "precio_sobre_valor_intrinseco": 0.5632807812946571,
+     "margen_seguridad": 0.4367192187053429,
+     "precio_sobre_numero_graham": 1.8672605814430039,
+     "per_justo_formula": 25.904281638125195,
+     "g_usado": 12.91158658525794,
      "tasa_aaa": 5.83
     }
    },
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 279.07501220703125,
-    "market_cap_usd": 3430948101352.64,
+    "precio": 280.1000061035156,
+    "market_cap_usd": 3443510902612.787,
     "sector": "Communication Services",
     "industria": "Internet Content & Information",
-    "rend_div": 0.30816087517072677,
+    "rend_div": 0.30703319573730126,
     "racha_dividendos": 3,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 471097999360.0,
-    "per": 14.641515,
+    "per": 14.591384,
     "ganancia_ttm_positiva": true,
-    "per_forward": 18.521124,
-    "pb": 5.356838779279041,
-    "ptbv": 5.981982472844667,
+    "per_forward": 18.457708,
+    "pb": 5.3764534452485435,
+    "ptbv": 6.003886172559158,
     "liquidez_corriente": 2.723981254609035,
     "capital_trabajo_usd": 217413000000.0,
     "deuda_lp_usd": 98165000000.0,
@@ -11567,7 +11532,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.17604921309018237,
     "deuda_neta_ebitda": -0.7012883030226842,
-    "caja_neta_pct": 0.037808208159388686,
+    "caja_neta_pct": 0.037670274225522445,
     "patrimonio_activos": 0.6946765829738726,
     "roe": 0.44286,
     "margen_neto": 0.50031,
@@ -11641,18 +11606,18 @@
     "crec_10a_anios": 10,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": 12.955946376426864,
+     "final": 12.91158658525794,
      "historico": 29.839591160275525,
      "historico_anios": 5,
      "estimado_1_2a": -7.090000000000001,
-     "largo_plazo": 12.955946376426864
+     "largo_plazo": 12.91158658525794
     },
-    "crec_lynch": 12.955946376426864,
-    "per_eff": 14.087945553111188,
-    "peg": 1.087372943959075,
-    "div_ajustado": 0.9059245065553387,
-    "per_3a": 33.6276248731812,
-    "per_normalizado": 46.48081422386003,
+    "crec_lynch": 12.91158658525794,
+    "per_eff": 14.041722563390099,
+    "peg": 1.0875288230977371,
+    "div_ajustado": 0.905919533129636,
+    "per_3a": 33.75075619305339,
+    "per_normalizado": 46.65100893804821,
     "ciclo_ratio": 3.1878653839829685,
     "ciclo_anios": 7,
     "alertas": [
@@ -11670,11 +11635,11 @@
    "sector": "Technology",
    "industria": "Semiconductors",
    "moneda": "USD",
-   "precio": 206.25360107421875,
+   "precio": 206.3800048828125,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.03466443162475752,
-   "ret_ytd": 0.10850529730775893,
-   "ret_1a": 0.01901397976105068,
+   "var_dia": -0.03407281968790832,
+   "ret_ytd": 0.10918465170785785,
+   "ret_1a": 0.019638488847831148,
    "max_52": 239.24000549316406,
    "min_52": 164.79331970214844,
    "senal": "MANTENER",
@@ -11795,7 +11760,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 21,75 · PER×P/VL 1.459,1",
+       "valor": "P/VL 21,76 · PER×P/VL 1.461,0",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -11849,7 +11814,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "24,31",
+       "valor": "24,33",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -11859,9 +11824,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.8994171584415585,
-     "margen_seguridad": 0.10058284155844155,
-     "precio_sobre_numero_graham": 5.026124574320896,
+     "precio_sobre_valor_intrinseco": 0.8989411220779221,
+     "margen_seguridad": 0.1010588779220779,
+     "precio_sobre_numero_graham": 5.026429745776901,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -11870,20 +11835,20 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 206.25360107421875,
-    "market_cap_usd": 4980215470389.279,
+    "precio": 206.3800048828125,
+    "market_cap_usd": 4983457861691.123,
     "sector": "Technology",
     "industria": "Semiconductors",
-    "rend_div": 0.25211681022377985,
+    "rend_div": 0.2519623934960504,
     "racha_dividendos": 15,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 302970011648.0,
-    "per": 26.134008,
+    "per": 26.120176,
     "ganancia_ttm_positiva": true,
-    "per_forward": 12.98933,
-    "pb": 21.74918540330014,
-    "ptbv": 24.310217515238524,
+    "per_forward": 12.982456,
+    "pb": 21.763345306620213,
+    "ptbv": 24.326044789838587,
     "liquidez_corriente": 4.588949069016016,
     "capital_trabajo_usd": 154393000000.0,
     "deuda_lp_usd": 32366000000.0,
@@ -11891,7 +11856,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.16748331761171087,
     "deuda_neta_ebitda": -0.11983146445255904,
-    "caja_neta_pct": 0.0048427623550422036,
+    "caja_neta_pct": 0.004839611504573979,
     "patrimonio_activos": 0.7149672778138583,
     "roe": 1.17211,
     "margen_neto": 0.63663,
@@ -11975,14 +11940,14 @@
      "historico": 95.62634964187018,
      "historico_anios": 5,
      "estimado_1_2a": 70.89999999999999,
-     "largo_plazo": 100.2839907904835
+     "largo_plazo": 100.23091327705296
     },
     "crec_lynch": 50,
-    "per_eff": 26.00744720987123,
-    "peg": 0.5201489441974246,
-    "div_ajustado": 1.9228629917854076,
-    "per_3a": 67.08655952066094,
-    "per_normalizado": 142.9013887508965,
+    "per_eff": 25.993764495728904,
+    "peg": 0.5198752899145781,
+    "div_ajustado": 1.9238753365787447,
+    "per_3a": 67.13023652185773,
+    "per_normalizado": 142.99442533187622,
     "ciclo_ratio": 5.534463352536328,
     "ciclo_anios": 7,
     "alertas": [
@@ -12003,11 +11968,11 @@
    "sector": "Consumer Cyclical",
    "industria": "Internet Retail",
    "moneda": "USD",
-   "precio": 233.2899932861328,
+   "precio": 238.19000244140625,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.04306985638937322,
-   "ret_ytd": 0.010700917960047684,
-   "ret_1a": 0.04680064904970127,
+   "var_dia": -0.022970552520397924,
+   "ret_ytd": 0.031929619978026125,
+   "ret_1a": 0.06878758767419035,
    "max_52": 284.0199890136719,
    "min_52": 198.7899932861328,
    "senal": "VENDER",
@@ -12015,9 +11980,9 @@
    "lynch": {
     "categoria": "lento",
     "categoria_nombre": "Crecimiento lento",
-    "categoria_motivo": "Crecimiento de ganancias estimado -2,5% < 7%",
+    "categoria_motivo": "Crecimiento de ganancias estimado -2,4% < 7%",
     "senal": "VENDER",
-    "motivo": "PEG s/d y (crec.+div.)/PER -0,13: paga demasiado por un crecimiento de -2,5%",
+    "motivo": "PEG s/d y (crec.+div.)/PER -0,13: paga demasiado por un crecimiento de -2,4%",
     "checks": [
      {
       "nombre": "Deuda / patrimonio",
@@ -12056,7 +12021,7 @@
       "estado": "sin datos",
       "valor": "s/d",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 18,9 → efectivo 18,9 · crecimiento -2,5%",
+      "nota": "PER 19,1 → efectivo 19,1 · crecimiento -2,4%",
       "informativo": false
      },
      {
@@ -12072,7 +12037,7 @@
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 18,9 > PER justo de la fórmula (6,4, g=0,0%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 19,1 > PER justo de la fórmula (6,4, g=0,0%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
@@ -12126,7 +12091,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "45,2",
+       "valor": "46,2",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -12134,7 +12099,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 5,71 · PER×P/VL 258,0",
+       "valor": "P/VL 5,83 · PER×P/VL 269,0",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -12188,7 +12153,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "6,03",
+       "valor": "6,15",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -12198,9 +12163,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 2.9400689999999994,
-     "margen_seguridad": -1.9400689999999994,
-     "precio_sobre_numero_graham": 2.1872636622946056,
+     "precio_sobre_valor_intrinseco": 2.9803249941176464,
+     "margen_seguridad": -1.9803249941176464,
+     "precio_sobre_numero_graham": 2.2251940206800946,
      "per_justo_formula": 6.415094339622643,
      "g_usado": 0.0,
      "tasa_aaa": 5.83
@@ -12209,8 +12174,8 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 233.2899932861328,
-    "market_cap_usd": 2522098152634.7725,
+    "precio": 238.19000244140625,
+    "market_cap_usd": 2575071988504.1025,
     "sector": "Consumer Cyclical",
     "industria": "Internet Retail",
     "rend_div": 0.0,
@@ -12218,11 +12183,11 @@
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 775680032768.0,
-    "per": 18.86082,
+    "per": 19.119066,
     "ganancia_ttm_positiva": true,
-    "per_forward": 22.434256,
-    "pb": 5.707214871297973,
-    "ptbv": 6.02702293533455,
+    "per_forward": 22.74143,
+    "pb": 5.827088502523347,
+    "ptbv": 6.153613775355412,
     "liquidez_corriente": 1.1771531122552548,
     "capital_trabajo_usd": 38399000000.0,
     "deuda_lp_usd": 119074000000.0,
@@ -12230,7 +12195,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.47495214000914204,
     "deuda_neta_ebitda": 0.39546629028599156,
-    "caja_neta_pct": -0.026485487858677017,
+    "caja_neta_pct": -0.025940634008762033,
     "patrimonio_activos": 0.4821072842913717,
     "roe": 0.30558002,
     "margen_neto": 0.1744,
@@ -12310,26 +12275,26 @@
     "crec_10a_anios": 10,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": -2.495021234428086,
+     "final": -2.403626132502831,
      "historico": null,
      "historico_anios": null,
      "estimado_1_2a": -18.34,
-     "largo_plazo": 13.349957531143827
+     "largo_plazo": 13.532747734994338
     },
-    "crec_lynch": -2.495021234428086,
-    "per_eff": 18.86082,
+    "crec_lynch": -2.403626132502831,
+    "per_eff": 19.119066,
     "peg": null,
-    "div_ajustado": -0.13228593637116975,
-    "per_3a": 45.21428717008968,
-    "per_normalizado": 76.45899191197817,
+    "div_ajustado": -0.1257188051185571,
+    "per_3a": 46.16396243351863,
+    "per_normalizado": 78.0649270672172,
     "ciclo_ratio": 4.101128621141253,
     "ciclo_anios": 7,
     "alertas": [
-     "Estimaciones de crecimiento muy dispares (analistas próximo año -18% · largo plazo 13%): conviene revisar la categoría de Lynch a mano"
+     "Estimaciones de crecimiento muy dispares (analistas próximo año -18% · largo plazo 14%): conviene revisar la categoría de Lynch a mano"
     ]
    },
    "alertas": [
-    "Estimaciones de crecimiento muy dispares (analistas próximo año -18% · largo plazo 13%): conviene revisar la categoría de Lynch a mano"
+    "Estimaciones de crecimiento muy dispares (analistas próximo año -18% · largo plazo 14%): conviene revisar la categoría de Lynch a mano"
    ]
   },
   {
@@ -12339,11 +12304,11 @@
    "sector": "Technology",
    "industria": "Software - Infrastructure",
    "moneda": "USD",
-   "precio": 519.0599975585938,
+   "precio": 520.3079833984375,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.020900171244744636,
-   "ret_ytd": 0.08008976237026721,
-   "ret_1a": -0.004620567347663029,
+   "var_dia": -0.018546102875332093,
+   "ret_ytd": 0.08268664276085458,
+   "ret_1a": -0.002227474400313567,
    "max_52": 543.4500122070312,
    "min_52": 352.1670227050781,
    "senal": "MANTENER",
@@ -12353,7 +12318,7 @@
     "categoria_nombre": "Estable (stalwart)",
     "categoria_motivo": "Crecimiento de ganancias estimado 17,4% entre 7% y 18%",
     "senal": "MANTENER",
-    "motivo": "PEG 1,54 · (crec.+div.)/PER 0,67: precio razonable",
+    "motivo": "PEG 1,56 · (crec.+div.)/PER 0,66: precio razonable",
     "checks": [
      {
       "nombre": "Deuda / patrimonio",
@@ -12382,15 +12347,15 @@
      {
       "nombre": "PEG (PER efectivo / crecimiento)",
       "estado": "no cumple",
-      "valor": "1,54",
+      "valor": "1,56",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 26,9 → efectivo 26,7 · crecimiento 17,4%",
+      "nota": "PER 27,2 → efectivo 27,1 · crecimiento 17,4%",
       "informativo": false
      },
      {
       "nombre": "(Crecimiento + dividendo) / PER",
       "estado": "no cumple",
-      "valor": "0,67",
+      "valor": "0,66",
       "umbral": "≥ 2 compra · < 1 venta",
       "nota": "Rend. dividendo 0,7%",
       "informativo": false
@@ -12400,7 +12365,7 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 7,5% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 6,2% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
@@ -12454,7 +12419,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "35,7",
+       "valor": "35,8",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -12462,7 +12427,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 8,71 · PER×P/VL 311,1",
+       "valor": "P/VL 8,73 · PER×P/VL 312,8",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -12516,7 +12481,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "12,67",
+       "valor": "12,70",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -12526,9 +12491,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.9248918493506493,
-     "margen_seguridad": 0.07510815064935072,
-     "precio_sobre_numero_graham": 3.2255683937865696,
+     "precio_sobre_valor_intrinseco": 0.93755527012987,
+     "margen_seguridad": 0.062444729870129945,
+     "precio_sobre_numero_graham": 3.2519348430750887,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -12537,20 +12502,20 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 519.0599975585938,
-    "market_cap_usd": 3853555168545.1226,
+    "precio": 520.3079833984375,
+    "market_cap_usd": 3863908330613.533,
     "sector": "Technology",
     "industria": "Software - Infrastructure",
-    "rend_div": 0.7012676794822935,
+    "rend_div": 0.6995856523717009,
     "racha_dividendos": 24,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 346444988416.0,
-    "per": 26.874216,
+    "per": 27.242172,
     "ganancia_ttm_positiva": true,
-    "per_forward": 21.33377,
-    "pb": 8.710823709885513,
-    "ptbv": 12.670874892874103,
+    "per_forward": 21.625868,
+    "pb": 8.734226662658562,
+    "ptbv": 12.704917125455921,
     "liquidez_corriente": 1.2303272619576484,
     "capital_trabajo_usd": 38885000000.0,
     "deuda_lp_usd": 31067000000.0,
@@ -12558,7 +12523,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.12845314170624364,
     "deuda_neta_ebitda": -0.09633700497959723,
-    "caja_neta_pct": 0.0051446000207348175,
+    "caja_neta_pct": 0.0051308153050442775,
     "patrimonio_activos": 0.5833346519404623,
     "roe": 0.34221,
     "margen_neto": 0.41169998,
@@ -12640,14 +12605,14 @@
      "historico": 17.398690013462392,
      "historico_anios": 5,
      "estimado_1_2a": 20.549999,
-     "largo_plazo": 15.609116570831155
+     "largo_plazo": 15.822833246210141
     },
     "crec_lynch": 17.398690013462392,
-    "per_eff": 26.73595890780917,
-    "peg": 1.5366650527782253,
-    "div_ajustado": 0.6735064454696905,
-    "per_3a": 35.71225949096083,
-    "per_normalizado": 46.964465603612766,
+    "per_eff": 27.102397446959753,
+    "peg": 1.5577263245674835,
+    "div_ajustado": 0.6643477497254658,
+    "per_3a": 35.80820590775461,
+    "per_normalizado": 47.09064278353727,
     "ciclo_ratio": 1.738287922446933,
     "ciclo_anios": 7,
     "alertas": []
@@ -12661,11 +12626,11 @@
    "sector": "Communication Services",
    "industria": "Internet Content & Information",
    "moneda": "USD",
-   "precio": 610.9249877929688,
+   "precio": 614.7100219726562,
    "fecha_precio": "2026-10-30",
-   "var_dia": -0.021768768515195602,
-   "ret_ytd": -0.07209970756859208,
-   "ret_1a": -0.08023272161896178,
+   "var_dia": -0.01570805939248654,
+   "ret_ytd": -0.06635074121565454,
+   "ret_1a": -0.07453423055116781,
    "max_52": 777.5900268554688,
    "min_52": 524.8190307617188,
    "senal": "MANTENER",
@@ -12675,7 +12640,7 @@
     "categoria_nombre": "Crecimiento rápido",
     "categoria_motivo": "Crecimiento de ganancias estimado 18,4% ≥ 18%",
     "senal": "MANTENER",
-    "motivo": "PEG 1,13 entre 1 y 2",
+    "motivo": "PEG 1,14 entre 1 y 2",
     "checks": [
      {
       "nombre": "Deuda / patrimonio",
@@ -12704,9 +12669,9 @@
      {
       "nombre": "PEG (PER efectivo / crecimiento)",
       "estado": "no cumple",
-      "valor": "1,13",
+      "valor": "1,14",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 20,9 → efectivo 20,9 · crecimiento 18,4%",
+      "nota": "PER 21,0 → efectivo 21,0 · crecimiento 18,4%",
       "informativo": false
      }
     ],
@@ -12714,7 +12679,7 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 28,1% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 27,7% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
@@ -12768,7 +12733,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "28,9",
+       "valor": "29,1",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -12776,7 +12741,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 5,73 · PER×P/VL 165,9",
+       "valor": "P/VL 5,77 · PER×P/VL 168,0",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -12830,7 +12795,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "6,27",
+       "valor": "6,31",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -12840,9 +12805,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.7189229051948052,
-     "margen_seguridad": 0.2810770948051948,
-     "precio_sobre_numero_graham": 2.307336218235413,
+     "precio_sobre_valor_intrinseco": 0.7225393980519481,
+     "margen_seguridad": 0.2774606019480519,
+     "precio_sobre_numero_graham": 2.3203626314222467,
      "per_justo_formula": 29.056603773584907,
      "g_usado": 15,
      "tasa_aaa": 5.83
@@ -12851,20 +12816,20 @@
    "metricas": {
     "moneda": "USD",
     "moneda_balance": "USD",
-    "precio": 610.9249877929688,
-    "market_cap_usd": 1561931180859.0422,
+    "precio": 614.7100219726562,
+    "market_cap_usd": 1571710814509.778,
     "sector": "Communication Services",
     "industria": "Internet Content & Information",
-    "rend_div": 0.3437410552785658,
+    "rend_div": 0.34162449365327135,
     "racha_dividendos": 3,
     "tipo": "ACCION",
     "es_financiera": false,
     "ventas_usd": 241605001216.0,
-    "per": 20.889458,
+    "per": 20.994541,
     "ganancia_ttm_positiva": true,
-    "per_forward": 17.204468,
-    "pb": 5.73425646273686,
-    "ptbv": 6.273697832462564,
+    "per_forward": 17.291014,
+    "pb": 5.770160046807758,
+    "ptbv": 6.312978991062109,
     "liquidez_corriente": 1.902842360857628,
     "capital_trabajo_usd": 56889000000.0,
     "deuda_lp_usd": 80922000000.0,
@@ -12872,7 +12837,7 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.4216149141292137,
     "deuda_neta_ebitda": 0.27879334803219974,
-    "caja_neta_pct": -0.02073906993916612,
+    "caja_neta_pct": -0.02061002552184098,
     "patrimonio_activos": 0.5688502952994344,
     "roe": 0.32264,
     "margen_neto": 0.31145,
@@ -12954,14 +12919,14 @@
      "historico": 18.415463484501625,
      "historico_anios": 5,
      "estimado_1_2a": 16.49,
-     "largo_plazo": 26.105296175956013
+     "largo_plazo": 26.23661709572607
     },
     "crec_lynch": 18.415463484501625,
-    "per_eff": 20.889458,
-    "peg": 1.1343433206327107,
-    "div_ajustado": 0.8980225595025104,
-    "per_3a": 28.93965724559109,
-    "per_normalizado": 40.179475247828314,
+    "per_eff": 20.994541,
+    "peg": 1.14004955768118,
+    "div_ajustado": 0.8934269140799456,
+    "per_3a": 29.120855527121066,
+    "per_normalizado": 40.43104878257679,
     "ciclo_ratio": 1.9357225132424658,
     "ciclo_anios": 7,
     "alertas": []
