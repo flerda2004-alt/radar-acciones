@@ -232,3 +232,29 @@ def test_inventario_irrelevante_no_alerta():
     raw["balance"].loc["Inventory"] = [1.0, 1.5, 2.5, 4.0, 8.0]   # crece fuerte pero es < 5% de ventas
     m = construir("XYZ", raw, {"precio": 20.0}, TCFalso(), None, CFG)
     assert m["inventario_brecha_pp"] is None
+
+
+def test_quiebre_nu_y_pampa():
+    from radar.metricas import cortar_quiebres
+    idx = pd.to_datetime([f"{y}-12-31" for y in range(2019, 2026)])
+    nu = pd.Series([1137931.0, 1315578.0, -0.103, -0.078, 0.2121, 0.4034, 0.5846], index=idx)
+    out, q = cortar_quiebres(nu)
+    assert q and out.index[0].year == 2021
+    idx2 = pd.to_datetime([f"{y}-12-31" for y in range(2017, 2026)])
+    pam = pd.Series([5.61, 4.31, 0.38, -0.23, 0.19, 0.33, 0.22, 0.46, 0.28], index=idx2)
+    out, q = cortar_quiebres(pam)
+    assert q and out.index[0].year == 2019
+
+
+def test_quiebre_no_corta_caidas_reales():
+    from radar.metricas import cortar_quiebres
+    idx = pd.to_datetime([f"{y}-12-31" for y in range(2014, 2026)])
+    brk = pd.Series([19.9, 24.1, 24.1, 44.9, 4.0, 81.4, 42.5, 89.9, -22.8, 96.2, 89.0, 67.0], index=idx)
+    out, q = cortar_quiebres(brk)
+    assert not q and len(out) == 12
+    amzn = pd.Series([-0.026, 0.0625, 0.245, 0.3075, 1.007, 1.15, 2.09, 3.24, -0.27, 2.9, 5.53, 7.17], index=idx)
+    out, q = cortar_quiebres(amzn)
+    assert not q
+    intc = pd.Series([2.31, 2.33, 2.12, 1.99, 4.48, 4.71, 4.94, 4.86, 1.94, 0.4, -4.38, -0.06], index=idx)
+    out, q = cortar_quiebres(intc)
+    assert not q

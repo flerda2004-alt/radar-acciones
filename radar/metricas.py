@@ -56,6 +56,8 @@ def crecimiento_historico(eps: pd.Series, objetivo=5.0, minimo=2.5):
     if not previos:
         return None, None
     _, t0 = min(previos)
+    if (eps[eps.index >= t0] <= 0).any():
+        return None, None  # una tasa compuesta que atraviesa años con pérdidas no tiene sentido
     return cagr(float(eps[t0]), v1, anios_entre(t0, fin)), round(anios_entre(t0, fin))
 
 
@@ -91,6 +93,31 @@ def ajustar_splits_yahoo(eps: pd.Series, ganancia: pd.Series, splits) -> pd.Seri
                 eps[eps.index < f] = eps[eps.index < f] / r
                 acciones[acciones.index < f] = acciones[acciones.index < f] * r
     return eps
+
+
+def cortar_quiebres(s: pd.Series, salto: float = 10.0, nivel: float = 8.0, min_restante: int = 4) -> tuple[pd.Series, bool]:
+    """Detecta cambios de base en la serie de la SEC (moneda o cantidad de acciones mal etiquetadas,
+    ej. Pampa informaba en ARS antes de 2019; Nu antes de su IPO) y descarta la parte vieja.
+    Un quiebre es un salto > 'salto' veces entre años consecutivos que además cambia el NIVEL
+    de la serie (mediana de los 2 años previos vs. los 3 siguientes > 'nivel' veces).
+    Así no se corta una caída real de ganancias que después se recupera (ej. Berkshire 2018)."""
+    if s is None or len(s) < min_restante + 1:
+        return s, False
+    v = [float(x) for x in s.values]
+    for i in range(len(v) - 1, 0, -1):
+        a, b = abs(v[i - 1]), abs(v[i])
+        if a == 0 or b == 0:
+            continue
+        if max(a, b) / min(a, b) <= salto:
+            continue
+        viejos = [abs(x) for x in v[max(0, i - 2):i] if x]
+        nuevos = [abs(x) for x in v[i:i + 3] if x]
+        if not viejos or not nuevos:
+            continue
+        r = statistics.median(viejos) / statistics.median(nuevos)
+        if (r > nivel or r < 1 / nivel) and len(v) - i >= min_restante:
+            return s.iloc[i:], True
+    return s, False
 
 
 def empalmar(base: pd.Series, extra: pd.Series, tolerancia: float = 0.15) -> tuple[pd.Series, int]:
@@ -266,7 +293,11 @@ def construir(sym: str, raw: dict, px: dict, tc: TipoCambio, hist_edgar: dict | 
     fuente, eps, gan, moneda_hist = "Yahoo Finance", yf_eps, yf_gan, moneda_bal
     m["edgar"] = None
     if hist_edgar:
-        e_eps, e_gan = hist_edgar["eps"], hist_edgar["ganancia"]
+        e_eps, q_eps = cortar_quiebres(hist_edgar["eps"])
+        e_gan, q_gan = cortar_quiebres(hist_edgar["ganancia"])
+        if q_eps or q_gan:
+            alertas.append("La serie de la SEC cambia de base (moneda o cantidad de acciones) en años viejos: "
+                           "se descartaron esos años")
 
         def al_dia(s: pd.Series, ref: pd.Series) -> bool:
             return len(s) > 0 and (len(ref) == 0 or s.index[-1] >= ref.index[-1] - pd.Timedelta(days=120))
