@@ -1,0 +1,95 @@
+# ─────────────────────────────────────────────────────────────
+#  PARÁMETROS DEL RADAR — todos los umbrales son editables.
+#  Los valores por defecto salen de "One Up on Wall Street" /
+#  "Beating the Street" (Lynch) y de los caps. 14 y 15 de
+#  "El inversor inteligente" (Graham, ed. revisada 1973).
+# ─────────────────────────────────────────────────────────────
+
+sitio:
+  titulo: "Radar de Acciones"
+  firma: "Renta Global SRL"
+  # URL pública de la página (se completa después de activar GitHub Pages;
+  # se usa en el aviso de Telegram)
+  url_publica: "https://flerda2004-alt.github.io/radar-acciones/"
+  aviso_legal: >-
+    Señales generadas automáticamente a partir de criterios cuantitativos de
+    Peter Lynch y Benjamin Graham sobre datos públicos (Yahoo Finance, SEC EDGAR,
+    FRED). No constituyen una recomendación personalizada de inversión ni
+    consideran el perfil de riesgo de cada inversor. Los datos pueden contener
+    errores u omisiones de las fuentes.
+
+datos:
+  # La SEC exige identificar quién consulta su API: nombre + mail de contacto.
+  # Se puede pisar con la variable de entorno SEC_USER_AGENT.
+  sec_user_agent: "RadarAcciones contacto@completar.com"
+  pausa_entre_tickers_seg: 1.0
+  reintentos: 3
+  # Rendimiento del bono corporativo AAA (Moody's, FRED serie AAA).
+  # Solo se usa si FRED no responde.
+  tasa_aaa_respaldo: 5.3
+
+lynch:
+  crecimiento_max: 50            # % — Lynch desconfiaba de crecimientos > 50% sostenidos
+  umbral_rapido: 18              # % de crecimiento de EPS para "crecimiento rápido" (Lynch: 20-25%)
+  umbral_estable: 7              # % para "estable/stalwart" (Lynch: 10-12%); debajo = lento
+  peg_compra: 1.0                # PER/crecimiento ≤ 1 → barata (Lynch: PER = crecimiento es precio justo)
+  peg_venta: 2.0                 # PER el doble del crecimiento → muy cara
+  dividendo_ajustado_compra: 2.0 # (crecimiento + rend. dividendo) / PER ≥ 2 → "excelente"
+  dividendo_ajustado_venta: 1.0  # < 1 → "pobre"
+  deuda_patrimonio_max: 1.0      # deuda total / patrimonio neto
+  deuda_neta_ebitda_max: 3.0     # alternativa cuando el patrimonio es negativo (recompras)
+  patrimonio_activos_min: 0.055  # bancos: patrimonio/activos (Lynch, "Beating the Street")
+  inventario_brecha_pp: 5        # alerta si inventarios crecen > ventas + 5 p.p.
+  ventana_ciclo_anios: 7
+  ciclica_per_normalizado_compra: 12
+  ciclica_per_normalizado_venta: 22
+  ciclica_pico: 1.5              # ganancia actual / promedio del ciclo ≥ 1,5 → zona de pico
+  ciclica_caida_min: 0.30        # caída anual de EPS ≥ 30% = ganancias volátiles
+  industrias_ciclicas:
+    - Semiconductors
+    - Semiconductor Equipment & Materials
+    - Auto Manufacturers
+    - Auto Parts
+    - Airlines
+    - Steel
+    - Aluminum
+    - Copper
+    - Other Industrial Metals & Mining
+    - Gold
+    - Silver
+    - Chemicals
+    - Specialty Chemicals
+    - Agricultural Inputs
+    - Oil & Gas E&P
+    - Oil & Gas Integrated
+    - Oil & Gas Refining & Marketing
+    - Oil & Gas Equipment & Services
+    - Oil & Gas Drilling
+    - Building Materials
+    - Residential Construction
+    - Marine Shipping
+    - Trucking
+    - Farm & Heavy Construction Machinery
+    - Lumber & Wood Production
+    - Paper & Paper Products
+    - Coking Coal
+    - Thermal Coal
+
+graham:
+  # Inversor defensivo (cap. 14)
+  ventas_minimas_usd_mm: 2000    # Graham pedía USD 100 M de 1971; ajustado por inflación y escala actual
+  liquidez_corriente_min: 2.0
+  anios_ganancias: 10
+  anios_dividendos: 20
+  crecimiento_eps_10a_min: 33    # % (promedios de 3 años al inicio y al final)
+  per_max: 15                    # sobre ganancia promedio de 3 años
+  pb_max: 1.5
+  per_x_pb_max: 22.5
+  fallas_toleradas: 0            # criterios de calidad que se pueden incumplir y seguir siendo COMPRA
+  # Inversor emprendedor (cap. 15)
+  emp_liquidez_min: 1.5
+  emp_deuda_vs_capital_trabajo: 1.1
+  emp_anios_sin_perdidas: 5
+  emp_ptbv_max: 1.2
+  # Valor intrínseco: V = EPS × (8,5 + 2g) × 4,4 / Y   (cap. 11, ed. 1973)
+  crecimiento_formula_tope: 15   # % tope de g (la fórmula sobrevalúa crecimientos altos)

@@ -1,0 +1,49 @@
+name: Actualizar radar
+
+on:
+  schedule:
+    # 22:30 UTC = 19:30 hora Argentina, de lunes a viernes.
+    # Cubre el cierre de NYSE (17:00 o 18:00 ARG según horario de verano de EE.UU.) y de BYMA.
+    - cron: "30 22 * * 1-5"
+  workflow_dispatch: {}   # botón "Run workflow" para correrlo a mano
+
+permissions:
+  contents: write
+
+concurrency:
+  group: radar
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+
+      - name: Descargar datos, evaluar y generar la página
+        env:
+          SEC_USER_AGENT: ${{ secrets.SEC_USER_AGENT }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        run: python -m radar.main
+
+      - name: Publicar
+        run: |
+          git config user.name "radar-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add docs
+          if git diff --cached --quiet; then
+            echo "Sin cambios"
+          else
+            git commit -m "Radar: cierre $(date -u +%F)"
+            git push
+          fi

@@ -1,0 +1,59 @@
+# ─────────────────────────────────────────────────────────────
+#  WATCHLIST DEL RADAR
+#  Es lo único que tenés que tocar a mano, y solo cuando agregás
+#  o sacás una acción. Formato de ticker: el de Yahoo Finance
+#  (acciones argentinas con .BA, ej. GGAL.BA; clases con guion, ej. BRK-B).
+#
+#  Opcional, por ticker:
+#    categoria_lynch: rapido | estable | lento | ciclica | recuperacion
+#      → fuerza la categoría de Lynch si no estás de acuerdo con la automática.
+# ─────────────────────────────────────────────────────────────
+
+acciones:
+  - UBER
+  - NBIS
+  - ADBE
+  - SPOT
+  - MELI
+  - ORCL
+  - INTC
+  - MU
+  - JPM
+  - ASML
+  - RACE
+  - MCO
+  - MCD
+  - BABA
+  - BRK-B
+  - TSM
+  - LLY
+  - AVGO
+  - NFLX
+  - WMT
+  - KO
+  - PEP
+  - C
+  - BAC
+  - BYMA.BA
+  - DIA
+  - NKE
+  - AXP
+  - MA
+  - V
+  - SPY
+  - QQQ
+  - VIST
+  - PAM
+  - YPF
+  - NU
+  - TSLA
+  - AAPL
+  - GOOG
+  - NVDA
+  - AMZN
+  - MSFT
+  - META
+
+# Ejemplo de override:
+#  - ticker: NVDA
+#    categoria_lynch: rapido

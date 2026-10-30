@@ -1,0 +1,495 @@
+<title>Radar de Acciones</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+/* Layout: pizarra de bolsa ordenada — resumen arriba, filas de acciones que se despliegan en la ficha Lynch/Graham. */
+:root {
+  --bg: #F3F5F7; --panel: #FFFFFF; --ink: #15202B; --muted: #5A6774; --line: #DAE0E6; --soft: #EBEFF3;
+  --accent: #2647A6;
+  --compra: #1C7A4C; --mantener: #9A6200; --vender: #B3302D; --na: #6B7682;
+  --f-display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-body: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --f-data: "IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0E1318; --panel: #151C23; --ink: #E5EAEF; --muted: #93A0AC; --line: #26313B; --soft: #1C252E;
+    --accent: #93AAFF; --compra: #4CC38A; --mantener: #E3AA3E; --vender: #F2736A; --na: #8A96A2;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0E1318; --panel: #151C23; --ink: #E5EAEF; --muted: #93A0AC; --line: #26313B; --soft: #1C252E;
+  --accent: #93AAFF; --compra: #4CC38A; --mantener: #E3AA3E; --vender: #F2736A; --na: #8A96A2;
+  color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 15px; line-height: 1.45; }
+.wrap { max-width: 1240px; margin: 0 auto; padding-block: 28px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.num, .tk, .mono { font-family: var(--f-data); font-variant-numeric: tabular-nums; }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; border-radius: 4px; }
+
+/* Encabezado */
+header.top { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 32px; margin-bottom: 24px; }
+.eyebrow { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+h1 { font-size: clamp(30px, 5vw, 46px); font-weight: 780; font-stretch: 118%; letter-spacing: -0.02em; line-height: 1.02; margin-top: 4px; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--muted); font-size: 13px; }
+.meta b { color: var(--ink); font-weight: 600; }
+
+/* Resumen */
+.resumen { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 18px; }
+.cuenta { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; text-align: left; cursor: pointer;
+  display: grid; gap: 2px; border-left-width: 4px; transition: border-color .15s, background .15s; }
+.cuenta:hover { background: var(--soft); }
+.cuenta[aria-pressed="true"] { background: var(--soft); outline: 1.5px solid currentColor; outline-offset: -1.5px; }
+.cuenta .n { font-family: var(--f-display); font-size: 30px; font-weight: 760; font-stretch: 110%; line-height: 1; }
+.cuenta .l { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.cuenta.COMPRAR { border-left-color: var(--compra); } .cuenta.COMPRAR .n { color: var(--compra); }
+.cuenta.MANTENER { border-left-color: var(--mantener); } .cuenta.MANTENER .n { color: var(--mantener); }
+.cuenta.VENDER { border-left-color: var(--vender); } .cuenta.VENDER .n { color: var(--vender); }
+.cuenta.NA { border-left-color: var(--na); } .cuenta.NA .n { color: var(--na); }
+
+.cambios { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin-bottom: 18px; display: grid; gap: 8px; }
+.cambios h2 { font-size: 13px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 650; }
+.cambios ul { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+.cambios li { display: flex; align-items: center; gap: 6px; font-size: 13px; background: var(--soft); border-radius: 999px; padding: 4px 10px 4px 6px; }
+.cambios .tk { font-weight: 600; }
+.cambios .vacio { color: var(--muted); font-size: 13px; }
+
+/* Controles */
+.controles { display: flex; flex-wrap: wrap; gap: 10px 14px; align-items: center; margin-bottom: 12px; }
+.seg { display: inline-flex; background: var(--soft); border-radius: 9px; padding: 3px; gap: 2px; }
+.seg button { border: 0; background: transparent; padding: 6px 12px; border-radius: 7px; cursor: pointer; font-size: 14px; color: var(--muted); font-weight: 550; }
+.seg button[aria-pressed="true"] { background: var(--panel); color: var(--ink); box-shadow: 0 1px 2px rgb(0 0 0 / .12); }
+.controles input, .controles select { font: inherit; font-size: 14px; color: var(--ink); background: var(--panel); border: 1px solid var(--line);
+  border-radius: 8px; padding: 7px 10px; min-width: 0; }
+.controles input { flex: 1 1 200px; max-width: 320px; }
+.controles label { font-size: 13px; color: var(--muted); display: inline-flex; align-items: center; gap: 6px; }
+
+/* Lista */
+.lista { background: var(--panel); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+.cols, .cab {
+  display: grid; align-items: center; gap: 4px 14px;
+  grid-template-columns: minmax(150px, 2.1fr) 96px 72px 112px minmax(120px, 1.3fr) 64px 64px 64px 84px 120px;
+  grid-template-areas: "acc pre dia sen cat per peg pb mg rng";
+}
+.cols { padding: 10px 16px; font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 650; border-bottom: 1px solid var(--line); background: var(--soft); }
+.cols span:nth-child(n+2):not(:nth-child(4)):not(:nth-child(5)) { text-align: right; }
+.fila { border-bottom: 1px solid var(--line); }
+.fila:last-child { border-bottom: 0; }
+.cab { width: 100%; padding: 11px 16px; background: transparent; border: 0; text-align: left; cursor: pointer; }
+.cab:hover { background: var(--soft); }
+.fila.abierta > .cab { background: var(--soft); }
+.acc { grid-area: acc; display: flex; flex-direction: column; min-width: 0; }
+.acc .tk { font-weight: 600; font-size: 15px; letter-spacing: .02em; }
+.acc .nom { font-size: 12.5px; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.pre { grid-area: pre; text-align: right; }
+.dia { grid-area: dia; text-align: right; font-size: 13.5px; }
+.sen { grid-area: sen; }
+.cat { grid-area: cat; font-size: 13px; color: var(--muted); min-width: 0; }
+.c-per { grid-area: per; text-align: right; } .c-peg { grid-area: peg; text-align: right; } .c-pb { grid-area: pb; text-align: right; }
+.c-mg { grid-area: mg; text-align: right; } .rng { grid-area: rng; }
+.pos { color: var(--compra); } .neg { color: var(--vender); }
+.lab-m { display: none; }
+
+.pill { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 650; letter-spacing: .06em; text-transform: uppercase;
+  padding: 3px 9px 3px 7px; border-radius: 6px; white-space: nowrap; }
+.pill::before { content: ""; width: 7px; height: 7px; border-radius: 2px; background: currentColor; }
+.pill.COMPRAR { color: var(--compra); background: color-mix(in srgb, var(--compra) 13%, transparent); }
+.pill.MANTENER { color: var(--mantener); background: color-mix(in srgb, var(--mantener) 14%, transparent); }
+.pill.VENDER { color: var(--vender); background: color-mix(in srgb, var(--vender) 12%, transparent); }
+.pill.NA { color: var(--na); background: color-mix(in srgb, var(--na) 14%, transparent); }
+
+.rango { position: relative; height: 18px; }
+.rango .bar { position: absolute; left: 0; right: 0; top: 8px; height: 3px; border-radius: 2px; background: var(--line); }
+.rango .pt { position: absolute; top: 4px; width: 3px; height: 11px; border-radius: 2px; background: var(--ink); transform: translateX(-1.5px); }
+.rango .lo, .rango .hi { display: none; }
+
+/* Detalle */
+.detalle { padding: 6px 16px 20px; display: grid; gap: 16px; background: var(--panel); }
+.resumen-ficha { font-size: 14px; color: var(--muted); max-width: 80ch; }
+.resumen-ficha b { color: var(--ink); }
+.marcos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
+.marco { border: 1px solid var(--line); border-radius: 10px; padding: 14px; display: grid; gap: 10px; align-content: start; min-width: 0; }
+.marco h3 { font-size: 16px; font-weight: 720; font-stretch: 108%; display: flex; align-items: center; justify-content: space-between; gap: 10px; flex-wrap: wrap; }
+.marco .motivo { font-size: 13.5px; }
+.marco .sub { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 650; margin-top: 4px; }
+.checks { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.checks li { display: grid; grid-template-columns: 18px 1fr auto; gap: 2px 8px; font-size: 13px; align-items: baseline; }
+.checks .ic { font-family: var(--f-data); font-weight: 700; text-align: center; }
+.checks .ok .ic { color: var(--compra); } .checks .no .ic { color: var(--vender); } .checks .nd .ic, .checks .na .ic { color: var(--na); }
+.checks .info .ic { color: var(--accent); }
+.checks .val { font-family: var(--f-data); font-size: 12.5px; text-align: right; white-space: nowrap; }
+.checks .umb, .checks .nota { grid-column: 2 / 4; font-size: 12px; color: var(--muted); }
+.kv { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 8px 18px; margin: 0; }
+.kv div { display: flex; justify-content: space-between; gap: 10px; border-bottom: 1px dashed var(--line); padding-bottom: 4px; font-size: 13px; min-width: 0; }
+.kv dt { color: var(--muted); } .kv dd { margin: 0; font-family: var(--f-data); font-size: 12.5px; text-align: right; }
+.eps { display: grid; gap: 6px; }
+.eps svg { width: 100%; max-width: 560px; height: auto; display: block; }
+.eps .ax { fill: var(--muted); font-family: var(--f-data); font-size: 10px; }
+.alertas { margin: 0; padding-left: 18px; font-size: 13px; color: var(--mantener); display: grid; gap: 4px; }
+.link-ficha { font-size: 12.5px; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+
+footer { margin-top: 28px; display: grid; gap: 14px; font-size: 13px; color: var(--muted); }
+footer details { background: var(--panel); border: 1px solid var(--line); border-radius: 10px; padding: 12px 16px; }
+footer summary { cursor: pointer; color: var(--ink); font-weight: 600; }
+footer .met { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-top: 10px; }
+footer .met h3 { font-size: 14px; color: var(--ink); margin-bottom: 6px; }
+footer .met ul { margin: 0; padding-left: 18px; display: grid; gap: 4px; }
+.legal { max-width: 95ch; }
+.errores { color: var(--vender); font-size: 13px; }
+
+@media (max-width: 860px) {
+  .cols { display: none; }
+  .cab { grid-template-columns: 1fr auto; grid-template-areas: "acc pre" "sen dia" "cat cat" "per per"; gap: 6px 10px; padding: 12px 14px; }
+  .pre { font-size: 15px; } .dia { justify-self: end; }
+  .c-per, .c-peg, .c-pb, .c-mg, .rng { display: none; }
+  .met-m { grid-area: per; display: flex; flex-wrap: wrap; gap: 4px 14px; font-size: 12.5px; color: var(--muted); }
+  .met-m .num { color: var(--ink); }
+  .detalle { padding: 4px 14px 18px; }
+  .marcos { grid-template-columns: 1fr; }
+}
+@media (min-width: 861px) { .met-m { display: none; } }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="eyebrow" id="firma"></div>
+      <h1 id="titulo">Radar de Acciones</h1>
+    </div>
+    <div class="meta" id="meta"></div>
+  </header>
+
+  <section class="resumen" id="resumen" aria-label="Resumen de señales"></section>
+  <section class="cambios" id="cambios" aria-label="Cambios de señal"></section>
+
+  <div class="controles">
+    <div class="seg" role="group" aria-label="Marco de inversión" id="marco">
+      <button type="button" data-m="senal" aria-pressed="true">Combinada</button>
+      <button type="button" data-m="lynch" aria-pressed="false">Lynch</button>
+      <button type="button" data-m="graham" aria-pressed="false">Graham</button>
+    </div>
+    <input type="search" id="buscar" placeholder="Buscar ticker o empresa" aria-label="Buscar ticker o empresa">
+    <label for="sector">Sector <select id="sector"></select></label>
+    <label for="orden">Ordenar <select id="orden">
+      <option value="senal">Señal</option>
+      <option value="ticker">Ticker</option>
+      <option value="dia">Variación del día</option>
+      <option value="peg">PEG (menor primero)</option>
+      <option value="mg">Margen Graham (mayor primero)</option>
+      <option value="per">PER (menor primero)</option>
+    </select></label>
+  </div>
+
+  <div class="lista" id="lista">
+    <div class="cols" aria-hidden="true">
+      <span>Acción</span><span>Precio</span><span>Día</span><span id="col-senal">Señal</span><span>Categoría Lynch</span>
+      <span>PER</span><span>PEG</span><span>P/VL</span><span>Margen G.</span><span>Rango 52 sem.</span>
+    </div>
+    <div id="filas"></div>
+  </div>
+
+  <footer>
+    <details id="metodo"><summary>Cómo se calcula cada señal</summary><div class="met" id="met"></div></details>
+    <p class="errores" id="errores" hidden></p>
+    <p class="legal" id="legal"></p>
+  </footer>
+</div>
+
+<script id="datos" type="application/json">__DATOS__</script>
+<script>
+(function () {
+  "use strict";
+  const D = JSON.parse(document.getElementById("datos").textContent);
+  const $ = (s, el = document) => el.querySelector(s);
+  const ORDEN_SENAL = { COMPRAR: 0, MANTENER: 1, VENDER: 2, "N/A": 3 };
+  const NOMBRE = { COMPRAR: "Comprar", MANTENER: "Mantener", VENDER: "Vender", "N/A": "No aplica" };
+  const cls = s => (s === "N/A" || !s) ? "NA" : s;
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  const nf = (v, d = 2) => (v == null || !isFinite(v)) ? "—" :
+    Number(v).toLocaleString("es-AR", { minimumFractionDigits: d, maximumFractionDigits: d });
+  const fr = (v, d = 1, signo = false) => (v == null || !isFinite(v)) ? "—" : (signo && v > 0 ? "+" : "") + nf(v * 100, d) + "%";
+  const pp = (v, d = 1) => (v == null || !isFinite(v)) ? "—" : nf(v, d) + "%";
+  const usdM = v => v == null ? "—" : (v >= 1e12 ? "USD " + nf(v / 1e12, 2) + " B" : v >= 1e9 ? "USD " + nf(v / 1e9, 1) + " MM" : "USD " + nf(v / 1e6, 0) + " M");
+  const fecha = s => s ? s.split("-").reverse().join("/") : "—";
+  const hashDe = t => t.replace(/[^A-Za-z0-9-]/g, "-");
+
+  const estado = { marco: "senal", filtro: null, q: "", sector: "", orden: "senal", abiertos: new Set() };
+  try { const m = localStorage.getItem("radar-marco"); if (m) estado.marco = m; } catch (e) {}
+
+  const senalDe = r => estado.marco === "senal" ? r.senal : ((r[estado.marco] || {}).senal || "N/A");
+  const motivoDe = r => estado.marco === "senal" ? r.motivo : ((r[estado.marco] || {}).motivo || r.motivo);
+
+  // ── Encabezado ──
+  const S = D.sitio || {};
+  $("#firma").textContent = S.firma || "";
+  $("#titulo").textContent = S.titulo || "Radar de Acciones";
+  document.title = S.titulo || "Radar de Acciones";
+  $("#meta").innerHTML =
+    `<span>Cierre <b>${fecha(D.fecha_datos)}</b></span>` +
+    `<span>Actualizado <b>${esc((D.generado || "").split(" ").map((x, i) => i ? x : fecha(x)).join(" "))}</b> (hora Argentina)</span>` +
+    `<span>Tasa AAA <b>${nf(D.tasa_aaa, 2)}%</b></span>` +
+    `<span><b>${D.acciones.length}</b> instrumentos</span>`;
+  $("#legal").textContent = S.aviso_legal || "";
+  if (D.errores && D.errores.length) {
+    const e = $("#errores"); e.hidden = false;
+    e.textContent = "Sin datos en esta corrida: " + D.errores.map(x => x.ticker).join(", ") + ". Se reintenta en la próxima actualización.";
+  }
+
+  // ── Sectores ──
+  const sectores = [...new Set(D.acciones.map(r => r.sector).filter(Boolean))].sort();
+  $("#sector").innerHTML = `<option value="">Todos</option>` + sectores.map(s => `<option>${esc(s)}</option>`).join("");
+
+  function pintarResumen() {
+    const c = { COMPRAR: 0, MANTENER: 0, VENDER: 0, "N/A": 0 };
+    D.acciones.forEach(r => { c[senalDe(r)] = (c[senalDe(r)] || 0) + 1; });
+    $("#resumen").innerHTML = Object.keys(c).filter(k => k !== "N/A" || c[k]).map(k =>
+      `<button type="button" class="cuenta ${cls(k)}" data-f="${k}" aria-pressed="${estado.filtro === k}">
+        <span class="n">${c[k]}</span><span class="l">${NOMBRE[k]}</span></button>`).join("");
+    $("#col-senal").textContent = estado.marco === "senal" ? "Señal" : estado.marco === "lynch" ? "Señal Lynch" : "Señal Graham";
+  }
+
+  function pintarCambios() {
+    const cs = D.cambios || [];
+    const box = $("#cambios");
+    if (!cs.length) {
+      box.innerHTML = `<h2>Cambios de señal</h2><p class="vacio">Sin cambios respecto del cierre anterior.</p>`;
+      return;
+    }
+    box.innerHTML = `<h2>Cambios de señal desde el cierre anterior</h2><ul>` + cs.map(c =>
+      `<li><button type="button" class="link-ficha tk" data-ir="${esc(c.ticker)}">${esc(c.ticker)}</button>
+       <span>${esc(c.marco)}:</span> <span class="pill ${cls(c.antes)}">${NOMBRE[c.antes] || c.antes}</span>→<span class="pill ${cls(c.ahora)}">${NOMBRE[c.ahora] || c.ahora}</span></li>`).join("") + `</ul>`;
+  }
+
+  function rango(r) {
+    if (r.max_52 == null || r.min_52 == null || r.max_52 <= r.min_52) return "";
+    const p = Math.max(0, Math.min(1, (r.precio - r.min_52) / (r.max_52 - r.min_52)));
+    return `<div class="rango" title="Mín. ${nf(r.min_52)} · Máx. ${nf(r.max_52)}"><span class="bar"></span><span class="pt" style="left:${(p * 100).toFixed(1)}%"></span></div>`;
+  }
+
+  function cabecera(r) {
+    const m = r.metricas || {};
+    const s = senalDe(r);
+    const mg = r.graham ? r.graham.valuacion.margen_seguridad : null;
+    const cat = r.lynch ? r.lynch.categoria_nombre : (r.tipo === "ETF" ? "ETF" : "—");
+    return `
+      <span class="acc"><span class="tk">${esc(r.ticker)}</span><span class="nom">${esc(r.nombre)}</span></span>
+      <span class="pre num">${nf(r.precio)}${r.moneda && r.moneda !== "USD" ? ` <small>${esc(r.moneda)}</small>` : ""}</span>
+      <span class="dia num ${r.var_dia > 0 ? "pos" : r.var_dia < 0 ? "neg" : ""}">${fr(r.var_dia, 2, true)}</span>
+      <span class="sen"><span class="pill ${cls(s)}">${NOMBRE[s] || s}</span></span>
+      <span class="cat">${esc(cat)}</span>
+      <span class="c-per num">${nf(m.per, 1)}</span>
+      <span class="c-peg num">${nf(m.peg, 2)}</span>
+      <span class="c-pb num">${nf(m.pb, 1)}</span>
+      <span class="c-mg num ${mg > 0 ? "pos" : mg < 0 ? "neg" : ""}">${fr(mg, 0)}</span>
+      <span class="rng">${rango(r)}</span>
+      <span class="met-m">PER <span class="num">${nf(m.per, 1)}</span> PEG <span class="num">${nf(m.peg, 2)}</span> P/VL <span class="num">${nf(m.pb, 1)}</span> Margen G. <span class="num">${fr(mg, 0)}</span></span>`;
+  }
+
+  const ICON = { "cumple": ["ok", "✓"], "no cumple": ["no", "✗"], "sin datos": ["nd", "?"], "n/a": ["na", "–"] };
+  function lista(checks) {
+    return `<ul class="checks">` + checks.map(c => {
+      let [k, ic] = ICON[c.estado] || ["nd", "?"];
+      if (c.informativo) { k = "info"; ic = c.estado === "cumple" ? "+" : "·"; }
+      return `<li class="${k}"><span class="ic" aria-label="${esc(c.estado)}">${ic}</span><span>${esc(c.nombre)}</span>
+        <span class="val">${esc(c.valor)}</span>
+        ${c.umbral ? `<span class="umb">Criterio: ${esc(c.umbral)}</span>` : ""}
+        ${c.nota ? `<span class="nota">${esc(c.nota)}</span>` : ""}</li>`;
+    }).join("") + `</ul>`;
+  }
+
+  function graficoEps(hist, moneda) {
+    if (!hist || hist.length < 2) return "";
+    const W = 560, H = 150, padL = 8, padR = 8, padT = 16, padB = 22;
+    const vals = hist.map(h => h[1]);
+    const max = Math.max(0, ...vals), min = Math.min(0, ...vals);
+    const span = (max - min) || 1;
+    const y = v => padT + (max - v) / span * (H - padT - padB);
+    const bw = (W - padL - padR) / hist.length;
+    const y0 = y(0);
+    let out = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="EPS anual">`;
+    out += `<line x1="${padL}" x2="${W - padR}" y1="${y0}" y2="${y0}" stroke="var(--line)" stroke-width="1"/>`;
+    hist.forEach((h, i) => {
+      const v = h[1], x = padL + i * bw + bw * 0.18, w = bw * 0.64;
+      const top = Math.min(y(v), y0), alto = Math.max(1, Math.abs(y(v) - y0));
+      const col = v < 0 ? "var(--vender)" : (i === hist.length - 1 ? "var(--accent)" : "color-mix(in srgb, var(--accent) 45%, var(--panel))");
+      out += `<rect x="${x.toFixed(1)}" y="${top.toFixed(1)}" width="${w.toFixed(1)}" height="${alto.toFixed(1)}" rx="2" fill="${col}"><title>${h[0].slice(0, 4)}: ${nf(v)}</title></rect>`;
+      out += `<text class="ax" x="${(x + w / 2).toFixed(1)}" y="${H - 6}" text-anchor="middle">${h[0].slice(2, 4)}</text>`;
+      if (i === hist.length - 1 || i === 0) {
+        const ty = v < 0 ? top + alto + 11 : top - 4;
+        out += `<text class="ax" x="${(x + w / 2).toFixed(1)}" y="${Math.max(10, Math.min(H - padB - 2, ty)).toFixed(1)}" text-anchor="middle">${nf(v)}</text>`;
+      }
+    });
+    out += `</svg>`;
+    return `<div class="eps"><div class="sub">EPS anual (${esc(moneda || "")}, ajustado por splits)</div>${out}</div>`;
+  }
+
+  function detalle(r) {
+    const m = r.metricas || {};
+    if (r.tipo === "ETF") {
+      return `<p class="resumen-ficha">${esc(r.motivo)}. Graham recomendaba la inversión indexada como núcleo para el inversor defensivo; se muestra solo como referencia de mercado.</p>
+        <dl class="kv">
+          <div><dt>PER del índice</dt><dd>${nf(m.per, 1)}</dd></div>
+          <div><dt>Rend. dividendo</dt><dd>${pp(m.rend_div)}</dd></div>
+          <div><dt>Retorno en el año</dt><dd>${fr(r.ret_ytd)}</dd></div>
+          <div><dt>Retorno 12 meses</dt><dd>${fr(r.ret_1a)}</dd></div>
+          <div><dt>Mín./máx. 52 sem.</dt><dd>${nf(r.min_52)} / ${nf(r.max_52)}</dd></div>
+        </dl>`;
+    }
+    const L = r.lynch, G = r.graham, v = G.valuacion, cr = m.crecimiento || {};
+    const alertas = (r.alertas || []);
+    return `
+      <p class="resumen-ficha"><b>Señal combinada: ${NOMBRE[r.senal] || r.senal}.</b> ${esc(r.motivo)}.</p>
+      <div class="marcos">
+        <section class="marco">
+          <h3>Peter Lynch <span class="pill ${cls(L.senal)}">${NOMBRE[L.senal]}</span></h3>
+          <div class="motivo">${esc(L.motivo)}</div>
+          <div class="sub">Categoría: ${esc(L.categoria_nombre)}</div>
+          <div class="motivo" style="color:var(--muted)">${esc(L.categoria_motivo)}</div>
+          ${lista(L.checks)}
+        </section>
+        <section class="marco">
+          <h3>Benjamin Graham <span class="pill ${cls(G.senal)}">${NOMBRE[G.senal]}</span></h3>
+          <div class="motivo">${esc(G.motivo)}</div>
+          <dl class="kv">
+            <div><dt>Precio / valor intrínseco</dt><dd>${nf(v.precio_sobre_valor_intrinseco, 2)}</dd></div>
+            <div><dt>Margen de seguridad</dt><dd>${fr(v.margen_seguridad, 0)}</dd></div>
+            <div><dt>Precio / número de Graham</dt><dd>${nf(v.precio_sobre_numero_graham, 2)}</dd></div>
+            <div><dt>PER justo (fórmula)</dt><dd>${nf(v.per_justo_formula, 1)}</dd></div>
+          </dl>
+          <div class="sub">Inversor defensivo · ${G.defensivo.cumple}/${G.defensivo.aplicables}</div>
+          ${lista(G.defensivo.checks)}
+          <div class="sub">Inversor emprendedor · ${G.emprendedor.cumple}/${G.emprendedor.aplicables}</div>
+          ${lista(G.emprendedor.checks)}
+        </section>
+      </div>
+      <dl class="kv">
+        <div><dt>Crecimiento usado</dt><dd>${pp(cr.final)}</dd></div>
+        <div><dt>Histórico EPS${cr.historico_anios ? " (" + cr.historico_anios + " a)" : ""}</dt><dd>${pp(cr.historico)}</dd></div>
+        <div><dt>Estimado analistas 1-2 a</dt><dd>${pp(cr.estimado_1_2a)}</dd></div>
+        <div><dt>Estimado largo plazo</dt><dd>${pp(cr.largo_plazo)}</dd></div>
+        <div><dt>PER (12 m)</dt><dd>${nf(m.per, 1)}</dd></div>
+        <div><dt>PER efectivo (neto de caja)</dt><dd>${nf(m.per_eff, 1)}</dd></div>
+        <div><dt>PER forward</dt><dd>${nf(m.per_forward, 1)}</dd></div>
+        <div><dt>PER promedio 3 a</dt><dd>${nf(m.per_3a, 1)}</dd></div>
+        <div><dt>PER normalizado ciclo</dt><dd>${nf(m.per_normalizado, 1)}</dd></div>
+        <div><dt>P/VL · P/VL tangible</dt><dd>${nf(m.pb, 2)} · ${nf(m.ptbv, 2)}</dd></div>
+        <div><dt>Deuda / patrimonio</dt><dd>${m.patrimonio_negativo ? "patr. negativo" : nf(m.deuda_patrimonio, 2)}</dd></div>
+        <div><dt>Deuda neta / EBITDA</dt><dd>${nf(m.deuda_neta_ebitda, 2)}</dd></div>
+        <div><dt>Liquidez corriente</dt><dd>${nf(m.liquidez_corriente, 2)}</dd></div>
+        <div><dt>Caja neta / capitalización</dt><dd>${fr(m.caja_neta_pct)}</dd></div>
+        <div><dt>Rend. dividendo · racha</dt><dd>${pp(m.rend_div)} · ${m.racha_dividendos ?? 0} a</dd></div>
+        <div><dt>ROE · margen neto</dt><dd>${fr(m.roe, 0)} · ${fr(m.margen_neto, 0)}</dd></div>
+        <div><dt>Capitalización</dt><dd>${usdM(m.market_cap_usd)}</dd></div>
+        <div><dt>Retorno año · 12 m</dt><dd>${fr(r.ret_ytd, 0, true)} · ${fr(r.ret_1a, 0, true)}</dd></div>
+        <div><dt>Historia de ganancias</dt><dd>${esc(m.fuente_historia || "—")}</dd></div>
+      </dl>
+      ${graficoEps(m.eps_hist, m.moneda_hist)}
+      ${alertas.length ? `<ul class="alertas">${alertas.map(a => `<li>${esc(a)}</li>`).join("")}</ul>` : ""}`;
+  }
+
+  function filtradas() {
+    const q = estado.q.trim().toLowerCase();
+    let fs = D.acciones.filter(r =>
+      (!estado.filtro || senalDe(r) === estado.filtro) &&
+      (!estado.sector || r.sector === estado.sector) &&
+      (!q || r.ticker.toLowerCase().includes(q) || (r.nombre || "").toLowerCase().includes(q)));
+    const num = (v, def) => (v == null || !isFinite(v)) ? def : v;
+    const ords = {
+      senal: (a, b) => (ORDEN_SENAL[senalDe(a)] - ORDEN_SENAL[senalDe(b)]) || a.ticker.localeCompare(b.ticker),
+      ticker: (a, b) => a.ticker.localeCompare(b.ticker),
+      dia: (a, b) => num(b.var_dia, -1e9) - num(a.var_dia, -1e9),
+      peg: (a, b) => num((a.metricas || {}).peg, 1e9) - num((b.metricas || {}).peg, 1e9),
+      mg: (a, b) => num(b.graham && b.graham.valuacion.margen_seguridad, -1e9) - num(a.graham && a.graham.valuacion.margen_seguridad, -1e9),
+      per: (a, b) => num((a.metricas || {}).per, 1e9) - num((b.metricas || {}).per, 1e9),
+    };
+    return fs.sort(ords[estado.orden]);
+  }
+
+  function pintarFilas() {
+    const fs = filtradas();
+    $("#filas").innerHTML = fs.length ? fs.map(r => {
+      const ab = estado.abiertos.has(r.ticker);
+      return `<article class="fila${ab ? " abierta" : ""}" id="${hashDe(r.ticker)}" data-t="${esc(r.ticker)}">
+        <button type="button" class="cab" aria-expanded="${ab}">${cabecera(r)}</button>
+        <div class="detalle"${ab ? "" : " hidden"}>${ab ? detalle(r) : ""}</div></article>`;
+    }).join("") : `<p style="padding:16px;color:var(--muted)">Ninguna acción coincide con el filtro.</p>`;
+  }
+
+  function pintar() {
+    document.querySelectorAll("#marco button").forEach(b => b.setAttribute("aria-pressed", b.dataset.m === estado.marco));
+    pintarResumen(); pintarFilas();
+  }
+
+  function abrir(ticker, desplazar) {
+    estado.abiertos.add(ticker);
+    if (estado.filtro || estado.q || estado.sector) { estado.filtro = null; estado.q = ""; estado.sector = ""; $("#buscar").value = ""; $("#sector").value = ""; }
+    pintar();
+    const el = document.getElementById(hashDe(ticker));
+    if (el && desplazar && el.scrollIntoView) el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  // ── Eventos ──
+  $("#marco").addEventListener("click", e => {
+    const b = e.target.closest("button"); if (!b) return;
+    estado.marco = b.dataset.m; estado.filtro = null;
+    try { localStorage.setItem("radar-marco", estado.marco); } catch (err) {}
+    pintar();
+  });
+  $("#resumen").addEventListener("click", e => {
+    const b = e.target.closest(".cuenta"); if (!b) return;
+    estado.filtro = estado.filtro === b.dataset.f ? null : b.dataset.f; pintar();
+  });
+  $("#cambios").addEventListener("click", e => { const b = e.target.closest("[data-ir]"); if (b) abrir(b.dataset.ir, true); });
+  $("#buscar").addEventListener("input", e => { estado.q = e.target.value; pintarFilas(); });
+  $("#sector").addEventListener("change", e => { estado.sector = e.target.value; pintarFilas(); });
+  $("#orden").addEventListener("change", e => { estado.orden = e.target.value; pintarFilas(); });
+  $("#filas").addEventListener("click", e => {
+    const cab = e.target.closest(".cab"); if (!cab) return;
+    const fila = cab.parentElement, t = fila.dataset.t, det = fila.querySelector(".detalle");
+    const r = D.acciones.find(x => x.ticker === t);
+    if (estado.abiertos.has(t)) {
+      estado.abiertos.delete(t); det.hidden = true; det.innerHTML = ""; fila.classList.remove("abierta"); cab.setAttribute("aria-expanded", "false");
+    } else {
+      estado.abiertos.add(t); det.innerHTML = detalle(r); det.hidden = false; fila.classList.add("abierta"); cab.setAttribute("aria-expanded", "true");
+      try { history.replaceState(null, "", "#" + hashDe(t)); } catch (err) {}
+    }
+  });
+
+  // ── Metodología ──
+  const P = D.parametros || { lynch: {}, graham: {} }, pl = P.lynch, pg = P.graham;
+  $("#met").innerHTML = `
+    <div><h3>Peter Lynch</h3><ul>
+      <li>Clasifica cada empresa: crecimiento rápido (≥ ${pl.umbral_rapido}% anual de EPS), estable (${pl.umbral_estable}–${pl.umbral_rapido}%), lento, cíclica o en recuperación.</li>
+      <li>Crecimiento = mediana entre el histórico de EPS (~5 años), la estimación de analistas a 1-2 años y la de largo plazo; tope ${pl.crecimiento_max}%.</li>
+      <li>PEG = PER efectivo / crecimiento. Compra ≤ ${nf(pl.peg_compra, 1)}, venta > ${nf(pl.peg_venta, 1)}. El PER efectivo descuenta la caja neta del precio.</li>
+      <li>Estables y lentas: también (crecimiento + dividendo) / PER; compra ≥ ${nf(pl.dividendo_ajustado_compra, 1)}, venta < ${nf(pl.dividendo_ajustado_venta, 1)}.</li>
+      <li>Cíclicas: PER sobre la ganancia promedio de ${pl.ventana_ciclo_anios} años; nunca compra en zona de pico.</li>
+      <li>En recuperación: nunca compra automáticamente; mantener solo con caja neta o balance sano.</li>
+      <li>Una compra baja a mantener si deuda/patrimonio > ${nf(pl.deuda_patrimonio_max, 1)} o los inventarios crecen más que las ventas.</li>
+    </ul></div>
+    <div><h3>Benjamin Graham</h3><ul>
+      <li>Inversor defensivo (cap. 14): ventas ≥ USD ${pg.ventas_minimas_usd_mm} M, liquidez ≥ ${nf(pg.liquidez_corriente_min, 1)}, deuda LP ≤ capital de trabajo, ganancias ${pg.anios_ganancias} años, dividendos ${pg.anios_dividendos} años, EPS +${pg.crecimiento_eps_10a_min}% en 10 años, PER (3 años) ≤ ${pg.per_max}, P/VL ≤ ${nf(pg.pb_max, 1)} o PER×P/VL ≤ ${nf(pg.per_x_pb_max, 1)}.</li>
+      <li>Inversor emprendedor (cap. 15): liquidez ≥ ${nf(pg.emp_liquidez_min, 1)}, deuda ≤ ${nf(pg.emp_deuda_vs_capital_trabajo * 100, 0)}% del capital de trabajo, sin pérdidas en ${pg.emp_anios_sin_perdidas} años, dividendo actual, EPS creciente, precio ≤ ${nf(pg.emp_ptbv_max * 100, 0)}% del valor tangible.</li>
+      <li>Valor intrínseco: V = EPS × (8,5 + 2g) × 4,4 / Y, con g tope ${pg.crecimiento_formula_tope}% e Y = tasa AAA (${nf(D.tasa_aaa, 2)}%).</li>
+      <li>Compra si cumple todos los criterios defensivos o los del emprendedor; venta si no tiene ganancias o cotiza sobre el valor de la fórmula y fuera de los límites de PER y P/VL.</li>
+    </ul></div>
+    <div><h3>Señal combinada</h3><ul>
+      <li>Comprar = +1, mantener = 0, vender = −1; se suman Lynch y Graham.</li>
+      <li>Suma ≥ 1: comprar · 0: mantener · ≤ −1: vender.</li>
+      <li>Datos: Yahoo Finance (precios y balances), SEC EDGAR (10 años de ganancias de 10-K y 20-F), FRED (tasa AAA). Los ADR se valúan con capitalización total para evitar errores de ratio y moneda.</li>
+    </ul></div>`;
+
+  pintar();
+  pintarCambios();
+  const h = decodeURIComponent((location.hash || "").slice(1));
+  if (h) { const r = D.acciones.find(x => hashDe(x.ticker) === h); if (r) abrir(r.ticker, true); }
+})();
+</script>
