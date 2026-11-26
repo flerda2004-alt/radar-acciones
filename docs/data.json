@@ -1,6 +1,6 @@
 {
- "generado": "2026-11-25 20:26",
- "fecha_datos": "2026-11-25",
+ "generado": "2026-11-26 20:30",
+ "fecha_datos": "2026-11-26",
  "tasa_aaa": 5.75,
  "fuente_aaa": "estimada: Tesoro EE.UU. 10 años 4.85% + 0.9 pp (FRED no respondió)",
  "sitio": {
@@ -48,28 +48,13 @@
    "crecimiento_formula_tope": 15
   }
  },
- "cambios": [
-  {
-   "ticker": "UBER",
-   "marco": "Combinada",
-   "antes": "MANTENER",
-   "ahora": "VENDER",
-   "desde": "2026-11-24"
-  },
-  {
-   "ticker": "UBER",
-   "marco": "Lynch",
-   "antes": "COMPRAR",
-   "ahora": "MANTENER",
-   "desde": "2026-11-24"
-  }
- ],
+ "cambios": [],
  "base_cambios": {
-  "fecha": "2026-11-24",
+  "fecha": "2026-11-25",
   "senales": {
    "UBER": {
-    "senal": "MANTENER",
-    "lynch": "COMPRAR",
+    "senal": "VENDER",
+    "lynch": "MANTENER",
     "graham": "VENDER"
    },
    "NBIS": {
@@ -508,7 +493,7 @@
     "patrimonio_activos": 0.3891961107124263,
     "roe": 0.123339996,
     "margen_neto": 0.061300002,
-    "inst_pct": 0.84582,
+    "inst_pct": 0.84586,
     "payout": 0.0,
     "inventario_brecha_pp": null,
     "edgar": {
@@ -814,7 +799,7 @@
     "patrimonio_activos": 0.317421233168405,
     "roe": 0.01455,
     "margen_neto": 0.05685,
-    "inst_pct": 0.61912,
+    "inst_pct": 0.61904997,
     "payout": 0.0,
     "inventario_brecha_pp": -515.5568557030506,
     "inventario_crec": -36.540462260427645,
@@ -1138,7 +1123,7 @@
     "patrimonio_activos": 0.392381841833161,
     "roe": 0.61902,
     "margen_neto": 0.28048,
-    "inst_pct": 0.87605006,
+    "inst_pct": 0.87602997,
     "payout": 0.0,
     "inventario_brecha_pp": null,
     "edgar": {
@@ -1296,7 +1281,7 @@
       {
        "nombre": "1. Tamaño: ventas anuales",
        "estado": "cumple",
-       "valor": "USD 20.652 M",
+       "valor": "USD 20.641 M",
        "umbral": "≥ USD 2.000 M",
        "nota": "",
        "informativo": false
@@ -1344,7 +1329,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "122,8",
+       "valor": "122,9",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -1352,7 +1337,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 13,20 · PER×P/VL 1.621,8",
+       "valor": "P/VL 13,21 · PER×P/VL 1.623,6",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -1406,7 +1391,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "15,20",
+       "valor": "15,21",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -1416,9 +1401,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.3241884975081903,
-     "margen_seguridad": -0.32418849750819034,
-     "precio_sobre_numero_graham": 4.784346743666846,
+     "precio_sobre_valor_intrinseco": 1.3249154685258302,
+     "margen_seguridad": -0.3249154685258302,
+     "precio_sobre_numero_graham": 4.7869733194357265,
      "per_justo_formula": 29.460869565217394,
      "g_usado": 15,
      "tasa_aaa": 5.75
@@ -1435,24 +1420,24 @@
     "racha_dividendos": 0,
     "tipo": "ACCION",
     "es_financiera": false,
-    "ventas_usd": 20652173660.150757,
-    "per": 39.011744604849994,
+    "ventas_usd": 20640841969.89666,
+    "per": 39.03316180317837,
     "ganancia_ttm_positiva": true,
     "per_forward": null,
-    "pb": 13.201778461806382,
-    "ptbv": 15.19778026269585,
+    "pb": 13.209026153763451,
+    "ptbv": 15.206123746878221,
     "liquidez_corriente": 2.1287109375,
-    "capital_trabajo_usd": 6344971591.855026,
-    "deuda_lp_usd": 429292938.6425532,
+    "capital_trabajo_usd": 6341490154.310819,
+    "deuda_lp_usd": 429057388.87965566,
     "deuda_lp_sobre_ct": 0.06765876449212667,
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.051710330625786526,
     "deuda_neta_ebitda": -3.410191464310714,
-    "caja_neta_pct": 0.08177007034541282,
+    "caja_neta_pct": 0.08172520373115431,
     "patrimonio_activos": 0.610746226942426,
     "roe": 0.35811,
     "margen_neto": 0.15726,
-    "inst_pct": 0.70224,
+    "inst_pct": 0.70228,
     "payout": 0.0,
     "inventario_brecha_pp": null,
     "edgar": {
@@ -1525,11 +1510,11 @@
      "largo_plazo": null
     },
     "crec_lynch": 28.48,
-    "per_eff": 35.82175150421413,
-    "peg": 1.2577862185468442,
-    "div_ajustado": 0.7300365643339961,
-    "per_3a": 122.8496226415716,
-    "per_normalizado": 508.9963571156566,
+    "per_eff": 35.843168702542506,
+    "peg": 1.258538226915116,
+    "div_ajustado": 0.7296359988362753,
+    "per_3a": 122.91706629884278,
+    "per_normalizado": 509.27579286094783,
     "ciclo_ratio": 13.047259543793318,
     "ciclo_anios": 7,
     "alertas": []
@@ -1758,7 +1743,7 @@
     "patrimonio_activos": 0.14322143431026654,
     "roe": 0.26217,
     "margen_neto": 0.049060002,
-    "inst_pct": 0.81369,
+    "inst_pct": 0.81364995,
     "payout": 0.0,
     "inventario_brecha_pp": null,
     "edgar": {
@@ -1860,7 +1845,7 @@
    "precio": 103.87999725341797,
    "fecha_precio": "2026-11-25",
    "var_dia": -0.051324225996182915,
-   "ret_ytd": -0.4599051405913699,
+   "ret_ytd": -0.4599051834391368,
    "ret_1a": -0.4657164470582178,
    "max_52": 246.37844848632812,
    "min_52": 101.19000244140625,
@@ -2218,7 +2203,7 @@
      {
       "nombre": "Tenencia institucional",
       "estado": "no cumple",
-      "valor": "69,1%",
+      "valor": "69,0%",
       "umbral": "< 40% (poco seguida)",
       "nota": "Lynch prefería empresas poco cubiertas por institucionales",
       "informativo": true
@@ -2390,7 +2375,7 @@
     "patrimonio_activos": 0.5027430941401909,
     "roe": -0.0962,
     "margen_neto": -0.20089,
-    "inst_pct": 0.69051003,
+    "inst_pct": 0.6905,
     "payout": 0.0,
     "inventario_brecha_pp": -4.287843329703744,
     "inventario_crec": -4.754877848827677,
@@ -2494,7 +2479,7 @@
    "precio": 601.25,
    "fecha_precio": "2026-11-25",
    "var_dia": -0.04531665955806086,
-   "ret_ytd": 1.1081594640574335,
+   "ret_ytd": 1.1081592384767824,
    "ret_1a": 1.6808571581166416,
    "max_52": 1213.1824951171875,
    "min_52": 225.26417541503906,
@@ -2505,7 +2490,7 @@
     "categoria_nombre": "Cíclica",
     "categoria_motivo": "Industria cíclica (Semiconductors) con ganancias volátiles en el ciclo",
     "senal": "VENDER",
-    "motivo": "PER normalizado 45,1 > 22 y ganancias en zona de pico",
+    "motivo": "PER normalizado 45,2 > 22 y ganancias en zona de pico",
     "checks": [
      {
       "nombre": "Deuda / patrimonio",
@@ -2534,7 +2519,7 @@
      {
       "nombre": "Tenencia institucional",
       "estado": "no cumple",
-      "valor": "79,8%",
+      "valor": "70,5%",
       "umbral": "< 40% (poco seguida)",
       "nota": "Lynch prefería empresas poco cubiertas por institucionales",
       "informativo": true
@@ -2542,7 +2527,7 @@
      {
       "nombre": "PER normalizado (ganancia promedio 7 años)",
       "estado": "no cumple",
-      "valor": "45,1",
+      "valor": "45,2",
       "umbral": "≤ 12 compra · > 22 venta",
       "nota": "",
       "informativo": false
@@ -2614,7 +2599,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "21,6",
+       "valor": "21,7",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -2622,7 +2607,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 4,92 · PER×P/VL 106,4",
+       "valor": "P/VL 4,93 · PER×P/VL 107,1",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -2676,7 +2661,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "4,96",
+       "valor": "4,97",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -2688,7 +2673,7 @@
     "valuacion": {
      "precio_sobre_valor_intrinseco": 0.2745651136363636,
      "margen_seguridad": 0.7254348863636364,
-     "precio_sobre_numero_graham": 1.3294155667094856,
+     "precio_sobre_numero_graham": 1.331476726558671,
      "per_justo_formula": 29.460869565217394,
      "g_usado": 15,
      "tasa_aaa": 5.75
@@ -2698,7 +2683,7 @@
     "moneda": "USD",
     "moneda_balance": "USD",
     "precio": 601.25,
-    "market_cap_usd": 680268201984.0,
+    "market_cap_usd": 682379247616.0,
     "sector": "Technology",
     "industria": "Semiconductors",
     "rend_div": 0.09397089397089398,
@@ -2709,8 +2694,8 @@
     "per": 8.088927,
     "ganancia_ttm_positiva": true,
     "per_forward": 2.933074,
-    "pb": 4.916014120626111,
-    "ptbv": 4.957211370740665,
+    "pb": 4.931269765540765,
+    "ptbv": 4.972594861223657,
     "liquidez_corriente": 3.313805399898115,
     "capital_trabajo_usd": 63588000000.0,
     "deuda_lp_usd": 2792000000.0,
@@ -2718,11 +2703,11 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.03742646952550261,
     "deuda_neta_ebitda": -0.351469548500888,
-    "caja_neta_pct": 0.05623517296329509,
+    "caja_neta_pct": 0.056061200767241824,
     "patrimonio_activos": 0.7064138691497182,
     "roe": 0.8826,
     "margen_neto": 0.63796,
-    "inst_pct": 0.79785,
+    "inst_pct": 0.70474,
     "payout": 0.0070999996,
     "inventario_brecha_pp": -232.18601852957468,
     "inventario_crec": 24.141232794733703,
@@ -2805,11 +2790,11 @@
      "largo_plazo": 50.55579375
     },
     "crec_lynch": 33.817896875,
-    "per_eff": 7.634044791067533,
-    "peg": 0.2257397856314071,
+    "per_eff": 7.635452039461437,
+    "peg": 0.2257813981657142,
     "div_ajustado": 4.192381482608372,
-    "per_3a": 21.644831745455317,
-    "per_normalizado": 45.05598945848157,
+    "per_3a": 21.712001175657043,
+    "per_normalizado": 45.195809678601165,
     "ciclo_ratio": 5.627724794186662,
     "ciclo_anios": 7,
     "alertas": [
@@ -2831,7 +2816,7 @@
    "fecha_precio": "2026-11-25",
    "var_dia": -0.001135338575247724,
    "ret_ytd": 0.0019250904093581767,
-   "ret_1a": 0.0654795036368605,
+   "ret_1a": 0.06547972239662658,
    "max_52": 363.3671875,
    "min_52": 278.7472229003906,
    "senal": "MANTENER",
@@ -3153,17 +3138,17 @@
    "fecha_precio": "2026-11-25",
    "var_dia": -0.02468459582107052,
    "ret_ytd": 0.22545686731071046,
-   "ret_1a": 0.30685919119132343,
-   "max_52": 1984.2525634765625,
+   "ret_1a": 0.30685911119563825,
+   "max_52": 1984.252685546875,
    "min_52": 1009.2438354492188,
    "senal": "VENDER",
    "motivo": "Lynch mantener · Graham vender",
    "lynch": {
     "categoria": "rapido",
     "categoria_nombre": "Crecimiento rápido",
-    "categoria_motivo": "Crecimiento de ganancias estimado 30,1% ≥ 18%",
+    "categoria_motivo": "Crecimiento de ganancias estimado 30,7% ≥ 18%",
     "senal": "MANTENER",
-    "motivo": "PEG 1,10 entre 1 y 2",
+    "motivo": "PEG 1,08 entre 1 y 2",
     "checks": [
      {
       "nombre": "Deuda / patrimonio",
@@ -3200,9 +3185,9 @@
      {
       "nombre": "PEG (PER efectivo / crecimiento)",
       "estado": "no cumple",
-      "valor": "1,10",
+      "valor": "1,08",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 33,9 → efectivo 33,1 · crecimiento 30,1%",
+      "nota": "PER 34,0 → efectivo 33,2 · crecimiento 30,7%",
       "informativo": false
      }
     ],
@@ -3210,13 +3195,13 @@
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 33,9 > PER justo de la fórmula (29,5, g=15,0%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 34,0 > PER justo de la fórmula (29,5, g=15,0%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
        "nombre": "1. Tamaño: ventas anuales",
        "estado": "cumple",
-       "valor": "USD 43.339 M",
+       "valor": "USD 43.316 M",
        "umbral": "≥ USD 2.000 M",
        "nota": "",
        "informativo": false
@@ -3264,7 +3249,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "54,8",
+       "valor": "54,9",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -3272,7 +3257,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 20,73 · PER×P/VL 1.137,1",
+       "valor": "P/VL 20,74 · PER×P/VL 1.138,4",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -3326,7 +3311,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "27,08",
+       "valor": "27,09",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -3336,9 +3321,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.1523223467573092,
-     "margen_seguridad": -0.15232234675730916,
-     "precio_sobre_numero_graham": 5.592941166085225,
+     "precio_sobre_valor_intrinseco": 1.152954964357181,
+     "margen_seguridad": -0.15295496435718103,
+     "precio_sobre_numero_graham": 5.596011655021476,
      "per_justo_formula": 29.460869565217394,
      "g_usado": 15,
      "tasa_aaa": 5.75
@@ -3355,24 +3340,24 @@
     "racha_dividendos": 20,
     "tipo": "ACCION",
     "es_financiera": false,
-    "ventas_usd": 43339373100.23963,
-    "per": 33.948418354902294,
+    "ventas_usd": 43315593116.59916,
+    "per": 33.96705581949678,
     "ganancia_ttm_positiva": true,
     "per_forward": null,
-    "pb": 20.732108565594107,
-    "ptbv": 27.078469536158117,
+    "pb": 20.74349036062564,
+    "ptbv": 27.09333544278083,
     "liquidez_corriente": 1.4867271916897886,
-    "capital_trabajo_usd": 13308739859.461824,
-    "deuda_lp_usd": 2155248180.4484196,
+    "capital_trabajo_usd": 13301437455.354563,
+    "deuda_lp_usd": 2154065612.2014427,
     "deuda_lp_sobre_ct": 0.16194231784582894,
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.08896885863333318,
     "deuda_neta_ebitda": -0.6657252253989714,
-    "caja_neta_pct": 0.023549116680770706,
+    "caja_neta_pct": 0.02353619545996483,
     "patrimonio_activos": 0.374083606301669,
     "roe": 0.65636003,
     "margen_neto": 0.34135,
-    "inst_pct": 0.19945,
+    "inst_pct": 0.19944,
     "payout": 0.2226,
     "inventario_brecha_pp": -10.645884843879227,
     "inventario_crec": 4.9377955286232345,
@@ -3448,18 +3433,18 @@
     "crec_10a_anios": 10,
     "eps_vs_5a": true,
     "crecimiento": {
-     "final": 30.061724356394443,
+     "final": 30.73172335639444,
      "historico": 23.853446712788884,
      "historico_anios": 5,
-     "estimado_1_2a": 36.270002,
+     "estimado_1_2a": 37.61,
      "largo_plazo": null
     },
-    "crec_lynch": 30.061724356394443,
-    "per_eff": 33.14896308993508,
-    "peg": 1.102696661606637,
-    "div_ajustado": 0.9065211027345254,
-    "per_3a": 54.84786213194386,
-    "per_normalizado": 75.03545982422031,
+    "crec_lynch": 30.73172335639444,
+    "per_eff": 33.167600554529564,
+    "peg": 1.079262629364659,
+    "div_ajustado": 0.9257486668929931,
+    "per_3a": 54.877973257530925,
+    "per_normalizado": 75.07665381185133,
     "ciclo_ratio": 2.210278518421312,
     "ciclo_anios": 7,
     "alertas": []
@@ -3548,7 +3533,7 @@
       {
        "nombre": "1. Tamaño: ventas anuales",
        "estado": "cumple",
-       "valor": "USD 8.216 M",
+       "valor": "USD 8.212 M",
        "umbral": "≥ USD 2.000 M",
        "nota": "",
        "informativo": false
@@ -3596,7 +3581,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "44,8",
+       "valor": "44,9",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -3604,7 +3589,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 16,71 · PER×P/VL 749,2",
+       "valor": "P/VL 16,71 · PER×P/VL 750,0",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -3658,7 +3643,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "46,54",
+       "valor": "46,57",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -3668,9 +3653,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.3164023065267758,
-     "margen_seguridad": -0.3164023065267758,
-     "precio_sobre_numero_graham": 5.366083164842954,
+     "precio_sobre_valor_intrinseco": 1.3171250029753552,
+     "margen_seguridad": -0.3171250029753552,
+     "precio_sobre_numero_graham": 5.36902911018716,
      "per_justo_formula": 29.460869565217394,
      "g_usado": 15,
      "tasa_aaa": 5.75
@@ -3687,24 +3672,24 @@
     "racha_dividendos": 11,
     "tipo": "ACCION",
     "es_financiera": false,
-    "ventas_usd": 8216253846.048649,
-    "per": 38.782356647936666,
+    "ventas_usd": 8211745650.196505,
+    "per": 38.80364791374351,
     "ganancia_ttm_positiva": true,
     "per_forward": null,
-    "pb": 16.705640089169677,
-    "ptbv": 46.5420618020455,
+    "pb": 16.71481137875481,
+    "ptbv": 46.56761309636271,
     "liquidez_corriente": 1.8922930543671457,
-    "capital_trabajo_usd": 2801687588.466697,
-    "deuda_lp_usd": 2252012565.515898,
+    "capital_trabajo_usd": 2800150323.844402,
+    "deuda_lp_usd": 2250776903.388478,
     "deuda_lp_sobre_ct": 0.8038057400783846,
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.798188468328878,
     "deuda_neta_ebitda": 0.5454516710297009,
-    "caja_neta_pct": -0.021183767821334742,
+    "caja_neta_pct": -0.021172144449416796,
     "patrimonio_activos": 0.37508095391402646,
     "roe": 0.43835998,
     "margen_neto": 0.22513,
-    "inst_pct": 0.4454,
+    "inst_pct": 0.44541,
     "payout": 0.3793,
     "inventario_brecha_pp": -4.66332946254695,
     "inventario_crec": 2.362630192778137,
@@ -3783,12 +3768,12 @@
      "largo_plazo": null
     },
     "crec_lynch": 16.50702584930716,
-    "per_eff": 38.782356647936666,
-    "peg": 2.349445442321426,
-    "div_ajustado": 0.4524125646374718,
-    "per_3a": 44.844893022226955,
-    "per_normalizado": 61.490366905619695,
-    "ciclo_ratio": 1.585524249179199,
+    "per_eff": 38.80364791374351,
+    "peg": 2.350735272845786,
+    "div_ajustado": 0.4521643293120337,
+    "per_3a": 44.86951258173655,
+    "per_normalizado": 61.52412472385219,
+    "ciclo_ratio": 1.5855242491791992,
     "ciclo_anios": 7,
     "alertas": []
    },
@@ -3805,9 +3790,9 @@
    "fecha_precio": "2026-11-25",
    "var_dia": 0.0005974630172405071,
    "ret_ytd": -0.04081061079858528,
-   "ret_1a": 0.00891945685890505,
-   "max_52": 534.8615112304688,
-   "min_52": 408.60247802734375,
+   "ret_1a": 0.008919392899580547,
+   "max_52": 534.8614501953125,
+   "min_52": 408.6024475097656,
    "senal": "VENDER",
    "motivo": "Lynch y Graham coinciden: vender",
    "lynch": {
@@ -4346,7 +4331,7 @@
     "patrimonio_activos": -0.0056547471849910155,
     "roe": null,
     "margen_neto": 0.32377,
-    "inst_pct": 0.7604,
+    "inst_pct": 0.76038,
     "payout": 0.5886,
     "inventario_brecha_pp": null,
     "edgar": {
@@ -4512,7 +4497,7 @@
       {
        "nombre": "1. Tamaño: ventas anuales",
        "estado": "cumple",
-       "valor": "USD 160.482 M",
+       "valor": "USD 160.484 M",
        "umbral": "≥ USD 2.000 M",
        "nota": "",
        "informativo": false
@@ -4632,9 +4617,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.4150451387569693,
-     "margen_seguridad": 0.5849548612430306,
-     "precio_sobre_numero_graham": 0.812994440022761,
+     "precio_sobre_valor_intrinseco": 0.41503892744792364,
+     "margen_seguridad": 0.5849610725520764,
+     "precio_sobre_numero_graham": 0.8129822732504082,
      "per_justo_formula": 29.460869565217394,
      "g_usado": 15,
      "tasa_aaa": 5.75
@@ -4651,20 +4636,20 @@
     "racha_dividendos": 4,
     "tipo": "ACCION",
     "es_financiera": false,
-    "ventas_usd": 160481589913.32367,
-    "per": 12.227590696596627,
+    "ventas_usd": 160483991617.5619,
+    "per": 12.227407706031004,
     "ganancia_ttm_positiva": true,
     "per_forward": null,
-    "pb": 1.2162329814546013,
-    "ptbv": 1.5589232945878722,
+    "pb": 1.216214780063442,
+    "ptbv": 1.5588999647052715,
     "liquidez_corriente": 1.5022620695733282,
-    "capital_trabajo_usd": 41077741826.10885,
-    "deuda_lp_usd": 36634331758.31638,
+    "capital_trabajo_usd": 41078356579.40668,
+    "deuda_lp_usd": 36634880013.29003,
     "deuda_lp_sobre_ct": 0.8918292517976669,
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.22741752775174875,
     "deuda_neta_ebitda": -1.2470350040915317,
-    "caja_neta_pct": 0.11198578762227109,
+    "caja_neta_pct": 0.11198746355744159,
     "patrimonio_activos": 0.5498007800344862,
     "roe": 0.096999995,
     "margen_neto": 0.109589994,
@@ -4749,12 +4734,12 @@
      "largo_plazo": null
     },
     "crec_lynch": 17.76617551820558,
-    "per_eff": 10.8582743217155,
-    "peg": 0.6111768011403846,
-    "div_ajustado": 1.5525074508126118,
-    "per_3a": 13.665855240056366,
-    "per_normalizado": 13.359905572557118,
-    "ciclo_ratio": 1.0926032694466665,
+    "per_eff": 10.858091331149875,
+    "peg": 0.6111665011990474,
+    "div_ajustado": 1.5525306850273684,
+    "per_3a": 13.665650725312446,
+    "per_normalizado": 13.359705636466842,
+    "ciclo_ratio": 1.0926032694466667,
     "ciclo_anios": 7,
     "alertas": [
      "Estimaciones de crecimiento muy dispares (histórico -4% · analistas próximo año 40%): conviene revisar la categoría de Lynch a mano"
@@ -4994,7 +4979,7 @@
     "patrimonio_activos": 0.583912809732596,
     "roe": 0.10574,
     "margen_neto": 0.19497,
-    "inst_pct": 0.67525,
+    "inst_pct": 0.67529,
     "payout": 0.0,
     "inventario_brecha_pp": null,
     "edgar": {
@@ -5132,7 +5117,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "cumple",
-      "valor": "5,1%",
+      "valor": "5,2%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -5150,7 +5135,7 @@
       "estado": "cumple",
       "valor": "0,73",
       "umbral": "≤ 1 compra · > 2 venta",
-      "nota": "PER 23,3 → efectivo 22,1 · crecimiento 30,2%",
+      "nota": "PER 23,1 → efectivo 21,9 · crecimiento 30,2%",
       "informativo": false
      }
     ],
@@ -5158,13 +5143,13 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 20,9% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 21,5% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
        "nombre": "1. Tamaño: ventas anuales",
        "estado": "cumple",
-       "valor": "USD 148.985 M",
+       "valor": "USD 150.225 M",
        "umbral": "≥ USD 2.000 M",
        "nota": "",
        "informativo": false
@@ -5212,7 +5197,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "no cumple",
-       "valor": "47,7",
+       "valor": "47,3",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -5220,7 +5205,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 8,42 · PER×P/VL 401,5",
+       "valor": "P/VL 8,35 · PER×P/VL 394,9",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -5274,7 +5259,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "8,46",
+       "valor": "8,39",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -5284,9 +5269,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.7913852887589349,
-     "margen_seguridad": 0.20861471124106512,
-     "precio_sobre_numero_graham": 2.95399725678671,
+     "precio_sobre_valor_intrinseco": 0.7848520497870841,
+     "margen_seguridad": 0.21514795021291588,
+     "precio_sobre_numero_graham": 2.929610690249638,
      "per_justo_formula": 29.460869565217394,
      "g_usado": 15,
      "tasa_aaa": 5.75
@@ -5303,24 +5288,24 @@
     "racha_dividendos": 23,
     "tipo": "ACCION",
     "es_financiera": false,
-    "ventas_usd": 148985168966.79706,
-    "per": 23.314898767958883,
+    "ventas_usd": 150225346287.33246,
+    "per": 23.12242386677079,
     "ganancia_ttm_positiva": true,
     "per_forward": null,
-    "pb": 8.421106490698055,
-    "ptbv": 8.455154322988491,
+    "pb": 8.35158649595894,
+    "ptbv": 8.385353248188895,
     "liquidez_corriente": 2.584138383724542,
-    "capital_trabajo_usd": 93919270291.60863,
-    "deuda_lp_usd": 24657453053.98791,
+    "capital_trabajo_usd": 94701069914.91774,
+    "deuda_lp_usd": 24862705793.383316,
     "deuda_lp_sobre_ct": 0.2625388056937552,
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.15232971964196104,
     "deuda_neta_ebitda": -0.8412399327212077,
-    "caja_neta_pct": 0.05139420744839297,
+    "caja_neta_pct": 0.051822021377298834,
     "patrimonio_activos": 0.6961085970826272,
     "roe": 0.4186,
     "margen_neto": 0.51116,
-    "inst_pct": 0.15421,
+    "inst_pct": 0.1542,
     "payout": 0.2446,
     "inventario_brecha_pp": -31.52140802683412,
     "inventario_crec": 0.08361447992975002,
@@ -5399,12 +5384,12 @@
      "largo_plazo": null
     },
     "crec_lynch": 30.213077375730176,
-    "per_eff": 22.116648024040124,
-    "peg": 0.7320223540620254,
-    "div_ajustado": 1.3441433728419703,
-    "per_3a": 47.68159921623477,
-    "per_normalizado": 66.99101809272987,
-    "ciclo_ratio": 2.8733137020862407,
+    "per_eff": 21.92417312285203,
+    "peg": 0.7256517715889302,
+    "div_ajustado": 1.3553322457889014,
+    "per_3a": 47.287966321278894,
+    "per_normalizado": 66.43797732183842,
+    "ciclo_ratio": 2.8733137020862403,
     "ciclo_anios": 7,
     "alertas": []
    },
@@ -5420,8 +5405,8 @@
    "precio": 1392.219970703125,
    "fecha_precio": "2026-11-25",
    "var_dia": -0.010919369624967645,
-   "ret_ytd": 0.30331233685120873,
-   "ret_1a": 0.26190934575385727,
+   "ret_ytd": 0.30331218791538905,
+   "ret_1a": 0.2619094853773696,
    "max_52": 1443.5,
    "min_52": 847.5028076171875,
    "senal": "VENDER",
@@ -6269,7 +6254,7 @@
     "patrimonio_activos": 0.4990674475495482,
     "roe": 0.53463,
     "margen_neto": 0.29691,
-    "inst_pct": 0.82721,
+    "inst_pct": 0.82725,
     "payout": 0.0,
     "inventario_brecha_pp": null,
     "edgar": {
@@ -6682,7 +6667,7 @@
      "final": 11.512752768337432,
      "historico": 11.512752768337432,
      "historico_anios": 5,
-     "estimado_1_2a": 11.73,
+     "estimado_1_2a": 11.72,
      "largo_plazo": 11.001391848664074
     },
     "crec_lynch": 11.512752768337432,
@@ -6935,7 +6920,7 @@
     "patrimonio_activos": 0.34619731357109773,
     "roe": 0.40592998,
     "margen_neto": 0.28654,
-    "inst_pct": 0.68321997,
+    "inst_pct": 0.68323,
     "payout": 0.6195,
     "inventario_brecha_pp": -8.278542958124223,
     "inventario_crec": -6.408629441624369,
@@ -7041,7 +7026,7 @@
    "var_dia": 0.008760863920426631,
    "ret_ytd": 0.03338446977809828,
    "ret_1a": 0.02499472973883421,
-   "max_52": 165.45346069335938,
+   "max_52": 165.4534454345703,
    "min_52": 123.7300033569336,
    "senal": "VENDER",
    "motivo": "Lynch y Graham coinciden: vender",
@@ -7371,10 +7356,10 @@
    "precio": 113.33000183105469,
    "fecha_precio": "2026-11-25",
    "var_dia": -0.004567383838697259,
-   "ret_ytd": -0.008711220281553578,
+   "ret_ytd": -0.008711286433942145,
    "ret_1a": 0.14335760845486667,
    "max_52": 144.14134216308594,
-   "min_52": 100.42340087890625,
+   "min_52": 100.42340850830078,
    "senal": "COMPRAR",
    "motivo": "Lynch comprar · Graham mantener",
    "lynch": {
@@ -7591,7 +7576,7 @@
     "patrimonio_activos": 0.0711967717357564,
     "roe": 0.09353,
     "margen_neto": 0.23208,
-    "inst_pct": 0.81424004,
+    "inst_pct": 0.81422997,
     "payout": 0.24069999,
     "inventario_brecha_pp": null,
     "edgar": {
@@ -7694,7 +7679,7 @@
    "fecha_precio": "2026-11-25",
    "var_dia": -0.0004118710296139305,
    "ret_ytd": -0.10330213493451368,
-   "ret_1a": -0.055360623029166334,
+   "ret_1a": -0.05536055290101016,
    "max_52": 64.48101043701172,
    "min_52": 46.242576599121094,
    "senal": "COMPRAR",
@@ -8012,11 +7997,11 @@
    "sector": "Financial Services",
    "industria": "Capital Markets",
    "moneda": "ARS",
-   "precio": 193.25,
-   "fecha_precio": "2026-11-25",
-   "var_dia": 0.017105263157894735,
-   "ret_ytd": -0.33530845298377254,
-   "ret_1a": -0.3242689736477944,
+   "precio": 195.0,
+   "fecha_precio": "2026-11-26",
+   "var_dia": 0.009055627425614388,
+   "ret_ytd": -0.32928925398103825,
+   "ret_1a": -0.33387132975639733,
    "max_52": 346.4837341308594,
    "min_52": 187.75,
    "senal": "VENDER",
@@ -8039,7 +8024,7 @@
      {
       "nombre": "Caja neta / capitalización",
       "estado": "cumple",
-      "valor": "110,0%",
+      "valor": "109,0%",
       "umbral": "> 0%",
       "nota": "Lynch descuenta la caja neta del precio: PER efectivo = PER × (1 − caja neta/cap.)",
       "informativo": true
@@ -8057,13 +8042,13 @@
    },
    "graham": {
     "senal": "VENDER",
-    "motivo": "PER 7,8 > PER justo de la fórmula (6,5, g=0,0%, AAA=5,8%) y no cumple los límites de precio",
+    "motivo": "PER 7,9 > PER justo de la fórmula (6,5, g=0,0%, AAA=5,8%) y no cumple los límites de precio",
     "defensivo": {
      "checks": [
       {
        "nombre": "1. Tamaño: ventas anuales",
        "estado": "no cumple",
-       "valor": "USD 179 M",
+       "valor": "USD 180 M",
        "umbral": "≥ USD 2.000 M",
        "nota": "",
        "informativo": false
@@ -8111,7 +8096,7 @@
       {
        "nombre": "6. PER sobre ganancia promedio 3 años",
        "estado": "cumple",
-       "valor": "7,4",
+       "valor": "7,5",
        "umbral": "≤ 15",
        "nota": "",
        "informativo": false
@@ -8119,7 +8104,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "cumple",
-       "valor": "P/VL 2,02 · PER×P/VL 15,0",
+       "valor": "P/VL 2,04 · PER×P/VL 15,3",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -8157,7 +8142,7 @@
       {
        "nombre": "E4. Paga dividendo actualmente",
        "estado": "cumple",
-       "valor": "13,5%",
+       "valor": "13,4%",
        "umbral": "> 0",
        "nota": "",
        "informativo": false
@@ -8173,7 +8158,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "2,58",
+       "valor": "2,60",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -8183,9 +8168,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 1.197054679144385,
-     "margen_seguridad": -0.19705467914438501,
-     "precio_sobre_numero_graham": 0.8361963033161214,
+     "precio_sobre_valor_intrinseco": 1.2078947205882353,
+     "margen_seguridad": -0.20789472058823533,
+     "precio_sobre_numero_graham": 0.8437685711805334,
      "per_justo_formula": 6.504347826086957,
      "g_usado": 0.0,
      "tasa_aaa": 5.75
@@ -8194,32 +8179,32 @@
    "metricas": {
     "moneda": "ARS",
     "moneda_balance": "ARS",
-    "precio": 193.25,
-    "market_cap_usd": 918734620.4444444,
+    "precio": 195.0,
+    "market_cap_usd": 927633384.974391,
     "sector": "Financial Services",
     "industria": "Capital Markets",
-    "rend_div": 13.484156274256145,
+    "rend_div": 13.354802051282052,
     "racha_dividendos": 9,
     "tipo": "ACCION",
     "es_financiera": false,
-    "ventas_usd": 179453338.3670412,
-    "per": 7.78606,
+    "ventas_usd": 179565426.64834478,
+    "per": 7.8565674,
     "ganancia_ttm_positiva": true,
-    "per_forward": 3.6992724,
-    "pb": 2.0206042334363983,
-    "ptbv": 2.58033270862817,
+    "per_forward": 3.7327716,
+    "pb": 2.038902070453933,
+    "ptbv": 2.6036992375961887,
     "liquidez_corriente": 1.2454225548655231,
-    "capital_trabajo_usd": 304701320.2247191,
+    "capital_trabajo_usd": 304891639.6002498,
     "deuda_lp_usd": 0.0,
     "deuda_lp_sobre_ct": 0.0,
     "patrimonio_negativo": false,
     "deuda_patrimonio": 9.781681853316933e-06,
     "deuda_neta_ebitda": -8.717881766480135,
-    "caja_neta_pct": 1.1001512813609367,
+    "caja_neta_pct": 1.0902781299562236,
     "patrimonio_activos": 0.26530192665048025,
     "roe": 0.23246,
     "margen_neto": 0.51574004,
-    "inst_pct": 0.0554,
+    "inst_pct": 0.055409998,
     "payout": 1.1773,
     "inventario_brecha_pp": null,
     "edgar": null,
@@ -8261,12 +8246,12 @@
      "largo_plazo": null
     },
     "crec_lynch": null,
-    "per_eff": 1.5572119999999996,
+    "per_eff": 1.5713134799999997,
     "peg": null,
     "div_ajustado": null,
-    "per_3a": 7.44220626529812,
-    "per_normalizado": 9.645229922472254,
-    "ciclo_ratio": 0.971643635188533,
+    "per_3a": 7.514290673204881,
+    "per_normalizado": 9.73865258012257,
+    "ciclo_ratio": 0.9722505331493002,
     "ciclo_anios": 4,
     "alertas": [
      "Balances en ARS: crecimiento medido en USD (tipo de cambio de cada cierre), aproximado"
@@ -8286,10 +8271,10 @@
    "precio": 501.2699890136719,
    "fecha_precio": "2026-11-25",
    "var_dia": 0.0030615896450059132,
-   "ret_ytd": 0.055886205377701836,
+   "ret_ytd": 0.05588627325313622,
    "ret_1a": 0.07927353319569952,
    "max_52": 540.3928833007812,
-   "min_52": 447.59295654296875,
+   "min_52": 447.5929870605469,
    "senal": "N/A",
    "motivo": "ETF: Lynch y Graham evalúan empresas, no índices",
    "lynch": null,
@@ -8320,8 +8305,8 @@
    "fecha_precio": "2026-11-25",
    "var_dia": 0.025454541186352708,
    "ret_ytd": -0.40937810707697875,
-   "ret_1a": -0.40532738895801845,
-   "max_52": 66.03540802001953,
+   "ret_1a": -0.40532742575595493,
+   "max_52": 66.03541564941406,
    "min_52": 32.91999816894531,
    "senal": "VENDER",
    "motivo": "Lynch y Graham coinciden: vender",
@@ -8547,7 +8532,7 @@
     "patrimonio_activos": 0.4027094247764195,
     "roe": 0.21563,
     "margen_neto": 0.0674,
-    "inst_pct": 0.83556,
+    "inst_pct": 0.83557,
     "payout": 0.7885,
     "inventario_brecha_pp": -0.03195225246481748,
     "inventario_crec": 0.16023501134998508,
@@ -8652,7 +8637,7 @@
    "fecha_precio": "2026-11-25",
    "var_dia": 0.012182904144568463,
    "ret_ytd": -0.1460804179939823,
-   "ret_1a": -0.12886733135478012,
+   "ret_1a": -0.12886740548947184,
    "max_52": 380.6043701171875,
    "min_52": 289.6576843261719,
    "senal": "MANTENER",
@@ -8953,8 +8938,8 @@
    "precio": 659.969970703125,
    "fecha_precio": "2026-11-25",
    "var_dia": 0.019353095598773518,
-   "ret_ytd": 0.16348876576414884,
-   "ret_1a": 0.21546007908790488,
+   "ret_ytd": 0.1634886405710967,
+   "ret_1a": 0.2154602157151566,
    "max_52": 672.6799926757812,
    "min_52": 470.0482482910156,
    "senal": "VENDER",
@@ -9165,7 +9150,7 @@
     "patrimonio_activos": 0.11613269359748234,
     "roe": 2.31366,
     "margen_neto": 0.46732,
-    "inst_pct": 0.9149,
+    "inst_pct": 0.91489,
     "payout": 0.17629999,
     "inventario_brecha_pp": null,
     "edgar": {
@@ -9267,7 +9252,7 @@
    "precio": 424.3900146484375,
    "fecha_precio": "2026-11-25",
    "var_dia": 0.01825907167193619,
-   "ret_ytd": 0.21960800753387755,
+   "ret_ytd": 0.21960811449488404,
    "ret_1a": 0.27859603906249863,
    "max_52": 435.7633972167969,
    "min_52": 293.81787109375,
@@ -9487,7 +9472,7 @@
     "patrimonio_activos": 0.38269393810936836,
     "roe": 0.63507,
     "margen_neto": 0.51203996,
-    "inst_pct": 0.89705,
+    "inst_pct": 0.89706004,
     "payout": 0.2175,
     "inventario_brecha_pp": null,
     "edgar": {
@@ -9594,7 +9579,7 @@
    "fecha_precio": "2026-11-25",
    "var_dia": -0.0028938159173377276,
    "ret_ytd": 0.059212133370521336,
-   "ret_1a": 0.07320122875482227,
+   "ret_1a": 0.07320113066929501,
    "max_52": 779.0900268554688,
    "min_52": 628.78466796875,
    "senal": "N/A",
@@ -9627,7 +9612,7 @@
    "fecha_precio": "2026-11-25",
    "var_dia": -0.006534999325657598,
    "ret_ytd": 0.03545278476771241,
-   "ret_1a": 0.046015666000396305,
+   "ret_1a": 0.04601577134570056,
    "max_52": 759.6599731445312,
    "min_52": 557.0867309570312,
    "senal": "N/A",
@@ -9845,7 +9830,7 @@
     "valuacion": {
      "precio_sobre_valor_intrinseco": 0.25825183944895885,
      "margen_seguridad": 0.7417481605510412,
-     "precio_sobre_numero_graham": 0.6986760948358623,
+     "precio_sobre_numero_graham": 0.6984860215546036,
      "per_justo_formula": 27.394782608695653,
      "g_usado": 13.65,
      "tasa_aaa": 5.75
@@ -9855,7 +9840,7 @@
     "moneda": "USD",
     "moneda_balance": "USD",
     "precio": 50.15999984741211,
-    "market_cap_usd": 5532016111.171478,
+    "market_cap_usd": 5529006575.180634,
     "sector": "Energy",
     "industria": "Oil & Gas E&P",
     "rend_div": 0.0,
@@ -9866,8 +9851,8 @@
     "per": 7.074753,
     "ganancia_ttm_positiva": true,
     "per_forward": 4.357523,
-    "pb": 1.5524692414900625,
-    "ptbv": 1.5688762491974786,
+    "pb": 1.5516246647637748,
+    "ptbv": 1.568022746705393,
     "liquidez_corriente": 0.7198971266848375,
     "capital_trabajo_usd": -517222000.0,
     "deuda_lp_usd": 3078038000.0,
@@ -9875,11 +9860,11 @@
     "patrimonio_negativo": false,
     "deuda_patrimonio": 1.0454587039333034,
     "deuda_neta_ebitda": 1.1554944185837732,
-    "caja_neta_pct": -0.5306945860246786,
+    "caja_neta_pct": -0.5309834524666099,
     "patrimonio_activos": 0.36472390022678525,
     "roe": 0.26751,
     "margen_neto": 0.19655001,
-    "inst_pct": 0.63327,
+    "inst_pct": 0.63345003,
     "payout": 0.0,
     "inventario_brecha_pp": null,
     "edgar": {
@@ -9947,8 +9932,8 @@
     "per_eff": 7.074753,
     "peg": 0.5182969230769231,
     "div_ajustado": 1.9293959803260976,
-    "per_3a": 10.414585606950588,
-    "per_normalizado": 21.77650455514761,
+    "per_3a": 10.408919847924588,
+    "per_normalizado": 21.76465766734098,
     "ciclo_ratio": 3.183013431167236,
     "ciclo_anios": 7,
     "alertas": []
@@ -10321,7 +10306,7 @@
      {
       "nombre": "Tenencia institucional",
       "estado": "no cumple",
-      "valor": "42,5%",
+      "valor": "42,2%",
       "umbral": "< 40% (poco seguida)",
       "nota": "Lynch prefería empresas poco cubiertas por institucionales",
       "informativo": true
@@ -10331,13 +10316,13 @@
    },
    "graham": {
     "senal": "MANTENER",
-    "motivo": "Margen de seguridad 4,6% según la fórmula; no cumple PER ≤ 15 / P/VL",
+    "motivo": "Margen de seguridad 4,7% según la fórmula; no cumple PER ≤ 15 / P/VL",
     "defensivo": {
      "checks": [
       {
        "nombre": "1. Tamaño: ventas anuales",
        "estado": "cumple",
-       "valor": "USD 20.435 M",
+       "valor": "USD 20.447 M",
        "umbral": "≥ USD 2.000 M",
        "nota": "",
        "informativo": false
@@ -10393,7 +10378,7 @@
       {
        "nombre": "7. P/VL o PER × P/VL",
        "estado": "no cumple",
-       "valor": "P/VL 1.441,92 · PER×P/VL 632.647.863,8",
+       "valor": "P/VL 1.441,02 · PER×P/VL 632.252.952,5",
        "umbral": "P/VL ≤ 1,5 o producto ≤ 22,5",
        "nota": "",
        "informativo": false
@@ -10447,7 +10432,7 @@
       {
        "nombre": "E6. Precio / valor contable tangible",
        "estado": "no cumple",
-       "valor": "1.491,96",
+       "valor": "1.491,03",
        "umbral": "≤ 1,2",
        "nota": "",
        "informativo": false
@@ -10457,9 +10442,9 @@
      "aplicables": 6
     },
     "valuacion": {
-     "precio_sobre_valor_intrinseco": 0.9536289073856454,
-     "margen_seguridad": 0.04637109261435457,
-     "precio_sobre_numero_graham": 19.937475935495637,
+     "precio_sobre_valor_intrinseco": 0.9530336334109979,
+     "margen_seguridad": 0.046966366589002106,
+     "precio_sobre_numero_graham": 19.92503056974315,
      "per_justo_formula": 6.504347826086957,
      "g_usado": 0.0,
      "tasa_aaa": 5.75
@@ -10476,24 +10461,24 @@
     "racha_dividendos": 0,
     "tipo": "ACCION",
     "es_financiera": false,
-    "ventas_usd": 20434651706.16729,
-    "per": 6.202734110647503,
+    "ventas_usd": 20447415386.183636,
+    "per": 6.198862241664578,
     "ganancia_ttm_positiva": true,
     "per_forward": null,
-    "pb": 1441.9151523701019,
-    "ptbv": 1491.962049316542,
+    "pb": 1441.0150804897214,
+    "ptbv": 1491.0307371758952,
     "liquidez_corriente": 1.2402440574551925,
-    "capital_trabajo_usd": 1179775.2808988765,
-    "deuda_lp_usd": 5413233.458177279,
+    "capital_trabajo_usd": 1180512.1798875702,
+    "deuda_lp_usd": 5416614.615865084,
     "deuda_lp_sobre_ct": 4.588359788359789,
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.8015717092337917,
     "deuda_neta_ebitda": 0.000636448777194106,
-    "caja_neta_pct": -0.00037151346686626886,
+    "caja_neta_pct": -0.00037174551775125716,
     "patrimonio_activos": 0.40208900201878345,
     "roe": 0.17413001,
     "margen_neto": 0.09759,
-    "inst_pct": 0.42474997,
+    "inst_pct": 0.42191002,
     "payout": 0.0,
     "inventario_brecha_pp": -2.0112357209556064,
     "inventario_crec": -6.403622250970242,
@@ -10544,12 +10529,12 @@
      "largo_plazo": null
     },
     "crec_lynch": null,
-    "per_eff": 6.202734110647503,
+    "per_eff": 6.198862241664578,
     "peg": null,
     "div_ajustado": null,
     "per_3a": 438755.26431318553,
     "per_normalizado": 3901.2152446558625,
-    "ciclo_ratio": 628.9509069813432,
+    "ciclo_ratio": 629.343755767715,
     "ciclo_anios": 4,
     "alertas": [
      "La serie de la SEC cambia de base (moneda o cantidad de acciones) en años viejos: se descartaron esos años",
@@ -10603,7 +10588,7 @@
      {
       "nombre": "Tenencia institucional",
       "estado": "no cumple",
-      "valor": "85,1%",
+      "valor": "85,0%",
       "umbral": "< 40% (poco seguida)",
       "nota": "Lynch prefería empresas poco cubiertas por institucionales",
       "informativo": true
@@ -10783,7 +10768,7 @@
     "patrimonio_activos": 0.16404961421365954,
     "roe": 0.31479,
     "margen_neto": 0.43014,
-    "inst_pct": 0.85051,
+    "inst_pct": 0.85047996,
     "payout": 0.0,
     "inventario_brecha_pp": null,
     "edgar": {
@@ -11085,7 +11070,7 @@
     "ventas_usd": 103569997824.0,
     "per": 417.73627,
     "ganancia_ttm_positiva": true,
-    "per_forward": 176.05432,
+    "per_forward": 175.6833,
     "pb": 16.828518648229156,
     "ptbv": 16.977973645884695,
     "liquidez_corriente": 1.7386644275412426,
@@ -11094,7 +11079,7 @@
     "deuda_lp_sobre_ct": 0.26599799398194585,
     "patrimonio_negativo": false,
     "deuda_patrimonio": 0.18417722227822017,
-    "deuda_neta_ebitda": -2.9244764815681044,
+    "deuda_neta_ebitda": -2.8129644818262522,
     "caja_neta_pct": 0.019147457296540767,
     "patrimonio_activos": 0.5668531015699892,
     "roe": 0.03844,
@@ -11208,9 +11193,9 @@
    "fecha_precio": "2026-11-25",
    "var_dia": 0.004264634724240324,
    "ret_ytd": 0.3125092862410659,
-   "ret_1a": 0.2882938266267665,
+   "ret_1a": 0.28829411151381046,
    "max_52": 356.2699890136719,
-   "min_52": 245.84352111816406,
+   "min_52": 245.843505859375,
    "senal": "VENDER",
    "motivo": "Lynch y Graham coinciden: vender",
    "lynch": {
@@ -11749,7 +11734,7 @@
     "patrimonio_activos": 0.675312365445644,
     "roe": 0.44286,
     "margen_neto": 0.50031,
-    "inst_pct": 0.61627996,
+    "inst_pct": 0.6163,
     "payout": 0.044899996,
     "inventario_brecha_pp": null,
     "edgar": {
@@ -11847,8 +11832,8 @@
    "precio": 149.3000030517578,
    "fecha_precio": "2026-11-25",
    "var_dia": -0.03912988569951603,
-   "ret_ytd": -0.1975905883016723,
-   "ret_1a": -0.15837530765735874,
+   "ret_ytd": -0.19759052249766895,
+   "ret_1a": -0.15837538005045515,
    "max_52": 239.24000549316406,
    "min_52": 125.52999877929688,
    "senal": "MANTENER",
@@ -12517,7 +12502,7 @@
    "fecha_precio": "2026-11-25",
    "var_dia": -0.012496749130292417,
    "ret_ytd": 0.02144373017870138,
-   "ret_1a": 0.03564145188516554,
+   "ret_1a": 0.035641518694157215,
    "max_52": 554.7283935546875,
    "min_52": 351.488037109375,
    "senal": "MANTENER",
@@ -12736,7 +12721,7 @@
     "patrimonio_activos": 0.6036787130662827,
     "roe": 0.34221,
     "margen_neto": 0.41169998,
-    "inst_pct": 0.76921,
+    "inst_pct": 0.76922995,
     "payout": 0.19,
     "inventario_brecha_pp": null,
     "edgar": {
@@ -13050,7 +13035,7 @@
     "patrimonio_activos": 0.5688502952994344,
     "roe": 0.32264,
     "margen_neto": 0.31145,
-    "inst_pct": 0.78695,
+    "inst_pct": 0.78703004,
     "payout": 0.0716,
     "inventario_brecha_pp": null,
     "edgar": {
